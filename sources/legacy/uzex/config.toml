@@ -1,0 +1,40 @@
+schema_version = 1
+
+[sources.uzex-etender]
+timezone = "Asia/Tashkent"
+timeout_seconds = 20
+check_interval_seconds = 1800
+rematch_fields = ["title", "description", "buyer", "location", "deadline", "value", "currency", "status"]
+
+[sources.uzex-etender.health]
+required_fields = ["title", "buyer", "deadline", "value", "currency", "status", "source_url"]
+allow_empty = false
+max_executed_steps = 100000
+
+[sources.uzex-etender.validity]
+excluded_statuses = ["closed", "cancelled", "expired", "deleted"]
+exclude_expired = true
+
+[sources.uzex-etender.normalization]
+parse_failure_policy = "reject"
+date_only_deadline = "reject"
+
+[sources.uzex-etender.calibration]
+version = "uzex-public-api-observation-v1"
+status = "provisional"
+evidence_references = ["docs/sources/UZEX.md", "tests/fixtures/uzex/README.md"]
+full_inventory_supported = false
+expected_mode = "incremental"
+completion_signals = ["empty_terminal_page"]
+minimum_pages = 2
+require_reported_total = true
+empty_policy = "block"
+maximum_malformed_ratio = 0
+maximum_duplicate_ratio = 0
+# Anonymous endpoints require no session. No invented expiry/maintenance signatures.
+
+[sources.uzex-etender.calibration.freshness]
+basis = "observed"
+max_age_seconds = 3600
+aging_after_seconds = 1800
+timestamp_meaning = "Collector retrieved these individual public API records during this sweep; this is observation recency, not an inventory update timestamp or verification of unseen records."

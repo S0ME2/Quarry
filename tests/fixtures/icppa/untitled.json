@@ -1,0 +1,130 @@
+{
+  "listing": {
+    "contractDate": null,
+    "contractStatus": "IN_PROCESS",
+    "contractSumma": null,
+    "contractType": 0,
+    "date": "2026-09-19",
+    "districtId": 4,
+    "districtName": "Chilonzor tumani",
+    "enktCodes": "",
+    "enktNames": "",
+    "lotId": 26111006512875,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "organ": "Fixture unnamed-product buyer",
+    "organInn": "100000099",
+    "organizationType": "BUDGET",
+    "platformName": "xarid.uzex.uz",
+    "purchaseType": "TENDER",
+    "regDate": null,
+    "regionId": 1,
+    "regionName": "Toshkent shahri",
+    "startDate": "2026-09-19",
+    "startSumma": 705000000000,
+    "vendor": "",
+    "vendorInn": ""
+  },
+  "detail": {
+    "analysisInfo": {
+      "cause": null,
+      "isBlacklist": false,
+      "isBudgetCustomer": true,
+      "isSingleVendor": false
+    },
+    "avansAmount": 0,
+    "cause": null,
+    "contractAmount": null,
+    "contractDate": null,
+    "contractStatus": null,
+    "lotId": 26111006512875,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "orgInfo": {
+      "name": "Fixture unnamed-product buyer",
+      "inn": "100000099",
+      "code": "FIXTURE",
+      "address": "Fixture address",
+      "state": "A"
+    },
+    "organizationType": "BUDGET",
+    "paidAmount": 0,
+    "platformName": "xarid.uzex.uz",
+    "products": [],
+    "purchaseType": "TENDER",
+    "savedAmount": null,
+    "savedPercent": null,
+    "startAmount": 705000000000,
+    "startDate": "2026-09-19",
+    "vendorInfo": {
+      "account": null,
+      "inn": null,
+      "kls": null,
+      "name": null,
+      "pinfl": null,
+      "status": null
+    }
+  }
+}

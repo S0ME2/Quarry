@@ -1,0 +1,1663 @@
+{
+  "schema_version": 1,
+  "source_id": "icppa-xarid-tender",
+  "version": "icppa-public-budget-tenders-v4",
+  "coverage": "incremental",
+  "completion": {
+    "$ref": "done"
+  },
+  "completion_signal": {
+    "kind": "final_page",
+    "value": {
+      "$ref": "done"
+    }
+  },
+  "expected_count": {
+    "$ref": "total"
+  },
+  "steps": [
+    {
+      "type": "transform",
+      "parameters": {
+        "input": 0,
+        "output": "page",
+        "name": "identity"
+      }
+    },
+    {
+      "type": "transform",
+      "parameters": {
+        "input": 0,
+        "output": "seen",
+        "name": "identity"
+      }
+    },
+    {
+      "type": "http_request",
+      "parameters": {
+        "url": "https://xarid.icppa.uz/api/v1/lot/searchlots",
+        "method": "POST",
+        "query": {
+          "page": 0,
+          "size": 10,
+          "sort": "lotId,desc"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "purchaseType": "TENDER",
+          "lotStatus": "IN_PROCESS",
+          "platformId": "1",
+          "organizationType": "BUDGET",
+          "hasContract": true
+        },
+        "output": "anchor_response",
+        "inventory_page": false
+      }
+    },
+    {
+      "type": "transform",
+      "parameters": {
+        "input": {
+          "$ref": "anchor_response.body"
+        },
+        "output": "anchor",
+        "name": "json"
+      }
+    },
+    {
+      "type": "transform",
+      "parameters": {
+        "input": {
+          "$ref": "anchor.totalElements"
+        },
+        "output": "total",
+        "name": "identity"
+      }
+    },
+    {
+      "type": "transform",
+      "parameters": {
+        "input": {
+          "$ref": "anchor.totalPages"
+        },
+        "output": "pages",
+        "name": "identity"
+      }
+    },
+    {
+      "type": "loop",
+      "parameters": {
+        "until": {
+          "$ref": "done"
+        },
+        "max_iterations": 100
+      },
+      "steps": [
+        {
+          "type": "http_request",
+          "parameters": {
+            "url": "https://xarid.icppa.uz/api/v1/lot/searchlots",
+            "method": "POST",
+            "query": {
+              "page": {
+                "$ref": "page"
+              },
+              "size": 10,
+              "sort": "lotId,desc"
+            },
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": {
+              "purchaseType": "TENDER",
+              "lotStatus": "IN_PROCESS",
+              "platformId": "1",
+              "organizationType": "BUDGET",
+              "hasContract": true
+            },
+            "output": "response",
+            "inventory_page": true
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "input": {
+              "$ref": "response.body"
+            },
+            "output": "payload",
+            "name": "json"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "name": "equals",
+            "input": {
+              "$ref": "payload.sort.sorted"
+            },
+            "arguments": {
+              "other": true
+            },
+            "output": "check"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "name": "assert",
+            "input": {
+              "$ref": "check"
+            },
+            "arguments": {
+              "message": "server did not acknowledge explicit ordering"
+            },
+            "output": "checked"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "input": {
+              "$ref": "payload.number"
+            },
+            "output": "check",
+            "arguments": {
+              "other": {
+                "$ref": "page"
+              }
+            },
+            "name": "equals"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "input": {
+              "$ref": "check"
+            },
+            "output": "checked",
+            "arguments": {
+              "message": "wrong page number"
+            },
+            "name": "assert"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "input": {
+              "$ref": "payload.size"
+            },
+            "output": "check",
+            "arguments": {
+              "other": 10
+            },
+            "name": "equals"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "input": {
+              "$ref": "check"
+            },
+            "output": "checked",
+            "arguments": {
+              "message": "wrong page size"
+            },
+            "name": "assert"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "input": {
+              "$ref": "payload.totalElements"
+            },
+            "output": "check",
+            "arguments": {
+              "other": {
+                "$ref": "total"
+              }
+            },
+            "name": "equals"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "input": {
+              "$ref": "check"
+            },
+            "output": "checked",
+            "arguments": {
+              "message": "inventory total changed"
+            },
+            "name": "assert"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "input": {
+              "$ref": "payload.totalPages"
+            },
+            "output": "check",
+            "arguments": {
+              "other": {
+                "$ref": "pages"
+              }
+            },
+            "name": "equals"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "input": {
+              "$ref": "check"
+            },
+            "output": "checked",
+            "arguments": {
+              "message": "page count changed"
+            },
+            "name": "assert"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "input": {
+              "$ref": "payload.content"
+            },
+            "output": "row_count",
+            "name": "length"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "input": {
+              "$ref": "payload.numberOfElements"
+            },
+            "output": "check",
+            "arguments": {
+              "other": {
+                "$ref": "row_count"
+              }
+            },
+            "name": "equals"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "input": {
+              "$ref": "check"
+            },
+            "output": "checked",
+            "arguments": {
+              "message": "page length mismatch"
+            },
+            "name": "assert"
+          }
+        },
+        {
+          "type": "loop",
+          "parameters": {
+            "items": {
+              "$ref": "payload.content"
+            },
+            "max_iterations": 10,
+            "variable": "row"
+          },
+          "steps": [
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "identity",
+                "input": null,
+                "output": "title_rows"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "row.lotId"
+                },
+                "output": "detail_url",
+                "arguments": {
+                  "template": "https://xarid.icppa.uz/api/v1/lot/public/{value}"
+                },
+                "name": "format_scalar"
+              }
+            },
+            {
+              "type": "http_request",
+              "parameters": {
+                "url": {
+                  "$ref": "detail_url"
+                },
+                "output": "detail_response"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "detail_response.body"
+                },
+                "output": "detail",
+                "name": "json"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "row.lotId"
+                },
+                "output": "check",
+                "arguments": {
+                  "other": {
+                    "$ref": "detail.lotId"
+                  }
+                },
+                "name": "equals"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "check"
+                },
+                "output": "checked",
+                "arguments": {
+                  "message": "listing/detail disagreement: row.lotId"
+                },
+                "name": "assert"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "row.organInn"
+                },
+                "output": "check",
+                "arguments": {
+                  "other": {
+                    "$ref": "detail.orgInfo.inn"
+                  }
+                },
+                "name": "equals"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "check"
+                },
+                "output": "checked",
+                "arguments": {
+                  "message": "listing/detail disagreement: row.organInn"
+                },
+                "name": "assert"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "row.startSumma"
+                },
+                "output": "check",
+                "arguments": {
+                  "other": {
+                    "$ref": "detail.startAmount"
+                  }
+                },
+                "name": "equals"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "check"
+                },
+                "output": "checked",
+                "arguments": {
+                  "message": "listing/detail disagreement: row.startSumma"
+                },
+                "name": "assert"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "row.startDate"
+                },
+                "output": "check",
+                "arguments": {
+                  "other": {
+                    "$ref": "detail.startDate"
+                  }
+                },
+                "name": "equals"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "check"
+                },
+                "output": "checked",
+                "arguments": {
+                  "message": "listing/detail disagreement: row.startDate"
+                },
+                "name": "assert"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "row.purchaseType"
+                },
+                "output": "check",
+                "arguments": {
+                  "other": {
+                    "$ref": "detail.purchaseType"
+                  }
+                },
+                "name": "equals"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "check"
+                },
+                "output": "checked",
+                "arguments": {
+                  "message": "listing/detail disagreement: row.purchaseType"
+                },
+                "name": "assert"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "row.platformName"
+                },
+                "output": "check",
+                "arguments": {
+                  "other": {
+                    "$ref": "detail.platformName"
+                  }
+                },
+                "name": "equals"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "check"
+                },
+                "output": "checked",
+                "arguments": {
+                  "message": "listing/detail disagreement: row.platformName"
+                },
+                "name": "assert"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "row.organizationType"
+                },
+                "output": "check",
+                "arguments": {
+                  "other": {
+                    "$ref": "detail.organizationType"
+                  }
+                },
+                "name": "equals"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "check"
+                },
+                "output": "checked",
+                "arguments": {
+                  "message": "listing/detail disagreement: row.organizationType"
+                },
+                "name": "assert"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "row.purchaseType"
+                },
+                "output": "check",
+                "arguments": {
+                  "other": "TENDER"
+                },
+                "name": "equals"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "check"
+                },
+                "output": "checked",
+                "arguments": {
+                  "message": "query scope mismatch: row.purchaseType"
+                },
+                "name": "assert"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "row.lotStatus"
+                },
+                "output": "check",
+                "arguments": {
+                  "other": "IN_PROCESS"
+                },
+                "name": "equals"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "check"
+                },
+                "output": "checked",
+                "arguments": {
+                  "message": "query scope mismatch: row.lotStatus"
+                },
+                "name": "assert"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "row.organizationType"
+                },
+                "output": "check",
+                "arguments": {
+                  "other": "BUDGET"
+                },
+                "name": "equals"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "check"
+                },
+                "output": "checked",
+                "arguments": {
+                  "message": "query scope mismatch: row.organizationType"
+                },
+                "name": "assert"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "row.platformName"
+                },
+                "output": "check",
+                "arguments": {
+                  "other": "xarid.uzex.uz"
+                },
+                "name": "equals"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "check"
+                },
+                "output": "checked",
+                "arguments": {
+                  "message": "query scope mismatch: row.platformName"
+                },
+                "name": "assert"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "row.lotId"
+                },
+                "output": "source_url",
+                "arguments": {
+                  "template": "https://xarid.icppa.uz/lot-info/{value}"
+                },
+                "name": "format_scalar"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": [
+                  {
+                    "$ref": "row.regionName"
+                  },
+                  {
+                    "$ref": "row.districtName"
+                  }
+                ],
+                "output": "location",
+                "arguments": {
+                  "separator": ", ",
+                  "skip_null": true
+                },
+                "name": "join_fields"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "detail.startAmount"
+                },
+                "output": "value",
+                "arguments": {
+                  "factor": "0.01"
+                },
+                "name": "scale_decimal"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "map_status",
+                "input": {
+                  "$ref": "detail.lotStatus"
+                },
+                "output": "status",
+                "arguments": {
+                  "mapping": {
+                    "IN_PROCESS": "published",
+                    "MADE_CONTRACT": "closed",
+                    "CANCELLED": "cancelled",
+                    "COMPLETED": "closed"
+                  }
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "equals",
+                "input": {
+                  "$ref": "status"
+                },
+                "output": "known_status",
+                "arguments": {
+                  "other": "published"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "parameters": {
+                "predicate": {
+                  "$ref": "known_status"
+                }
+              },
+              "steps": [
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "assert",
+                    "input": true,
+                    "output": "checked"
+                  }
+                }
+              ],
+              "else_steps": [
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "equals",
+                    "input": {
+                      "$ref": "status"
+                    },
+                    "output": "known_status",
+                    "arguments": {
+                      "other": "closed"
+                    }
+                  }
+                },
+                {
+                  "type": "condition",
+                  "parameters": {
+                    "predicate": {
+                      "$ref": "known_status"
+                    }
+                  },
+                  "steps": [
+                    {
+                      "type": "transform",
+                      "parameters": {
+                        "name": "assert",
+                        "input": true,
+                        "output": "checked"
+                      }
+                    }
+                  ],
+                  "else_steps": [
+                    {
+                      "type": "transform",
+                      "parameters": {
+                        "name": "equals",
+                        "input": {
+                          "$ref": "status"
+                        },
+                        "output": "known_status",
+                        "arguments": {
+                          "other": "cancelled"
+                        }
+                      }
+                    },
+                    {
+                      "type": "condition",
+                      "parameters": {
+                        "predicate": {
+                          "$ref": "known_status"
+                        }
+                      },
+                      "steps": [
+                        {
+                          "type": "transform",
+                          "parameters": {
+                            "name": "assert",
+                            "input": true,
+                            "output": "checked"
+                          }
+                        }
+                      ],
+                      "else_steps": [
+                        {
+                          "type": "transform",
+                          "parameters": {
+                            "name": "assert",
+                            "input": false,
+                            "output": "checked",
+                            "arguments": {
+                              "message": "unknown detail status"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "format_scalar",
+                "input": {
+                  "$ref": "row.lotId"
+                },
+                "output": "central_number",
+                "arguments": {
+                  "template": "{value}"
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "regex_extract",
+                "input": {
+                  "$ref": "central_number"
+                },
+                "output": "operator_id",
+                "arguments": {
+                  "pattern": "^[0-9]{2}1[12]1006([0-9]{6})$",
+                  "group": 1
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "format_scalar",
+                "input": {
+                  "$ref": "operator_id"
+                },
+                "output": "operator_url",
+                "arguments": {
+                  "template": "https://apietender.uzex.uz/api/common/GetTrade/{value}/0"
+                }
+              }
+            },
+            {
+              "type": "http_request",
+              "parameters": {
+                "url": {
+                  "$ref": "operator_url"
+                },
+                "output": "operator_response",
+                "inventory_page": false
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "json",
+                "input": {
+                  "$ref": "operator_response.body"
+                },
+                "output": "operator"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "equals",
+                "input": {
+                  "$ref": "operator.display_no"
+                },
+                "output": "origin_check",
+                "arguments": {
+                  "other": {
+                    "$ref": "central_number"
+                  }
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "assert",
+                "input": {
+                  "$ref": "origin_check"
+                },
+                "output": "checked",
+                "arguments": {
+                  "message": "operator association: display number mismatch"
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "format_scalar",
+                "input": {
+                  "$ref": "operator.id"
+                },
+                "output": "operator_number",
+                "arguments": {
+                  "template": "{value}"
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "equals",
+                "input": {
+                  "$ref": "operator_number"
+                },
+                "output": "origin_check",
+                "arguments": {
+                  "other": {
+                    "$ref": "operator_id"
+                  }
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "assert",
+                "input": {
+                  "$ref": "origin_check"
+                },
+                "output": "checked",
+                "arguments": {
+                  "message": "operator association: endpoint ID mismatch"
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "equals",
+                "input": {
+                  "$ref": "operator.customer_tin"
+                },
+                "output": "origin_check",
+                "arguments": {
+                  "other": {
+                    "$ref": "detail.orgInfo.inn"
+                  }
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "assert",
+                "input": {
+                  "$ref": "origin_check"
+                },
+                "output": "checked",
+                "arguments": {
+                  "message": "operator association: buyer identity mismatch"
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "equals",
+                "input": {
+                  "$ref": "operator.type_name"
+                },
+                "output": "origin_check",
+                "arguments": {
+                  "other": "Tender"
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "assert",
+                "input": {
+                  "$ref": "origin_check"
+                },
+                "output": "checked",
+                "arguments": {
+                  "message": "operator association: purchase type mismatch"
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "scale_decimal",
+                "input": {
+                  "$ref": "operator.start_cost"
+                },
+                "output": "operator_value",
+                "arguments": {
+                  "factor": "1"
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "scale_decimal",
+                "input": {
+                  "$ref": "detail.startAmount"
+                },
+                "output": "central_value",
+                "arguments": {
+                  "factor": "0.01"
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "decimal_equals",
+                "input": {
+                  "$ref": "operator_value"
+                },
+                "output": "origin_check",
+                "arguments": {
+                  "other": {
+                    "$ref": "central_value"
+                  }
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "assert",
+                "input": {
+                  "$ref": "origin_check"
+                },
+                "output": "checked",
+                "arguments": {
+                  "message": "operator association: initial amount mismatch"
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "json",
+                "input": {
+                  "$ref": "operator.budget_products"
+                },
+                "output": "operator_products"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "identity",
+                "input": "",
+                "output": "object_text"
+              }
+            },
+            {
+              "type": "loop",
+              "parameters": {
+                "items": {
+                  "$ref": "operator_products"
+                },
+                "variable": "product",
+                "max_iterations": 500
+              },
+              "steps": [
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "get",
+                    "input": {
+                      "$ref": "product"
+                    },
+                    "output": "product_name",
+                    "arguments": {
+                      "path": "Product_Name"
+                    }
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "get",
+                    "input": {
+                      "$ref": "product"
+                    },
+                    "output": "product_description",
+                    "arguments": {
+                      "path": "Description"
+                    }
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "join_fields",
+                    "input": [
+                      {
+                        "$ref": "object_text"
+                      },
+                      {
+                        "$ref": "product_name"
+                      },
+                      {
+                        "$ref": "product_description"
+                      }
+                    ],
+                    "output": "object_text",
+                    "arguments": {
+                      "separator": "\n",
+                      "skip_null": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "join_fields",
+                "input": [
+                  {
+                    "$ref": "object_text"
+                  },
+                  {
+                    "$ref": "operator.description"
+                  },
+                  {
+                    "$ref": "operator.addon_description"
+                  },
+                  {
+                    "$ref": "operator.technical_description"
+                  }
+                ],
+                "output": "description",
+                "arguments": {
+                  "separator": "\n",
+                  "skip_null": true
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "format_scalar",
+                "input": {
+                  "$ref": "operator.status_id"
+                },
+                "output": "operator_status_id",
+                "arguments": {
+                  "template": "{value}"
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "map_status",
+                "input": {
+                  "$ref": "operator_status_id"
+                },
+                "output": "operator_status",
+                "arguments": {
+                  "mapping": {
+                    "2": "draft",
+                    "3": "draft",
+                    "4": "published",
+                    "5": "cancelled",
+                    "6": "closed",
+                    "9": "closed",
+                    "10": "closed",
+                    "12": "closed",
+                    "20": "draft"
+                  }
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "regex_extract",
+                "input": {
+                  "$ref": "operator_status"
+                },
+                "output": "operator_status",
+                "arguments": {
+                  "pattern": "^(published|closed|cancelled|draft)$"
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "regex_extract",
+                "input": {
+                  "$ref": "operator.currency_codeabc"
+                },
+                "output": "operator_currency",
+                "arguments": {
+                  "pattern": "^[A-Z]{3}$"
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "identity",
+                "input": {
+                  "$ref": "row.enktNames"
+                },
+                "output": "title"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "equals",
+                "input": {
+                  "$ref": "title"
+                },
+                "output": "needs_title",
+                "arguments": {
+                  "other": null
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "parameters": {
+                "predicate": {
+                  "$ref": "needs_title"
+                }
+              },
+              "steps": [
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "identity",
+                    "input": true,
+                    "output": "needs_title"
+                  }
+                }
+              ],
+              "else_steps": [
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "normalize_text",
+                    "input": {
+                      "$ref": "title"
+                    },
+                    "output": "title"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "equals",
+                    "input": {
+                      "$ref": "title"
+                    },
+                    "output": "needs_title",
+                    "arguments": {
+                      "other": ""
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "condition",
+              "parameters": {
+                "predicate": {
+                  "$ref": "needs_title"
+                }
+              },
+              "steps": [
+                {
+                  "type": "http_request",
+                  "parameters": {
+                    "url": "https://apietender.uzex.uz/api/common/TradeList",
+                    "method": "POST",
+                    "headers": {
+                      "Language": "uz",
+                      "Content-Type": "application/json"
+                    },
+                    "body": {
+                      "From": 1,
+                      "To": 10,
+                      "TypeId": 2,
+                      "System_Id": 0,
+                      "Keyword": {
+                        "$ref": "operator_id"
+                      }
+                    },
+                    "output": "title_response",
+                    "inventory_page": false
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "json",
+                    "input": {
+                      "$ref": "title_response.body"
+                    },
+                    "output": "title_rows"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "identity",
+                    "input": 0,
+                    "output": "title_matches"
+                  }
+                },
+                {
+                  "type": "loop",
+                  "parameters": {
+                    "items": {
+                      "$ref": "title_rows"
+                    },
+                    "variable": "title_row",
+                    "max_iterations": 10
+                  },
+                  "steps": [
+                    {
+                      "type": "transform",
+                      "parameters": {
+                        "name": "equals",
+                        "input": {
+                          "$ref": "title_row.id"
+                        },
+                        "output": "title_id_matches",
+                        "arguments": {
+                          "other": {
+                            "$ref": "operator.id"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "condition",
+                      "parameters": {
+                        "predicate": {
+                          "$ref": "title_id_matches"
+                        }
+                      },
+                      "steps": [
+                        {
+                          "type": "transform",
+                          "parameters": {
+                            "name": "add",
+                            "input": {
+                              "$ref": "title_matches"
+                            },
+                            "output": "title_matches",
+                            "arguments": {
+                              "other": 1
+                            }
+                          }
+                        },
+                        {
+                          "type": "transform",
+                          "parameters": {
+                            "name": "equals",
+                            "input": {
+                              "$ref": "title_matches"
+                            },
+                            "output": "one_title_match",
+                            "arguments": {
+                              "other": 1
+                            }
+                          }
+                        },
+                        {
+                          "type": "transform",
+                          "parameters": {
+                            "name": "assert",
+                            "input": {
+                              "$ref": "one_title_match"
+                            },
+                            "output": "checked",
+                            "arguments": {
+                              "message": "ambiguous operator title lookup"
+                            }
+                          }
+                        },
+                        {
+                          "type": "transform",
+                          "parameters": {
+                            "name": "identity",
+                            "input": {
+                              "$ref": "title_row.name"
+                            },
+                            "output": "title"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "external_tender_id": {
+                    "$ref": "row.lotId"
+                  },
+                  "source_url": {
+                    "$ref": "source_url"
+                  },
+                  "title": {
+                    "$ref": "title"
+                  },
+                  "description": {
+                    "$ref": "description"
+                  },
+                  "buyer": {
+                    "$ref": "detail.orgInfo.name"
+                  },
+                  "location": {
+                    "$ref": "location"
+                  },
+                  "published_at": null,
+                  "deadline": {
+                    "$ref": "operator.end_date"
+                  },
+                  "value": {
+                    "$ref": "value"
+                  },
+                  "currency": {
+                    "$ref": "operator_currency"
+                  },
+                  "status": {
+                    "$ref": "operator_status"
+                  },
+                  "listing": {
+                    "$ref": "row"
+                  },
+                  "detail": {
+                    "$ref": "detail"
+                  },
+                  "operator": {
+                    "$ref": "operator"
+                  },
+                  "operator_products": {
+                    "$ref": "operator_products"
+                  },
+                  "operator_url": {
+                    "$ref": "operator_url"
+                  },
+                  "operator_title_lookup": {
+                    "$ref": "title_rows"
+                  }
+                },
+                "output": "observation",
+                "emit": true,
+                "name": "identity"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "seen"
+                },
+                "output": "seen",
+                "arguments": {
+                  "other": 1
+                },
+                "name": "add"
+              }
+            }
+          ]
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "input": {
+              "$ref": "payload.last"
+            },
+            "output": "done",
+            "name": "identity"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "input": {
+              "$ref": "page"
+            },
+            "output": "page",
+            "arguments": {
+              "other": 1
+            },
+            "name": "add"
+          }
+        },
+        {
+          "type": "condition",
+          "parameters": {
+            "predicate": {
+              "$ref": "done"
+            }
+          },
+          "steps": [
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "seen"
+                },
+                "output": "check",
+                "arguments": {
+                  "other": {
+                    "$ref": "total"
+                  }
+                },
+                "name": "equals"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "check"
+                },
+                "output": "checked",
+                "arguments": {
+                  "message": "premature final page"
+                },
+                "name": "assert"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "page"
+                },
+                "output": "check",
+                "arguments": {
+                  "other": {
+                    "$ref": "pages"
+                  }
+                },
+                "name": "equals"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "input": {
+                  "$ref": "check"
+                },
+                "output": "checked",
+                "arguments": {
+                  "message": "final page count mismatch"
+                },
+                "name": "assert"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "http_request",
+      "parameters": {
+        "url": "https://xarid.icppa.uz/api/v1/lot/searchlots",
+        "method": "POST",
+        "query": {
+          "page": 0,
+          "size": 10,
+          "sort": "lotId,desc"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "purchaseType": "TENDER",
+          "lotStatus": "IN_PROCESS",
+          "platformId": "1",
+          "organizationType": "BUDGET",
+          "hasContract": true
+        },
+        "output": "witness_response",
+        "inventory_page": false
+      }
+    },
+    {
+      "type": "transform",
+      "parameters": {
+        "input": {
+          "$ref": "witness_response.body"
+        },
+        "output": "witness",
+        "name": "json"
+      }
+    },
+    {
+      "type": "transform",
+      "parameters": {
+        "input": {
+          "$ref": "witness"
+        },
+        "output": "check",
+        "arguments": {
+          "other": {
+            "$ref": "anchor"
+          }
+        },
+        "name": "equals"
+      }
+    },
+    {
+      "type": "transform",
+      "parameters": {
+        "input": {
+          "$ref": "check"
+        },
+        "output": "checked",
+        "arguments": {
+          "message": "first page changed during sweep"
+        },
+        "name": "assert"
+      }
+    }
+  ]
+}

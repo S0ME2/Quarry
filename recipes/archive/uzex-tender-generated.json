@@ -1,0 +1,447 @@
+{
+  "schema_version": 1,
+  "source_id": "uzex-tender",
+  "version": "generated-2026-10-09-2",
+  "coverage": "full",
+  "completion": {
+    "$ref": "done"
+  },
+  "expected_count": {
+    "$ref": "total_count"
+  },
+  "checkpoint": null,
+  "data_as_of": null,
+  "completion_signal": {
+    "kind": "final_page",
+    "value": {
+      "$ref": "done"
+    }
+  },
+  "steps": [
+    {
+      "type": "transform",
+      "parameters": {
+        "name": "identity",
+        "input": 1,
+        "output": "from_value"
+      }
+    },
+    {
+      "type": "transform",
+      "parameters": {
+        "name": "add",
+        "input": {
+          "$ref": "from_value"
+        },
+        "arguments": {
+          "other": 19
+        },
+        "output": "to_value"
+      }
+    },
+    {
+      "type": "transform",
+      "parameters": {
+        "name": "identity",
+        "input": false,
+        "output": "done"
+      }
+    },
+    {
+      "type": "loop",
+      "parameters": {
+        "until": {
+          "$ref": "done"
+        },
+        "max_iterations": 100
+      },
+      "steps": [
+        {
+          "type": "http_request",
+          "parameters": {
+            "url": "https://apietender.uzex.uz/api/common/TradeList",
+            "method": "POST",
+            "body": {
+              "TypeId": 2,
+              "From": {
+                "$ref": "from_value"
+              },
+              "To": {
+                "$ref": "to_value"
+              },
+              "System_Id": 0
+            },
+            "headers": {
+              "Accept": "application/json",
+              "Content-Type": "application/json"
+            },
+            "inventory_page": true,
+            "output": "response"
+          }
+        },
+        {
+          "type": "extract",
+          "parameters": {
+            "format": "json",
+            "input": {
+              "$ref": "response.body"
+            },
+            "fields": {},
+            "output": "rows"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "name": "add",
+            "input": {
+              "$ref": "from_value"
+            },
+            "output": "to_value",
+            "arguments": {
+              "other": 19
+            }
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "name": "equals",
+            "input": {
+              "$ref": "from_value"
+            },
+            "output": "is_first_page",
+            "arguments": {
+              "other": 1
+            }
+          }
+        },
+        {
+          "type": "condition",
+          "parameters": {
+            "predicate": {
+              "$ref": "is_first_page"
+            }
+          },
+          "steps": [
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "length",
+                "input": {
+                  "$ref": "rows"
+                },
+                "output": "page_count"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "equals",
+                "input": {
+                  "$ref": "page_count"
+                },
+                "output": "empty_first_page",
+                "arguments": {
+                  "other": 0
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "not",
+                "input": {
+                  "$ref": "empty_first_page"
+                },
+                "output": "valid_first_page"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "assert",
+                "input": {
+                  "$ref": "valid_first_page"
+                },
+                "output": "first_page_health",
+                "arguments": {
+                  "message": "Tender category unexpectedly returned no first-page records"
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "get",
+                "input": {
+                  "$ref": "rows"
+                },
+                "arguments": {
+                  "path": "0.total_count"
+                },
+                "output": "total_count"
+              }
+            }
+          ]
+        },
+        {
+          "type": "loop",
+          "parameters": {
+            "items": {
+              "$ref": "rows"
+            },
+            "variable": "item",
+            "max_iterations": 100
+          },
+          "steps": [
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "format_scalar",
+                "input": {
+                  "$ref": "item.id"
+                },
+                "output": "api_detail_url",
+                "arguments": {
+                  "template": "https://apietender.uzex.uz/api/common/GetTrade/{value}/0"
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "format_scalar",
+                "input": {
+                  "$ref": "item.id"
+                },
+                "arguments": {
+                  "template": "https://etender.uzex.uz/lot/{value}"
+                },
+                "output": "public_detail_url"
+              }
+            },
+            {
+              "type": "http_request",
+              "parameters": {
+                "url": {
+                  "$ref": "api_detail_url"
+                },
+                "inventory_page": false,
+                "output": "response",
+                "headers": {
+                  "Accept": "application/json"
+                }
+              }
+            },
+            {
+              "type": "extract",
+              "parameters": {
+                "format": "json",
+                "input": {
+                  "$ref": "response.body"
+                },
+                "fields": {},
+                "output": "detail"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "equals",
+                "input": {
+                  "$ref": "item.id"
+                },
+                "arguments": {
+                  "other": {
+                    "$ref": "detail.id"
+                  }
+                },
+                "output": "detail_id_matches"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "assert",
+                "input": {
+                  "$ref": "detail_id_matches"
+                },
+                "arguments": {
+                  "message": "GetTrade response ID does not match its TradeList row"
+                },
+                "output": "detail_identity_health"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "equals",
+                "input": {
+                  "$ref": "item.display_no"
+                },
+                "arguments": {
+                  "other": {
+                    "$ref": "detail.display_no"
+                  }
+                },
+                "output": "display_number_matches"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "assert",
+                "input": {
+                  "$ref": "display_number_matches"
+                },
+                "arguments": {
+                  "message": "GetTrade display number does not match its TradeList row"
+                },
+                "output": "display_number_health"
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "get",
+                "input": {
+                  "$ref": "detail"
+                },
+                "output": "product_json",
+                "arguments": {
+                  "path": "budget_products"
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "json",
+                "input": {
+                  "$ref": "product_json"
+                },
+                "output": "products"
+              }
+            },
+            {
+              "type": "extract",
+              "parameters": {
+                "format": "json",
+                "input": {
+                  "$ref": "products"
+                },
+                "fields": {},
+                "output": "product_items"
+              }
+            },
+            {
+              "type": "extract",
+              "parameters": {
+                "format": "json",
+                "input": {
+                  "$ref": "."
+                },
+                "fields": {
+                  "external_tender_id": {
+                    "selector": "detail.id"
+                  },
+                  "title": {
+                    "selector": "item.name"
+                  },
+                  "description": {
+                    "selector": "detail.description"
+                  },
+                  "product_items": {
+                    "selector": "product_items"
+                  },
+                  "buyer": {
+                    "selector": "detail.customer_name"
+                  },
+                  "value": {
+                    "selector": "detail.start_cost"
+                  },
+                  "currency": {
+                    "selector": "detail.currency_codeabc"
+                  },
+                  "deadline": {
+                    "selector": "detail.end_date"
+                  },
+                  "published_at": {
+                    "selector": "detail.start_date"
+                  },
+                  "status": {
+                    "selector": "detail.status_name"
+                  },
+                  "source_url": {
+                    "selector": "public_detail_url"
+                  },
+                  "display_number": {
+                    "selector": "detail.display_no"
+                  },
+                  "api_list": {
+                    "selector": "item"
+                  },
+                  "api_detail": {
+                    "selector": "detail"
+                  }
+                },
+                "output": "observation",
+                "emit": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "name": "length",
+            "input": {
+              "$ref": "rows"
+            },
+            "output": "page_count"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "name": "equals",
+            "input": {
+              "$ref": "page_count"
+            },
+            "output": "done",
+            "arguments": {
+              "other": 0
+            }
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "name": "add",
+            "input": {
+              "$ref": "from_value"
+            },
+            "arguments": {
+              "other": 20
+            },
+            "output": "from_value"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "name": "add",
+            "input": {
+              "$ref": "to_value"
+            },
+            "arguments": {
+              "other": 20
+            },
+            "output": "to_value"
+          }
+        }
+      ]
+    }
+  ]
+}

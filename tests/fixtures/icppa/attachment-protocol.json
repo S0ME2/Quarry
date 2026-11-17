@@ -1,0 +1,38 @@
+{
+  "observed_at": "2026-10-05",
+  "lot_id": "26111006512875",
+  "operator_id": "512875",
+  "request": {
+    "method": "POST",
+    "url": "https://apietender.uzex.uz/api/common/DownloadFile",
+    "query_parameter": "path",
+    "body": null,
+    "requires_auth": false
+  },
+  "responses": [
+    {
+      "metadata_field": "tech_file_path",
+      "path": "/files/2026/9/19/202609192048425470.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 2986498,
+      "pdf_header": "%PDF-1.7"
+    },
+    {
+      "metadata_field": "tech_doc_file_path",
+      "path": "files/2026/10/4/20260410142419512875.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 247183,
+      "pdf_header": "%PDF-1.4"
+    }
+  ],
+  "sanitized_procurement_pdf_witness": {
+    "object": "Одноразовый комплект для обработки донорской плазмы",
+    "bidding_start_label": "Савдо бошланиш санаси",
+    "bidding_start": "23.09.2026 16:40",
+    "bidding_end_label": "Савдо тугаш санаси",
+    "bidding_end": "12.10.2026 16:40",
+    "publication_time_proven": false
+  }
+}

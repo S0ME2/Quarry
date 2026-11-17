@@ -1,0 +1,782 @@
+{
+  "schema_version": 1,
+  "source_id": "uzex-etender",
+  "version": "uzex-public-tenders-v2",
+  "coverage": "incremental",
+  "completion": {
+    "$ref": "done"
+  },
+  "completion_signal": {
+    "kind": "empty_terminal_page",
+    "value": {
+      "$ref": "done"
+    }
+  },
+  "expected_count": {
+    "$ref": "total"
+  },
+  "steps": [
+    {
+      "type": "transform",
+      "parameters": {
+        "name": "identity",
+        "input": 1,
+        "arguments": {},
+        "output": "next"
+      }
+    },
+    {
+      "type": "transform",
+      "parameters": {
+        "name": "identity",
+        "input": 20,
+        "arguments": {},
+        "output": "end"
+      }
+    },
+    {
+      "type": "transform",
+      "parameters": {
+        "name": "identity",
+        "input": 1,
+        "arguments": {},
+        "output": "ordinal"
+      }
+    },
+    {
+      "type": "transform",
+      "parameters": {
+        "name": "identity",
+        "input": null,
+        "arguments": {},
+        "output": "total"
+      }
+    },
+    {
+      "type": "transform",
+      "parameters": {
+        "name": "identity",
+        "input": [],
+        "arguments": {},
+        "output": "first_page"
+      }
+    },
+    {
+      "type": "loop",
+      "parameters": {
+        "until": {
+          "$ref": "done"
+        },
+        "max_iterations": 100
+      },
+      "steps": [
+        {
+          "type": "http_request",
+          "parameters": {
+            "url": "https://apietender.uzex.uz/api/common/TradeList",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json",
+              "Language": "uz"
+            },
+            "body": {
+              "From": {
+                "$ref": "next"
+              },
+              "To": {
+                "$ref": "end"
+              },
+              "TypeId": 2,
+              "System_Id": 0
+            },
+            "inventory_page": true,
+            "output": "response"
+          }
+        },
+        {
+          "type": "extract",
+          "parameters": {
+            "format": "json",
+            "input": {
+              "$ref": "response.body"
+            },
+            "output": "page"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "name": "length",
+            "input": {
+              "$ref": "page"
+            },
+            "arguments": {},
+            "output": "page_count"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "name": "equals",
+            "input": {
+              "$ref": "page_count"
+            },
+            "arguments": {
+              "other": 0
+            },
+            "output": "done"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "name": "not",
+            "input": {
+              "$ref": "done"
+            },
+            "output": "has_rows"
+          }
+        },
+        {
+          "type": "condition",
+          "parameters": {
+            "predicate": {
+              "$ref": "has_rows"
+            }
+          },
+          "steps": [
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "equals",
+                "input": {
+                  "$ref": "next"
+                },
+                "arguments": {
+                  "other": 1
+                },
+                "output": "first"
+              }
+            },
+            {
+              "type": "condition",
+              "parameters": {
+                "predicate": {
+                  "$ref": "first"
+                }
+              },
+              "steps": [
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "get",
+                    "input": {
+                      "$ref": "page"
+                    },
+                    "arguments": {
+                      "path": "0.total_count"
+                    },
+                    "output": "total"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "identity",
+                    "input": {
+                      "$ref": "page"
+                    },
+                    "arguments": {},
+                    "output": "first_page"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "loop",
+              "parameters": {
+                "items": {
+                  "$ref": "page"
+                },
+                "variable": "item",
+                "max_iterations": 20
+              },
+              "steps": [
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "equals",
+                    "input": {
+                      "$ref": "item.rn"
+                    },
+                    "arguments": {
+                      "other": {
+                        "$ref": "ordinal"
+                      }
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "assert",
+                    "input": {
+                      "$ref": "check"
+                    },
+                    "arguments": {
+                      "message": "Noncontiguous listing ordinal"
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "equals",
+                    "input": {
+                      "$ref": "item.total_count"
+                    },
+                    "arguments": {
+                      "other": {
+                        "$ref": "total"
+                      }
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "assert",
+                    "input": {
+                      "$ref": "check"
+                    },
+                    "arguments": {
+                      "message": "Listing total changed during traversal"
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "equals",
+                    "input": {
+                      "$ref": "item.type_id"
+                    },
+                    "arguments": {
+                      "other": 2
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "assert",
+                    "input": {
+                      "$ref": "check"
+                    },
+                    "arguments": {
+                      "message": "Unexpected tender category"
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "format_scalar",
+                    "input": {
+                      "$ref": "item.id"
+                    },
+                    "arguments": {
+                      "template": "https://apietender.uzex.uz/api/common/GetTrade/{value}/0"
+                    },
+                    "output": "detail_url"
+                  }
+                },
+                {
+                  "type": "http_request",
+                  "parameters": {
+                    "url": {
+                      "$ref": "detail_url"
+                    },
+                    "headers": {
+                      "Language": "uz"
+                    },
+                    "output": "detail_response"
+                  }
+                },
+                {
+                  "type": "extract",
+                  "parameters": {
+                    "format": "json",
+                    "input": {
+                      "$ref": "detail_response.body"
+                    },
+                    "output": "detail"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "equals",
+                    "input": {
+                      "$ref": "item.id"
+                    },
+                    "arguments": {
+                      "other": {
+                        "$ref": "detail.id"
+                      }
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "assert",
+                    "input": {
+                      "$ref": "check"
+                    },
+                    "arguments": {
+                      "message": "Listing/detail disagreement: id"
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "equals",
+                    "input": {
+                      "$ref": "item.display_no"
+                    },
+                    "arguments": {
+                      "other": {
+                        "$ref": "detail.display_no"
+                      }
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "assert",
+                    "input": {
+                      "$ref": "check"
+                    },
+                    "arguments": {
+                      "message": "Listing/detail disagreement: display_no"
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "equals",
+                    "input": {
+                      "$ref": "item.start_date"
+                    },
+                    "arguments": {
+                      "other": {
+                        "$ref": "detail.start_date"
+                      }
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "assert",
+                    "input": {
+                      "$ref": "check"
+                    },
+                    "arguments": {
+                      "message": "Listing/detail disagreement: start_date"
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "equals",
+                    "input": {
+                      "$ref": "item.end_date"
+                    },
+                    "arguments": {
+                      "other": {
+                        "$ref": "detail.end_date"
+                      }
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "assert",
+                    "input": {
+                      "$ref": "check"
+                    },
+                    "arguments": {
+                      "message": "Listing/detail disagreement: end_date"
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "equals",
+                    "input": {
+                      "$ref": "item.cost"
+                    },
+                    "arguments": {
+                      "other": {
+                        "$ref": "detail.start_cost"
+                      }
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "assert",
+                    "input": {
+                      "$ref": "check"
+                    },
+                    "arguments": {
+                      "message": "Listing/detail disagreement: cost"
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "equals",
+                    "input": {
+                      "$ref": "item.currency_codeabc"
+                    },
+                    "arguments": {
+                      "other": {
+                        "$ref": "detail.currency_codeabc"
+                      }
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "assert",
+                    "input": {
+                      "$ref": "check"
+                    },
+                    "arguments": {
+                      "message": "Listing/detail disagreement: currency_codeabc"
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "equals",
+                    "input": {
+                      "$ref": "item.seller_name"
+                    },
+                    "arguments": {
+                      "other": {
+                        "$ref": "detail.customer_name"
+                      }
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "assert",
+                    "input": {
+                      "$ref": "check"
+                    },
+                    "arguments": {
+                      "message": "Listing/detail disagreement: seller_name"
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "equals",
+                    "input": {
+                      "$ref": "detail.status_id"
+                    },
+                    "arguments": {
+                      "other": 4
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "assert",
+                    "input": {
+                      "$ref": "check"
+                    },
+                    "arguments": {
+                      "message": "Detail no longer published or status unknown"
+                    },
+                    "output": "check"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "format_scalar",
+                    "input": {
+                      "$ref": "item.id"
+                    },
+                    "arguments": {
+                      "template": "https://etender.uzex.uz/lot/{value}"
+                    },
+                    "output": "source_url"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "join_fields",
+                    "input": [
+                      {
+                        "$ref": "item.region_name"
+                      },
+                      {
+                        "$ref": "item.district_name"
+                      }
+                    ],
+                    "arguments": {
+                      "separator": ", ",
+                      "skip_null": true
+                    },
+                    "output": "location"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "join_fields",
+                    "input": [
+                      {
+                        "$ref": "detail.description"
+                      },
+                      {
+                        "$ref": "detail.addon_description"
+                      },
+                      {
+                        "$ref": "detail.technical_description"
+                      }
+                    ],
+                    "arguments": {
+                      "separator": "\n\n",
+                      "skip_null": true
+                    },
+                    "output": "description"
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "identity",
+                    "input": {
+                      "external_tender_id": {
+                        "$ref": "item.id"
+                      },
+                      "source_url": {
+                        "$ref": "source_url"
+                      },
+                      "title": {
+                        "$ref": "item.name"
+                      },
+                      "description": {
+                        "$ref": "description"
+                      },
+                      "buyer": {
+                        "$ref": "detail.customer_name"
+                      },
+                      "location": {
+                        "$ref": "location"
+                      },
+                      "published_at": null,
+                      "deadline": {
+                        "$ref": "detail.end_date"
+                      },
+                      "value": {
+                        "$ref": "detail.start_cost"
+                      },
+                      "currency": {
+                        "$ref": "detail.currency_codeabc"
+                      },
+                      "status": "published",
+                      "listing": {
+                        "$ref": "item"
+                      },
+                      "detail": {
+                        "id": {
+                          "$ref": "detail.id"
+                        },
+                        "display_no": {
+                          "$ref": "detail.display_no"
+                        },
+                        "start_date": {
+                          "$ref": "detail.start_date"
+                        },
+                        "end_date": {
+                          "$ref": "detail.end_date"
+                        },
+                        "start_cost": {
+                          "$ref": "detail.start_cost"
+                        },
+                        "description": {
+                          "$ref": "detail.description"
+                        },
+                        "status_id": {
+                          "$ref": "detail.status_id"
+                        },
+                        "status_name": {
+                          "$ref": "detail.status_name"
+                        },
+                        "customer_name": {
+                          "$ref": "detail.customer_name"
+                        },
+                        "currency_codeabc": {
+                          "$ref": "detail.currency_codeabc"
+                        },
+                        "technical_description": {
+                          "$ref": "detail.technical_description"
+                        },
+                        "addon_description": {
+                          "$ref": "detail.addon_description"
+                        }
+                      }
+                    },
+                    "arguments": {},
+                    "output": "observation",
+                    "emit": true
+                  }
+                },
+                {
+                  "type": "transform",
+                  "parameters": {
+                    "name": "add",
+                    "input": {
+                      "$ref": "ordinal"
+                    },
+                    "arguments": {
+                      "other": 1
+                    },
+                    "output": "ordinal"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "name": "add",
+            "input": {
+              "$ref": "next"
+            },
+            "arguments": {
+              "other": 20
+            },
+            "output": "next"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "name": "add",
+            "input": {
+              "$ref": "end"
+            },
+            "arguments": {
+              "other": 20
+            },
+            "output": "end"
+          }
+        }
+      ]
+    },
+    {
+      "type": "http_request",
+      "parameters": {
+        "url": "https://apietender.uzex.uz/api/common/TradeList",
+        "method": "POST",
+        "headers": {
+          "Content-Type": "application/json",
+          "Language": "uz"
+        },
+        "body": {
+          "From": 1,
+          "To": 20,
+          "TypeId": 2,
+          "System_Id": 0
+        },
+        "inventory_page": false,
+        "output": "response"
+      }
+    },
+    {
+      "type": "extract",
+      "parameters": {
+        "format": "json",
+        "input": {
+          "$ref": "response.body"
+        },
+        "output": "anchor"
+      }
+    },
+    {
+      "type": "transform",
+      "parameters": {
+        "name": "equals",
+        "input": {
+          "$ref": "first_page"
+        },
+        "arguments": {
+          "other": {
+            "$ref": "anchor"
+          }
+        },
+        "output": "check"
+      }
+    },
+    {
+      "type": "transform",
+      "parameters": {
+        "name": "assert",
+        "input": {
+          "$ref": "check"
+        },
+        "arguments": {
+          "message": "First-page inventory drift during traversal"
+        },
+        "output": "check"
+      }
+    }
+  ]
+}

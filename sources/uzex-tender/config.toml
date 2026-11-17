@@ -1,0 +1,21 @@
+[sources.uzex-tender]
+timezone = "Asia/Tashkent"
+
+[sources.uzex-tender.normalization]
+field_mapping = { external_tender_id = "display_number" }
+
+[sources.uzex-tender.calibration]
+version = "uzex-tender-provisional-v1"
+status = "provisional"
+full_inventory_supported = true
+expected_mode = "either"
+completion_signals = ["final_page"]
+minimum_pages = 1
+require_reported_total = true
+empty_policy = "block"
+maximum_malformed_ratio = 0.0
+maximum_duplicate_ratio = 0.0
+
+[sources.uzex-tender.calibration.freshness]
+basis = "unknown"
+unknown_policy = "observe_only"

@@ -1,0 +1,2224 @@
+{
+  "26111006517309": {
+    "analysisInfo": {
+      "cause": null,
+      "isBlacklist": false,
+      "isBudgetCustomer": true,
+      "isSingleVendor": false
+    },
+    "avansAmount": 0,
+    "cause": null,
+    "contractAmount": null,
+    "contractDate": null,
+    "contractStatus": null,
+    "lotId": 26111006517309,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "orgInfo": {
+      "name": "Fixture buyer 1",
+      "inn": "100000001",
+      "code": "FIXTURE",
+      "address": "Fixture address",
+      "state": "A"
+    },
+    "organizationType": "BUDGET",
+    "paidAmount": 0,
+    "platformName": "xarid.uzex.uz",
+    "products": [
+      {
+        "amount": 97.0,
+        "code": "21.31.17.260-00001",
+        "expense": "44354990",
+        "expenseName": "Boshqa texnika",
+        "name": "Kasalxona uchun jihozlar",
+        "nameCrl": "Касалхона учун жиҳозлар",
+        "nameRu": "Оборудование для больниц",
+        "price": 3600000000,
+        "summa": 349200000000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      }
+    ],
+    "purchaseType": "TENDER",
+    "savedAmount": null,
+    "savedPercent": null,
+    "startAmount": 349200000000,
+    "startDate": "2026-10-05",
+    "vendorInfo": {
+      "account": null,
+      "inn": null,
+      "kls": null,
+      "name": null,
+      "pinfl": null,
+      "status": null
+    }
+  },
+  "26111006517287": {
+    "analysisInfo": {
+      "cause": null,
+      "isBlacklist": false,
+      "isBudgetCustomer": true,
+      "isSingleVendor": false
+    },
+    "avansAmount": 0,
+    "cause": null,
+    "contractAmount": null,
+    "contractDate": null,
+    "contractStatus": null,
+    "lotId": 26111006517287,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "orgInfo": {
+      "name": "Fixture buyer 2",
+      "inn": "100000002",
+      "code": "FIXTURE",
+      "address": "Fixture address",
+      "state": "A"
+    },
+    "organizationType": "BUDGET",
+    "paidAmount": 0,
+    "platformName": "xarid.uzex.uz",
+    "products": [
+      {
+        "amount": 1.0,
+        "code": "41.20.40.900-00007",
+        "expense": "34321200",
+        "expenseName": "Noturar joy binolari",
+        "name": "Binolarni rekonstruksiya qilish bo‘yicha qurilish ishlari",
+        "nameCrl": "Биноларни реконструкция қилиш бўйича қурилиш ишлари",
+        "nameRu": "Работы строительные по реконструкции зданий",
+        "price": 3471337160300,
+        "summa": 3471337160300,
+        "type": "PRODUCT",
+        "unit": "shartli birlik"
+      },
+      {
+        "amount": 1.0,
+        "code": "41.20.40.900-00007",
+        "expense": "34321200",
+        "expenseName": "Noturar joy binolari",
+        "name": "Binolarni rekonstruksiya qilish bo‘yicha qurilish ishlari",
+        "nameCrl": "Биноларни реконструкция қилиш бўйича қурилиш ишлари",
+        "nameRu": "Работы строительные по реконструкции зданий",
+        "price": 182701955800,
+        "summa": 182701955800,
+        "type": "PRODUCT",
+        "unit": "shartli birlik"
+      }
+    ],
+    "purchaseType": "TENDER",
+    "savedAmount": null,
+    "savedPercent": null,
+    "startAmount": 3654039116100,
+    "startDate": "2026-10-05",
+    "vendorInfo": {
+      "account": null,
+      "inn": null,
+      "kls": null,
+      "name": null,
+      "pinfl": null,
+      "status": null
+    }
+  },
+  "26111006517281": {
+    "analysisInfo": {
+      "cause": null,
+      "isBlacklist": false,
+      "isBudgetCustomer": true,
+      "isSingleVendor": false
+    },
+    "avansAmount": 0,
+    "cause": null,
+    "contractAmount": null,
+    "contractDate": null,
+    "contractStatus": null,
+    "lotId": 26111006517281,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "orgInfo": {
+      "name": "Fixture buyer 3",
+      "inn": "100000003",
+      "code": "FIXTURE",
+      "address": "Fixture address",
+      "state": "A"
+    },
+    "organizationType": "BUDGET",
+    "paidAmount": 0,
+    "platformName": "xarid.uzex.uz",
+    "products": [
+      {
+        "amount": 560.0,
+        "code": "21.31.17.260-00001",
+        "expense": "44354990",
+        "expenseName": "Boshqa texnika",
+        "name": "Kasalxona uchun jihozlar",
+        "nameCrl": "Касалхона учун жиҳозлар",
+        "nameRu": "Оборудование для больниц",
+        "price": 3300000000,
+        "summa": 1848000000000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      }
+    ],
+    "purchaseType": "TENDER",
+    "savedAmount": null,
+    "savedPercent": null,
+    "startAmount": 1848000000000,
+    "startDate": "2026-10-05",
+    "vendorInfo": {
+      "account": null,
+      "inn": null,
+      "kls": null,
+      "name": null,
+      "pinfl": null,
+      "status": null
+    }
+  },
+  "26111006517278": {
+    "analysisInfo": {
+      "cause": null,
+      "isBlacklist": false,
+      "isBudgetCustomer": true,
+      "isSingleVendor": false
+    },
+    "avansAmount": 0,
+    "cause": null,
+    "contractAmount": null,
+    "contractDate": null,
+    "contractStatus": null,
+    "lotId": 26111006517278,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "orgInfo": {
+      "name": "Fixture buyer 4",
+      "inn": "100000004",
+      "code": "FIXTURE",
+      "address": "Fixture address",
+      "state": "A"
+    },
+    "organizationType": "BUDGET",
+    "paidAmount": 0,
+    "platformName": "xarid.uzex.uz",
+    "products": [
+      {
+        "amount": 51.0,
+        "code": "21.32.20.210-00002",
+        "expense": "44252411",
+        "expenseName": "Tibbiy buyumlar",
+        "name": "Gidrotsefaliya uchun implantlanadigan shuntlash tizimi",
+        "nameCrl": "Гидроцефалия учун имплантланадиган шунтлаш тизими",
+        "nameRu": "Имплантируемая шунтирующая система для гидроцефалии",
+        "price": 790250670,
+        "summa": 40302784170,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 443.0,
+        "code": "21.32.20.210-00002",
+        "expense": "44252411",
+        "expenseName": "Tibbiy buyumlar",
+        "name": "Gidrotsefaliya uchun implantlanadigan shuntlash tizimi",
+        "nameCrl": "Гидроцефалия учун имплантланадиган шунтлаш тизими",
+        "nameRu": "Имплантируемая шунтирующая система для гидроцефалии",
+        "price": 790250670,
+        "summa": 350081046810,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 28.0,
+        "code": "21.32.20.210-00002",
+        "expense": "44252411",
+        "expenseName": "Tibbiy buyumlar",
+        "name": "Gidrotsefaliya uchun implantlanadigan shuntlash tizimi",
+        "nameCrl": "Гидроцефалия учун имплантланадиган шунтлаш тизими",
+        "nameRu": "Имплантируемая шунтирующая система для гидроцефалии",
+        "price": 790250670,
+        "summa": 22127018760,
+        "type": "PRODUCT",
+        "unit": "dona"
+      }
+    ],
+    "purchaseType": "TENDER",
+    "savedAmount": null,
+    "savedPercent": null,
+    "startAmount": 412510849740,
+    "startDate": "2026-10-05",
+    "vendorInfo": {
+      "account": null,
+      "inn": null,
+      "kls": null,
+      "name": null,
+      "pinfl": null,
+      "status": null
+    }
+  },
+  "26111006517270": {
+    "analysisInfo": {
+      "cause": null,
+      "isBlacklist": false,
+      "isBudgetCustomer": true,
+      "isSingleVendor": false
+    },
+    "avansAmount": 0,
+    "cause": null,
+    "contractAmount": null,
+    "contractDate": null,
+    "contractStatus": null,
+    "lotId": 26111006517270,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "orgInfo": {
+      "name": "Fixture buyer 5",
+      "inn": "100000005",
+      "code": "FIXTURE",
+      "address": "Fixture address",
+      "state": "A"
+    },
+    "organizationType": "BUDGET",
+    "paidAmount": 0,
+    "platformName": "xarid.uzex.uz",
+    "products": [
+      {
+        "amount": 2312.0,
+        "code": "21.31.17.260-00001",
+        "expense": "44354990",
+        "expenseName": "Boshqa texnika",
+        "name": "Kasalxona uchun jihozlar",
+        "nameCrl": "Касалхона учун жиҳозлар",
+        "nameRu": "Оборудование для больниц",
+        "price": 3300000000,
+        "summa": 7629600000000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      }
+    ],
+    "purchaseType": "TENDER",
+    "savedAmount": null,
+    "savedPercent": null,
+    "startAmount": 7629600000000,
+    "startDate": "2026-10-05",
+    "vendorInfo": {
+      "account": null,
+      "inn": null,
+      "kls": null,
+      "name": null,
+      "pinfl": null,
+      "status": null
+    }
+  },
+  "26111006517228": {
+    "analysisInfo": {
+      "cause": null,
+      "isBlacklist": false,
+      "isBudgetCustomer": true,
+      "isSingleVendor": false
+    },
+    "avansAmount": 0,
+    "cause": null,
+    "contractAmount": null,
+    "contractDate": null,
+    "contractStatus": null,
+    "lotId": 26111006517228,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "orgInfo": {
+      "name": "Fixture buyer 6",
+      "inn": "100000006",
+      "code": "FIXTURE",
+      "address": "Fixture address",
+      "state": "A"
+    },
+    "organizationType": "BUDGET",
+    "paidAmount": 0,
+    "platformName": "xarid.uzex.uz",
+    "products": [
+      {
+        "amount": 1500.0,
+        "code": "26.20.13.000-00003",
+        "expense": "44354920",
+        "expenseName": "Kompyuter jihozlari, hisoblash va audio-video texnikasi, axborot texnologiyasi va kerakli ashyolar",
+        "name": "Monoblok",
+        "nameCrl": "Моноблок",
+        "nameRu": "Моноблок",
+        "price": 1150000000,
+        "summa": 1725000000000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      }
+    ],
+    "purchaseType": "TENDER",
+    "savedAmount": null,
+    "savedPercent": null,
+    "startAmount": 1725000000000,
+    "startDate": "2026-10-03",
+    "vendorInfo": {
+      "account": null,
+      "inn": null,
+      "kls": null,
+      "name": null,
+      "pinfl": null,
+      "status": null
+    }
+  },
+  "26111006516735": {
+    "analysisInfo": {
+      "cause": null,
+      "isBlacklist": false,
+      "isBudgetCustomer": true,
+      "isSingleVendor": false
+    },
+    "avansAmount": 0,
+    "cause": null,
+    "contractAmount": null,
+    "contractDate": null,
+    "contractStatus": null,
+    "lotId": 26111006516735,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "orgInfo": {
+      "name": "Fixture buyer 7",
+      "inn": "100000007",
+      "code": "FIXTURE",
+      "address": "Fixture address",
+      "state": "A"
+    },
+    "organizationType": "BUDGET",
+    "paidAmount": 0,
+    "platformName": "xarid.uzex.uz",
+    "products": [
+      {
+        "amount": 1500.0,
+        "code": "21.20.13.231-00010",
+        "expense": "44252410",
+        "expenseName": "Dori vositalari",
+        "name": "Human Coagulation Factor VIII & Von Willebrand Factor",
+        "nameCrl": "Human Coagulation Factor VIII & Von Willebrand Factor",
+        "nameRu": "Human Coagulation Factor VIII and Von Willebrand Factor",
+        "price": 322454500,
+        "summa": 483681750000,
+        "type": "PRODUCT",
+        "unit": "qadoq"
+      }
+    ],
+    "purchaseType": "TENDER",
+    "savedAmount": null,
+    "savedPercent": null,
+    "startAmount": 483681750000,
+    "startDate": "2026-10-02",
+    "vendorInfo": {
+      "account": null,
+      "inn": null,
+      "kls": null,
+      "name": null,
+      "pinfl": null,
+      "status": null
+    }
+  },
+  "26111006516699": {
+    "analysisInfo": {
+      "cause": null,
+      "isBlacklist": false,
+      "isBudgetCustomer": true,
+      "isSingleVendor": false
+    },
+    "avansAmount": 0,
+    "cause": null,
+    "contractAmount": null,
+    "contractDate": null,
+    "contractStatus": null,
+    "lotId": 26111006516699,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "orgInfo": {
+      "name": "Fixture buyer 8",
+      "inn": "100000008",
+      "code": "FIXTURE",
+      "address": "Fixture address",
+      "state": "A"
+    },
+    "organizationType": "BUDGET",
+    "paidAmount": 0,
+    "platformName": "xarid.uzex.uz",
+    "products": [
+      {
+        "amount": 2505.0,
+        "code": "32.40.12.131-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Yog‘och bolalar o‘yinchog‘i",
+        "nameCrl": "Ёғоч болалар ўйинчоғи",
+        "nameRu": "Детская игрушка деревянная",
+        "price": 5199900,
+        "summa": 13025749500,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.12.131-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Yog‘och bolalar o‘yinchog‘i",
+        "nameCrl": "Ёғоч болалар ўйинчоғи",
+        "nameRu": "Детская игрушка деревянная",
+        "price": 7450800,
+        "summa": 18664254000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.12.131-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Yog‘och bolalar o‘yinchog‘i",
+        "nameCrl": "Ёғоч болалар ўйинчоғи",
+        "nameRu": "Детская игрушка деревянная",
+        "price": 8095300,
+        "summa": 20278726500,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.12.131-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Yog‘och bolalar o‘yinchog‘i",
+        "nameCrl": "Ёғоч болалар ўйинчоғи",
+        "nameRu": "Детская игрушка деревянная",
+        "price": 11765000,
+        "summa": 29471325000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 56012500,
+        "summa": 140311312500,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 9034200,
+        "summa": 22630671000,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 5903900,
+        "summa": 14789269500,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 6423700,
+        "summa": 16091368500,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 6423700,
+        "summa": 16091368500,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 6423700,
+        "summa": 16091368500,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 6423700,
+        "summa": 16091368500,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 2573700,
+        "summa": 6447118500,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 2573700,
+        "summa": 6447118500,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 2573700,
+        "summa": 6447118500,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 2573700,
+        "summa": 6447118500,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 2573700,
+        "summa": 6447118500,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 6908600,
+        "summa": 17306043000,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.39.129-00002",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "O‘yinchoqlar va stol o‘yinlari to‘plami",
+        "nameCrl": "Ўйинчоқлар ва стол ўйинлари тўплами",
+        "nameRu": "Набор игрушек и настольных игр",
+        "price": 40274000,
+        "summa": 100886370000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.39.129-00002",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "O‘yinchoqlar va stol o‘yinlari to‘plami",
+        "nameCrl": "Ўйинчоқлар ва стол ўйинлари тўплами",
+        "nameRu": "Набор игрушек и настольных игр",
+        "price": 10504000,
+        "summa": 26312520000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.39.129-00002",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "O‘yinchoqlar va stol o‘yinlari to‘plami",
+        "nameCrl": "Ўйинчоқлар ва стол ўйинлари тўплами",
+        "nameRu": "Набор игрушек и настольных игр",
+        "price": 5517300,
+        "summa": 13820836500,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.39.259-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Rivojlantiruvchi va aqliy o‘stiruvchi bolalar o‘yinchog‘i",
+        "nameCrl": "Ривожлантирувчи ва ақлий ўстирувчи болалар ўйинчоғи",
+        "nameRu": "Детские развивающие и обучающие игрушки",
+        "price": 4817500,
+        "summa": 12067837500,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.39.259-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Rivojlantiruvchi va aqliy o‘stiruvchi bolalar o‘yinchog‘i",
+        "nameCrl": "Ривожлантирувчи ва ақлий ўстирувчи болалар ўйинчоғи",
+        "nameRu": "Детские развивающие и обучающие игрушки",
+        "price": 4817500,
+        "summa": 12067837500,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.39.259-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Rivojlantiruvchi va aqliy o‘stiruvchi bolalar o‘yinchog‘i",
+        "nameCrl": "Ривожлантирувчи ва ақлий ўстирувчи болалар ўйинчоғи",
+        "nameRu": "Детские развивающие и обучающие игрушки",
+        "price": 16043600,
+        "summa": 40189218000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.39.259-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Rivojlantiruvchi va aqliy o‘stiruvchi bolalar o‘yinchog‘i",
+        "nameCrl": "Ривожлантирувчи ва ақлий ўстирувчи болалар ўйинчоғи",
+        "nameRu": "Детские развивающие и обучающие игрушки",
+        "price": 4817500,
+        "summa": 12067837500,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.39.259-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Rivojlantiruvchi va aqliy o‘stiruvchi bolalar o‘yinchog‘i",
+        "nameCrl": "Ривожлантирувчи ва ақлий ўстирувчи болалар ўйинчоғи",
+        "nameRu": "Детские развивающие и обучающие игрушки",
+        "price": 6600200,
+        "summa": 16533501000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.39.259-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Rivojlantiruvchi va aqliy o‘stiruvchi bolalar o‘yinchog‘i",
+        "nameCrl": "Ривожлантирувчи ва ақлий ўстирувчи болалар ўйинчоғи",
+        "nameRu": "Детские развивающие и обучающие игрушки",
+        "price": 4520300,
+        "summa": 11323351500,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.99.53.130-00080",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Stol ustida turadigan pazl o‘yin",
+        "nameCrl": "Стол устида турадиган пазл ўйин",
+        "nameRu": "Настольная игра-пазл",
+        "price": 9311200,
+        "summa": 23324556000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.40.39.259-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Rivojlantiruvchi va aqliy o‘stiruvchi bolalar o‘yinchog‘i",
+        "nameCrl": "Ривожлантирувчи ва ақлий ўстирувчи болалар ўйинчоғи",
+        "nameRu": "Детские развивающие и обучающие игрушки",
+        "price": 6976100,
+        "summa": 17475130500,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2505.0,
+        "code": "32.99.53.130-00080",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Stol ustida turadigan pazl o‘yin",
+        "nameCrl": "Стол устида турадиган пазл ўйин",
+        "nameRu": "Настольная игра-пазл",
+        "price": 4760400,
+        "summa": 11924802000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      }
+    ],
+    "purchaseType": "TENDER",
+    "savedAmount": null,
+    "savedPercent": null,
+    "startAmount": 671072215500,
+    "startDate": "2026-10-01",
+    "vendorInfo": {
+      "account": null,
+      "inn": null,
+      "kls": null,
+      "name": null,
+      "pinfl": null,
+      "status": null
+    }
+  },
+  "26111006516668": {
+    "analysisInfo": {
+      "cause": null,
+      "isBlacklist": false,
+      "isBudgetCustomer": true,
+      "isSingleVendor": false
+    },
+    "avansAmount": 0,
+    "cause": null,
+    "contractAmount": null,
+    "contractDate": null,
+    "contractStatus": null,
+    "lotId": 26111006516668,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "orgInfo": {
+      "name": "Fixture buyer 9",
+      "inn": "100000009",
+      "code": "FIXTURE",
+      "address": "Fixture address",
+      "state": "A"
+    },
+    "organizationType": "BUDGET",
+    "paidAmount": 0,
+    "platformName": "xarid.uzex.uz",
+    "products": [
+      {
+        "amount": 2078.0,
+        "code": "32.40.12.131-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Yog‘och bolalar o‘yinchog‘i",
+        "nameCrl": "Ёғоч болалар ўйинчоғи",
+        "nameRu": "Детская игрушка деревянная",
+        "price": 5199900,
+        "summa": 10805392200,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.12.131-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Yog‘och bolalar o‘yinchog‘i",
+        "nameCrl": "Ёғоч болалар ўйинчоғи",
+        "nameRu": "Детская игрушка деревянная",
+        "price": 7450800,
+        "summa": 15482762400,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.12.131-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Yog‘och bolalar o‘yinchog‘i",
+        "nameCrl": "Ёғоч болалар ўйинчоғи",
+        "nameRu": "Детская игрушка деревянная",
+        "price": 8095300,
+        "summa": 16822033400,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.12.131-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Yog‘och bolalar o‘yinchog‘i",
+        "nameCrl": "Ёғоч болалар ўйинчоғи",
+        "nameRu": "Детская игрушка деревянная",
+        "price": 11765000,
+        "summa": 24447670000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 56012500,
+        "summa": 116393975000,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 9034200,
+        "summa": 18773067600,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 6423700,
+        "summa": 13348448600,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 5903900,
+        "summa": 12268304200,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 6423700,
+        "summa": 13348448600,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 6423700,
+        "summa": 13348448600,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 6423700,
+        "summa": 13348448600,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 2573700,
+        "summa": 5348148600,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 2573700,
+        "summa": 5348148600,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 2573700,
+        "summa": 5348148600,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 2573700,
+        "summa": 5348148600,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 2573700,
+        "summa": 5348148600,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.20.122-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Didaktik material",
+        "nameCrl": "Дидактик материал",
+        "nameRu": "Дидактический материал",
+        "price": 6908600,
+        "summa": 14356070800,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.39.129-00002",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "O‘yinchoqlar va stol o‘yinlari to‘plami",
+        "nameCrl": "Ўйинчоқлар ва стол ўйинлари тўплами",
+        "nameRu": "Набор игрушек и настольных игр",
+        "price": 40274000,
+        "summa": 83689372000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.39.129-00002",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "O‘yinchoqlar va stol o‘yinlari to‘plami",
+        "nameCrl": "Ўйинчоқлар ва стол ўйинлари тўплами",
+        "nameRu": "Набор игрушек и настольных игр",
+        "price": 10504000,
+        "summa": 21827312000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.39.129-00002",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "O‘yinchoqlar va stol o‘yinlari to‘plami",
+        "nameCrl": "Ўйинчоқлар ва стол ўйинлари тўплами",
+        "nameRu": "Набор игрушек и настольных игр",
+        "price": 5517300,
+        "summa": 11464949400,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.39.259-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Rivojlantiruvchi va aqliy o‘stiruvchi bolalar o‘yinchog‘i",
+        "nameCrl": "Ривожлантирувчи ва ақлий ўстирувчи болалар ўйинчоғи",
+        "nameRu": "Детские развивающие и обучающие игрушки",
+        "price": 4817500,
+        "summa": 10010765000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.39.259-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Rivojlantiruvchi va aqliy o‘stiruvchi bolalar o‘yinchog‘i",
+        "nameCrl": "Ривожлантирувчи ва ақлий ўстирувчи болалар ўйинчоғи",
+        "nameRu": "Детские развивающие и обучающие игрушки",
+        "price": 4817500,
+        "summa": 10010765000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.39.259-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Rivojlantiruvchi va aqliy o‘stiruvchi bolalar o‘yinchog‘i",
+        "nameCrl": "Ривожлантирувчи ва ақлий ўстирувчи болалар ўйинчоғи",
+        "nameRu": "Детские развивающие и обучающие игрушки",
+        "price": 16043600,
+        "summa": 33338600800,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.39.259-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Rivojlantiruvchi va aqliy o‘stiruvchi bolalar o‘yinchog‘i",
+        "nameCrl": "Ривожлантирувчи ва ақлий ўстирувчи болалар ўйинчоғи",
+        "nameRu": "Детские развивающие и обучающие игрушки",
+        "price": 4817500,
+        "summa": 10010765000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.39.259-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Rivojlantiruvchi va aqliy o‘stiruvchi bolalar o‘yinchog‘i",
+        "nameCrl": "Ривожлантирувчи ва ақлий ўстирувчи болалар ўйинчоғи",
+        "nameRu": "Детские развивающие и обучающие игрушки",
+        "price": 6600200,
+        "summa": 13715215600,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.39.259-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Rivojlantiruvchi va aqliy o‘stiruvchi bolalar o‘yinchog‘i",
+        "nameCrl": "Ривожлантирувчи ва ақлий ўстирувчи болалар ўйинчоғи",
+        "nameRu": "Детские развивающие и обучающие игрушки",
+        "price": 4520300,
+        "summa": 9393183400,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.99.53.130-00080",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Stol ustida turadigan pazl o‘yin",
+        "nameCrl": "Стол устида турадиган пазл ўйин",
+        "nameRu": "Настольная игра-пазл",
+        "price": 9311200,
+        "summa": 19348673600,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.40.39.259-00001",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Rivojlantiruvchi va aqliy o‘stiruvchi bolalar o‘yinchog‘i",
+        "nameCrl": "Ривожлантирувчи ва ақлий ўстирувчи болалар ўйинчоғи",
+        "nameRu": "Детские развивающие и обучающие игрушки",
+        "price": 6976100,
+        "summa": 14496335800,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2078.0,
+        "code": "32.99.53.130-00080",
+        "expense": "44252110",
+        "expenseName": "Tovar-moddiy zaxiralar (qog‘oz va boshqa matbaa mahsulotlaridan tashqari)",
+        "name": "Stol ustida turadigan pazl o‘yin",
+        "nameCrl": "Стол устида турадиган пазл ўйин",
+        "nameRu": "Настольная игра-пазл",
+        "price": 4760400,
+        "summa": 9892111200,
+        "type": "PRODUCT",
+        "unit": "dona"
+      }
+    ],
+    "purchaseType": "TENDER",
+    "savedAmount": null,
+    "savedPercent": null,
+    "startAmount": 556681861800,
+    "startDate": "2026-09-30",
+    "vendorInfo": {
+      "account": null,
+      "inn": null,
+      "kls": null,
+      "name": null,
+      "pinfl": null,
+      "status": null
+    }
+  },
+  "26111006516567": {
+    "analysisInfo": {
+      "cause": null,
+      "isBlacklist": false,
+      "isBudgetCustomer": true,
+      "isSingleVendor": false
+    },
+    "avansAmount": 0,
+    "cause": null,
+    "contractAmount": null,
+    "contractDate": null,
+    "contractStatus": null,
+    "lotId": 26111006516567,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "orgInfo": {
+      "name": "Fixture buyer 10",
+      "inn": "100000010",
+      "code": "FIXTURE",
+      "address": "Fixture address",
+      "state": "A"
+    },
+    "organizationType": "BUDGET",
+    "paidAmount": 0,
+    "platformName": "xarid.uzex.uz",
+    "products": [
+      {
+        "amount": 600000.0,
+        "code": "21.32.28.110-00001",
+        "expense": "44252412",
+        "expenseName": "Tibbiy uskuna va jihozlar uchun reagentlar va reaktivlar",
+        "name": "Reagentlar va reagentlar to‘plami (test tizimi)",
+        "nameCrl": "Реагентлар ва реагентлар тўплами (тест тизими)",
+        "nameRu": "Реагенты и наборы реагентов (тест-системы)",
+        "price": 675000,
+        "summa": 405000000000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      }
+    ],
+    "purchaseType": "TENDER",
+    "savedAmount": null,
+    "savedPercent": null,
+    "startAmount": 405000000000,
+    "startDate": "2026-09-30",
+    "vendorInfo": {
+      "account": null,
+      "inn": null,
+      "kls": null,
+      "name": null,
+      "pinfl": null,
+      "status": null
+    }
+  },
+  "26111006507659": {
+    "analysisInfo": {
+      "cause": null,
+      "isBlacklist": false,
+      "isBudgetCustomer": true,
+      "isSingleVendor": false
+    },
+    "avansAmount": 0,
+    "cause": "Тендерные торги",
+    "contractAmount": null,
+    "contractDate": null,
+    "contractStatus": null,
+    "lotId": 26111006507659,
+    "lotStatus": "MADE_CONTRACT",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": true,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "orgInfo": {
+      "name": "Fixture buyer 11",
+      "inn": "100000011",
+      "code": "FIXTURE",
+      "address": "Fixture address",
+      "state": "A"
+    },
+    "organizationType": "BUDGET",
+    "paidAmount": 0,
+    "platformName": "xarid.uzex.uz",
+    "products": [
+      {
+        "amount": 3.0,
+        "code": "21.31.17.190-00006",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Birinchi tibbiy yordam stoli",
+        "nameCrl": "Биринчи тиббий ёрдам столи",
+        "nameRu": "Стол первой медицинской помощи",
+        "price": 77915300,
+        "summa": 233745900,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 2.0,
+        "code": "21.31.17.190-00004",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Logoped stoli",
+        "nameCrl": "Логопед столи",
+        "nameRu": "Стол логопеда",
+        "price": 96914000,
+        "summa": 193828000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 4.0,
+        "code": "21.31.17.190-00005",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Ruhshunos stoli",
+        "nameCrl": "Руҳшунос столи",
+        "nameRu": "Стол психолога",
+        "price": 96415400,
+        "summa": 385661600,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 3.0,
+        "code": "21.31.17.190-00001",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Tibbiy stol",
+        "nameCrl": "Тиббий стол",
+        "nameRu": "Стол медицинский",
+        "price": 86870500,
+        "summa": 260611500,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 1.0,
+        "code": "26.51.32.190-00005",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Chizma taxtasi",
+        "nameCrl": "Чизма тахтаси",
+        "nameRu": "Кульман",
+        "price": 179487000,
+        "summa": 179487000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 4.0,
+        "code": "31.01.10.000-00001",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Yozuv stoli",
+        "nameCrl": "Ёзув столи",
+        "nameRu": "Стол письменный",
+        "price": 101693000,
+        "summa": 406772000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 8.0,
+        "code": "31.01.12.139-00003",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Kitob javoni",
+        "nameCrl": "Китоб жавони",
+        "nameRu": "Шкаф для книг",
+        "price": 197675600,
+        "summa": 1581404800,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 10.0,
+        "code": "31.01.12.139-00003",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Kitob javoni",
+        "nameCrl": "Китоб жавони",
+        "nameRu": "Шкаф для книг",
+        "price": 106240800,
+        "summa": 1062408000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 181.0,
+        "code": "31.01.12.131-00002",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "MDFdan ishlangan kiyim javoni",
+        "nameCrl": "МДФдан ишланган кийим жавони",
+        "nameRu": "Шкаф для одежды из МДФ",
+        "price": 117376700,
+        "summa": 21245182700,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 172.0,
+        "code": "31.01.12.139-00003",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Kitob javoni",
+        "nameCrl": "Китоб жавони",
+        "nameRu": "Шкаф для книг",
+        "price": 101651900,
+        "summa": 17484126800,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 4.0,
+        "code": "31.09.12.132-00001",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Jurnal stoli",
+        "nameCrl": "Журнал столи",
+        "nameRu": "Стол журнальный",
+        "price": 45706600,
+        "summa": 182826400,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 4.0,
+        "code": "31.01.12.190-00012",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Rahbar xonasi uchun mebel to‘plami",
+        "nameCrl": "Раҳбар хонаси учун мебель тўплами",
+        "nameRu": "Набор мебели для кабинета руководителя",
+        "price": 629674200,
+        "summa": 2518696800,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 4.0,
+        "code": "31.01.12.129-00003",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Minbar-stol",
+        "nameCrl": "Минбар-стол",
+        "nameRu": "Стол-кафедра",
+        "price": 90521300,
+        "summa": 362085200,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 10.0,
+        "code": "31.01.12.190-00012",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Rahbar xonasi uchun mebel to‘plami",
+        "nameCrl": "Раҳбар хонаси учун мебель тўплами",
+        "nameRu": "Набор мебели для кабинета руководителя",
+        "price": 558807800,
+        "summa": 5588078000,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 330.0,
+        "code": "31.01.12.131-00002",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "MDFdan ishlangan kiyim javoni",
+        "nameCrl": "МДФдан ишланган кийим жавони",
+        "nameRu": "Шкаф для одежды из МДФ",
+        "price": 104178000,
+        "summa": 34378740000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 102.0,
+        "code": "31.01.12.139-00003",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Kitob javoni",
+        "nameCrl": "Китоб жавони",
+        "nameRu": "Шкаф для книг",
+        "price": 105149500,
+        "summa": 10725249000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 3.0,
+        "code": "31.01.12.110-00003",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Majlislar stoli",
+        "nameCrl": "Мажлислар столи",
+        "nameRu": "Стол для совещаний",
+        "price": 124660800,
+        "summa": 373982400,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 14.0,
+        "code": "31.01.11.150-00006",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Ofis kreslosi",
+        "nameCrl": "Офис креслоси",
+        "nameRu": "Кресло офисное",
+        "price": 131423200,
+        "summa": 1839924800,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 3.0,
+        "code": "31.01.12.190-00010",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Minbar",
+        "nameCrl": "Минбар",
+        "nameRu": "Трибуна",
+        "price": 57766500,
+        "summa": 173299500,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 60.0,
+        "code": "31.01.12.110-00004",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Kompyuter stoli",
+        "nameCrl": "Компьютер столи",
+        "nameRu": "Стол компьютерный",
+        "price": 85185000,
+        "summa": 5111100000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 75.0,
+        "code": "31.01.10.000-00003",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "O‘qituvchi stoli",
+        "nameCrl": "Ўқитувчи столи",
+        "nameRu": "Стол для учителя",
+        "price": 98147100,
+        "summa": 7361032500,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 177.0,
+        "code": "31.01.10.000-00003",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "O‘qituvchi stoli",
+        "nameCrl": "Ўқитувчи столи",
+        "nameRu": "Стол для учителя",
+        "price": 111784600,
+        "summa": 19785874200,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 8.0,
+        "code": "31.09.10.000-00018",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Laboratoriya stoli",
+        "nameCrl": "Лаборатория столи",
+        "nameRu": "Стол лабораторный",
+        "price": 234275600,
+        "summa": 1874204800,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 268.0,
+        "code": "31.01.11.150-00001",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Metall karkasli stul",
+        "nameCrl": "Металл каркасли стул",
+        "nameRu": "Стул на металлическом каркасе",
+        "price": 29614500,
+        "summa": 7936686000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 4.0,
+        "code": "31.01.12.110-00004",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Kompyuter stoli",
+        "nameCrl": "Компьютер столи",
+        "nameRu": "Стол компьютерный",
+        "price": 95099000,
+        "summa": 380396000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 90.0,
+        "code": "31.09.11.190-00011",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Metall karkasga mahkamlangan uch o‘rinli kursi",
+        "nameCrl": "Металл каркасга маҳкамланган уч ўринли курси",
+        "nameRu": "Скамья трехместная на металлокаркасе",
+        "price": 137935300,
+        "summa": 12414177000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 14.0,
+        "code": "31.01.12.122-00002",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "O‘quvchilar stoli ikki o'rindiqli",
+        "nameCrl": "Ўқувчилар столи икки ўриндиқли",
+        "nameRu": "Стол ученический двухместный",
+        "price": 191077800,
+        "summa": 2675089200,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 40.0,
+        "code": "31.01.12.122-00005",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Bir o‘rinli o‘quvchilar stoli",
+        "nameCrl": "Бир ўринли ўқувчилар столи",
+        "nameRu": "Стол ученический одноместный",
+        "price": 86643600,
+        "summa": 3465744000,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 56.0,
+        "code": "31.01.12.122-00005",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Bir o‘rinli o‘quvchilar stoli",
+        "nameCrl": "Бир ўринли ўқувчилар столи",
+        "nameRu": "Стол ученический одноместный",
+        "price": 149499500,
+        "summa": 8371972000,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 602.0,
+        "code": "31.01.12.122-00002",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "O‘quvchilar stoli ikki o'rindiqli",
+        "nameCrl": "Ўқувчилар столи икки ўриндиқли",
+        "nameRu": "Стол ученический двухместный",
+        "price": 187639000,
+        "summa": 112958678000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 463.0,
+        "code": "31.01.12.122-00002",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "O‘quvchilar stoli ikki o'rindiqli",
+        "nameCrl": "Ўқувчилар столи икки ўриндиқли",
+        "nameRu": "Стол ученический двухместный",
+        "price": 188548000,
+        "summa": 87297724000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 49.0,
+        "code": "31.01.12.122-00005",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Bir o‘rinli o‘quvchilar stoli",
+        "nameCrl": "Бир ўринли ўқувчилар столи",
+        "nameRu": "Стол ученический одноместный",
+        "price": 149639500,
+        "summa": 7332335500,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 42.0,
+        "code": "31.01.12.122-00005",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Bir o‘rinli o‘quvchilar stoli",
+        "nameCrl": "Бир ўринли ўқувчилар столи",
+        "nameRu": "Стол ученический одноместный",
+        "price": 153204900,
+        "summa": 6434605800,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 670.0,
+        "code": "31.01.12.122-00002",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "O‘quvchilar stoli ikki o'rindiqli",
+        "nameCrl": "Ўқувчилар столи икки ўриндиқли",
+        "nameRu": "Стол ученический двухместный",
+        "price": 191575400,
+        "summa": 128355518000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 860.0,
+        "code": "31.01.12.122-00002",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "O‘quvchilar stoli ikki o'rindiqli",
+        "nameCrl": "Ўқувчилар столи икки ўриндиқли",
+        "nameRu": "Стол ученический двухместный",
+        "price": 191581200,
+        "summa": 164759832000,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 64.0,
+        "code": "31.01.12.122-00005",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Bir o‘rinli o‘quvchilar stoli",
+        "nameCrl": "Бир ўринли ўқувчилар столи",
+        "nameRu": "Стол ученический одноместный",
+        "price": 153248600,
+        "summa": 9807910400,
+        "type": "PRODUCT",
+        "unit": "to'plam"
+      },
+      {
+        "amount": 96.0,
+        "code": "31.01.11.150-00001",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Metall karkasli stul",
+        "nameCrl": "Металл каркасли стул",
+        "nameRu": "Стул на металлическом каркасе",
+        "price": 28662700,
+        "summa": 2751619200,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 4.0,
+        "code": "31.01.11.150-00006",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Ofis kreslosi",
+        "nameCrl": "Офис креслоси",
+        "nameRu": "Кресло офисное",
+        "price": 432582200,
+        "summa": 1730328800,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 3.0,
+        "code": "32.50.30.110-00009",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Bemorlarni ko‘rikdan o‘tkazish uchun kushetka",
+        "nameCrl": "Беморларни кўрикдан ўтказиш учун кушетка",
+        "nameRu": "Кушетка для осмотра больных",
+        "price": 76468400,
+        "summa": 229405200,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 191.0,
+        "code": "32.99.53.130-00002",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Magnitli-bo‘rli doska",
+        "nameCrl": "Магнитли-бўрли доска",
+        "nameRu": "Доска магнитно-меловая",
+        "price": 127540200,
+        "summa": 24360178200,
+        "type": "PRODUCT",
+        "unit": "dona"
+      },
+      {
+        "amount": 3.0,
+        "code": "32.50.30.110-00010",
+        "expense": "44354910",
+        "expenseName": "Mebel va ofis jihozlari",
+        "name": "Tibbiy javon",
+        "nameCrl": "Тиббий жавон",
+        "nameRu": "Шкаф медицинский",
+        "price": 127030900,
+        "summa": 381092700,
+        "type": "PRODUCT",
+        "unit": "dona"
+      }
+    ],
+    "purchaseType": "TENDER",
+    "savedAmount": null,
+    "savedPercent": null,
+    "startAmount": 714951613900,
+    "startDate": "2026-08-14",
+    "vendorInfo": {
+      "account": null,
+      "inn": null,
+      "kls": null,
+      "name": null,
+      "pinfl": null,
+      "status": null
+    }
+  }
+}

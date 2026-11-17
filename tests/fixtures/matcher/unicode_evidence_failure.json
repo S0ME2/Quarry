@@ -1,0 +1,41 @@
+{
+  "confidence": 0.95,
+  "criteria_conflicts": false,
+  "critical_missing_information": [],
+  "evidence": [
+    {
+      "field": "title",
+      "quote": "Hududiy pedagogik mahorat markazlari ushbu kompyuter texnikasi va boshqa texnik vositalarni xarid qilish"
+    },
+    {
+      "field": "description",
+      "quote": "Hududiy pedagogik mahorat markazlari ushbu kompyuter texnikasi va boshqa texnik vositalarni xarid qilish"
+    }
+  ],
+  "evidence_conflicts": false,
+  "field_assessments": [
+    {
+      "detail": "Directly requests computer equipment for pedagogical centers.",
+      "field": "title",
+      "quote": "Hududiy pedagogik mahorat markazlari ushbu kompyuter texnikasi va boshqa texnik vositalarni xarid qilish",
+      "relation": "direct"
+    },
+    {
+      "detail": "Repeats the title, confirming the scope is computer equipment.",
+      "field": "description",
+      "quote": "Hududiy pedagogik mahorat markazlari ushbu kompyuter texnikasi va boshqa texnik vositalarni xarid qilish",
+      "relation": "direct"
+    }
+  ],
+  "justification": "clear",
+  "reasons": [
+    "The tender explicitly requests the purchase of computer equipment (kompyuter texnikasi).",
+    "The buyer is a pedagogical center, aligning with the education sector.",
+    "The scope matches the campaign's requirement for computers and computer equipment for education centers."
+  ],
+  "result": "match",
+  "scope_relation": "direct",
+  "score": 0.9,
+  "support": "explicit",
+  "uncertainties": []
+}

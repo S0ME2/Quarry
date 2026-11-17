@@ -1,0 +1,147 @@
+{
+  "tender": {
+    "source_id": "source-ff60a49b87d04fda91ce41ae7f872af5",
+    "external_tender_id": "8915917",
+    "source_has_stable_external_id": true,
+    "fallback_kind": null,
+    "fallback_key": null,
+    "title": "Табиий пардозбоп тошларни (мармар, оникс ва бошқалар) қайта ишлаш объектлари қурилиши",
+    "description": "Тендер № 8915917",
+    "buyer": "\"UOGC TERMIZ BRANCH\" MAS'ULIYATI CHEKLANGAN JAMIYAT",
+    "location": null,
+    "published_at": "2026-10-08T00:00:00Z",
+    "deadline": "2026-10-26T23:59:59.999999Z",
+    "value": "24536563652.0",
+    "currency": "UZS",
+    "status": "open",
+    "product_items": [
+      {
+        "id": "41.20.30.100_00004",
+        "name": "Работы по строительству нежилых зданий",
+        "unit": "усл. ед",
+        "price": 24536563652.0,
+        "amount": null,
+        "lot_id": 1,
+        "category": {
+          "id": "61211458-b51c-43b4-a068-bb8f5542f1a4",
+          "uid": "61211458-b51c-43b4-a068-bb8f5542f1a4",
+          "code": "41.20.30.100",
+          "name": {
+            "en-US": "Работы по возведению жилых зданий, кроме работ по сохранению и воссозданию объектов культурного наследия",
+            "ru-RU": "Работы по возведению жилых зданий, кроме работ по сохранению и воссозданию объектов культурного наследия",
+            "uz-UZ@latin": "Madaniy meros ob'ektlarini saqlash va qayta yaratish ishlaridan tashqari turar joy binolarini qurish ishlari",
+            "uz-UZ@cyrillic": "Маданий мерос объектларини сақлаш ва қайта яратиш ишларидан ташқари турар жой биноларини қуриш ишлари"
+          },
+          "title": "Работы по возведению жилых зданий, кроме работ по сохранению и воссозданию объектов культурного наследия"
+        },
+        "category_id": "61211458-b51c-43b4-a068-bb8f5542f1a4",
+        "category_type": null,
+        "totalcost_item": 24536563652.0,
+        "translate_name": {
+          "ru-RU": "Работы по строительству нежилых зданий",
+          "uz-UZ@latin": "Noturar joy binolarini qurish ishlari",
+          "uz-UZ@cyrillic": "Нотурар жой биноларини қуриш ишлари"
+        }
+      }
+    ],
+    "quality_issues": [],
+    "internal_id": "7ccf3866-b1e1-42b4-bdb9-00e7130a6b5e",
+    "current_version_id": "c8b5348b-fc26-494f-a348-e37466a672b4",
+    "first_seen_at": "2026-10-15T11:32:53.669732Z",
+    "last_seen_at": "2026-10-15T12:19:34.977245Z",
+    "latest_observation_id": "2e40eb83-b3d3-5769-bfe3-277798594b1e",
+    "presence": {
+      "missing_successful_runs": 0,
+      "last_accounted_run_sequence": 3
+    }
+  },
+  "criteria": {
+    "name": "TEST — Construction",
+    "buyers": [],
+    "locations": [],
+    "max_value": null,
+    "min_value": null,
+    "currencies": [],
+    "description": "We provide construction services for industrial and commercial facilities, including the construction and renovation of non-residential buildings.",
+    "custom_notes": "",
+    "status_rules": [],
+    "ai_budget_usd": 10.0,
+    "matching_mode": "balanced",
+    "automatic_mode": "rules",
+    "deadline_rules": {
+      "max_days_remaining": null,
+      "min_days_remaining": null
+    },
+    "exclude_buyers": [],
+    "schema_version": 1,
+    "ai_request_limit": 0,
+    "exclude_keywords": [],
+    "include_keywords": [
+      "construction",
+      "industrial buildings",
+      "non-residential buildings"
+    ],
+    "automatic_matching": false,
+    "automatic_ai_authorized": false
+  },
+  "recorded_result": {
+    "score": 0.5,
+    "result": "unsure",
+    "reasons": [
+      {
+        "code": "semantic_relevance",
+        "field": null,
+        "detail": "The tender is for the construction of a non-residential building (a tabiyat park), which aligns with the campaign's intent to procure construction services for non-residential buildings. The product category explicitly excludes cultural heritage restoration, fitting the 'non-residential' scope."
+      }
+    ],
+    "evidence": [
+      {
+        "field": "deadline",
+        "quote": "2026-10-26 23:59:59.999999+00:00"
+      }
+    ],
+    "confidence": 0.0,
+    "model_calls": [
+      {
+        "cost": null,
+        "model": "qwen/qwen3.8-27b",
+        "stage": "semantic",
+        "attempts": 1,
+        "provider": "groq",
+        "error_code": null,
+        "http_status": null,
+        "input_tokens": 3864,
+        "failure_stage": null,
+        "model_version": "qwen/qwen3.8-27b/fp_43dd1ea4ee",
+        "output_tokens": 241,
+        "attempt_errors": [],
+        "failure_detail": null,
+        "retry_after_seconds": null
+      }
+    ],
+    "model_opinion": {
+      "decision": "match",
+      "confidence": 0.95,
+      "explanation": "The tender is for the construction of a non-residential building (a tabiyat park), which aligns with the campaign's intent to procure construction services for non-residential buildings. The product category explicitly excludes cultural heritage restoration, fitting the 'non-residential' scope."
+    },
+    "uncertainties": [
+      {
+        "code": "evidence_verification_failed",
+        "field": null,
+        "detail": "Optional model evidence failed verification; model opinion was retained"
+      }
+    ],
+    "decision_stage": "semantic",
+    "schema_version": 1,
+    "matcher_version": "3",
+    "tender_version_id": "c8b5348b-fc26-494f-a348-e37466a672b4",
+    "criteria_version_id": "c2390d20-4405-43ef-8058-20e17e7b2d4e",
+    "evidence_verification": {
+      "detail": "unrecognized_field_path",
+      "status": "invalid",
+      "error_code": "invalid_evidence"
+    },
+    "matcher_implementation": "intelligent"
+  },
+  "raw_response_available": false
+}

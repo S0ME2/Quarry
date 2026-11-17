@@ -1,0 +1,503 @@
+[
+  {
+    "id": "unrelated",
+    "mode": "broad",
+    "tender": {
+      "title": "Fresh vegetables for school kitchens"
+    },
+    "campaign": {
+      "name": "Network infrastructure",
+      "description": "Supply network equipment and data-center infrastructure; no civil construction."
+    },
+    "expected": "no_match",
+    "recorded": {
+      "schema_version": 1,
+      "result": "unsure",
+      "score": 0.5,
+      "reasons": [
+        {
+          "code": "model_unavailable",
+          "detail": "Model evaluation failed; relevance remains unresolved",
+          "field": null
+        }
+      ],
+      "uncertainties": [
+        {
+          "code": "model_failure",
+          "detail": "semantic evaluation failed (HTTPStatusError)",
+          "field": null
+        }
+      ],
+      "confidence": 0.0,
+      "matcher_implementation": "intelligent",
+      "matcher_version": "1",
+      "tender_version_id": "2f1f5be1-1eb6-544f-a75e-5552b3258fa4",
+      "criteria_version_id": null,
+      "decision_stage": "semantic",
+      "evidence": [],
+      "model_calls": [
+        {
+          "stage": "semantic",
+          "provider": "groq",
+          "model": "qwen/qwen3.8-27b",
+          "model_version": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "cost": null,
+          "error_code": "HTTPStatusError"
+        }
+      ]
+    }
+  },
+  {
+    "id": "conflicting_text",
+    "mode": "broad",
+    "tender": {
+      "title": "Supply network routers",
+      "description": "Lot specification: only office desks; network equipment is excluded."
+    },
+    "campaign": {
+      "name": "Network infrastructure",
+      "description": "Supply network equipment and data-center infrastructure; no civil construction."
+    },
+    "expected": "unsure",
+    "recorded": {
+      "schema_version": 1,
+      "result": "no_match",
+      "score": 0.1,
+      "reasons": [
+        {
+          "code": "semantic_relevance",
+          "detail": "The tender description explicitly states that network equipment is excluded.",
+          "field": null
+        },
+        {
+          "code": "semantic_relevance",
+          "detail": "The campaign specifically targets the supply of network equipment and data-center infrastructure.",
+          "field": null
+        },
+        {
+          "code": "semantic_relevance",
+          "detail": "The tender scope (office desks) conflicts with the campaign's core interest in network infrastructure.",
+          "field": null
+        }
+      ],
+      "uncertainties": [],
+      "confidence": 0.95,
+      "matcher_implementation": "intelligent",
+      "matcher_version": "1",
+      "tender_version_id": "b943edb3-6be2-5618-97c2-aff6addf04a2",
+      "criteria_version_id": null,
+      "decision_stage": "semantic",
+      "evidence": [
+        {
+          "field": "description",
+          "quote": "network equipment is excluded"
+        },
+        {
+          "field": "description",
+          "quote": "only office desks"
+        }
+      ],
+      "model_calls": [
+        {
+          "stage": "semantic",
+          "provider": "groq",
+          "model": "qwen/qwen3.8-27b",
+          "model_version": "qwen/qwen3.8-27b/fp_43dd1ea4ee",
+          "input_tokens": 465,
+          "output_tokens": 163,
+          "cost": null,
+          "error_code": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "conflicting_text",
+    "mode": "balanced",
+    "tender": {
+      "title": "Supply network routers",
+      "description": "Lot specification: only office desks; network equipment is excluded."
+    },
+    "campaign": {
+      "name": "Network infrastructure",
+      "description": "Supply network equipment and data-center infrastructure; no civil construction."
+    },
+    "expected": "unsure",
+    "recorded": {
+      "schema_version": 1,
+      "result": "no_match",
+      "score": 0.1,
+      "reasons": [
+        {
+          "code": "semantic_relevance",
+          "detail": "The tender description explicitly states that network equipment is excluded.",
+          "field": null
+        },
+        {
+          "code": "semantic_relevance",
+          "detail": "The campaign specifically targets the supply of network equipment and data-center infrastructure.",
+          "field": null
+        },
+        {
+          "code": "semantic_relevance",
+          "detail": "The tender scope (office desks) conflicts with the campaign's core interest in network infrastructure.",
+          "field": null
+        }
+      ],
+      "uncertainties": [],
+      "confidence": 0.95,
+      "matcher_implementation": "intelligent",
+      "matcher_version": "1",
+      "tender_version_id": "b943edb3-6be2-5618-97c2-aff6addf04a2",
+      "criteria_version_id": null,
+      "decision_stage": "semantic",
+      "evidence": [
+        {
+          "field": "description",
+          "quote": "network equipment is excluded"
+        },
+        {
+          "field": "description",
+          "quote": "only office desks"
+        }
+      ],
+      "model_calls": [
+        {
+          "stage": "semantic",
+          "provider": "groq",
+          "model": "qwen/qwen3.8-27b",
+          "model_version": "qwen/qwen3.8-27b/fp_43dd1ea4ee",
+          "input_tokens": 465,
+          "output_tokens": 163,
+          "cost": null,
+          "error_code": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "conflicting_text",
+    "mode": "strict",
+    "tender": {
+      "title": "Supply network routers",
+      "description": "Lot specification: only office desks; network equipment is excluded."
+    },
+    "campaign": {
+      "name": "Network infrastructure",
+      "description": "Supply network equipment and data-center infrastructure; no civil construction."
+    },
+    "expected": "unsure",
+    "recorded": {
+      "schema_version": 1,
+      "result": "no_match",
+      "score": 0.1,
+      "reasons": [
+        {
+          "code": "semantic_relevance",
+          "detail": "The tender description explicitly states that network equipment is excluded.",
+          "field": null
+        },
+        {
+          "code": "semantic_relevance",
+          "detail": "The campaign specifically targets the supply of network equipment and data-center infrastructure.",
+          "field": null
+        },
+        {
+          "code": "semantic_relevance",
+          "detail": "The tender scope (office desks) conflicts with the campaign's core interest in network infrastructure.",
+          "field": null
+        }
+      ],
+      "uncertainties": [],
+      "confidence": 0.95,
+      "matcher_implementation": "intelligent",
+      "matcher_version": "1",
+      "tender_version_id": "b943edb3-6be2-5618-97c2-aff6addf04a2",
+      "criteria_version_id": null,
+      "decision_stage": "semantic",
+      "evidence": [
+        {
+          "field": "description",
+          "quote": "network equipment is excluded"
+        },
+        {
+          "field": "description",
+          "quote": "only office desks"
+        }
+      ],
+      "model_calls": [
+        {
+          "stage": "semantic",
+          "provider": "groq",
+          "model": "qwen/qwen3.8-27b",
+          "model_version": "qwen/qwen3.8-27b/fp_8999620a6e",
+          "input_tokens": 465,
+          "output_tokens": 163,
+          "cost": null,
+          "error_code": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "adjacent_scope",
+    "mode": "balanced",
+    "tender": {
+      "title": "UPS batteries for server-room power backup"
+    },
+    "campaign": {
+      "name": "Network infrastructure",
+      "description": "Supply network equipment and data-center infrastructure; no civil construction."
+    },
+    "expected": "unsure",
+    "recorded": {
+      "schema_version": 1,
+      "result": "match",
+      "score": 0.85,
+      "reasons": [
+        {
+          "code": "semantic_relevance",
+          "detail": "The tender title explicitly identifies the procurement of UPS batteries for server-room power backup.",
+          "field": null
+        },
+        {
+          "code": "semantic_relevance",
+          "detail": "UPS batteries are a core component of data-center infrastructure, which is explicitly included in the campaign description.",
+          "field": null
+        },
+        {
+          "code": "semantic_relevance",
+          "detail": "The procurement does not involve civil construction, adhering to the campaign's exclusion criteria.",
+          "field": null
+        }
+      ],
+      "uncertainties": [],
+      "confidence": 0.9,
+      "matcher_implementation": "intelligent",
+      "matcher_version": "1",
+      "tender_version_id": "f6f019e5-d83e-5c2b-a355-747a83face14",
+      "criteria_version_id": null,
+      "decision_stage": "semantic",
+      "evidence": [
+        {
+          "field": "title",
+          "quote": "UPS batteries for server-room power backup"
+        }
+      ],
+      "model_calls": [
+        {
+          "stage": "semantic",
+          "provider": "groq",
+          "model": "qwen/qwen3.8-27b",
+          "model_version": "qwen/qwen3.8-27b/fp_a1293f40b5",
+          "input_tokens": 458,
+          "output_tokens": 151,
+          "cost": null,
+          "error_code": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "partial_scope",
+    "mode": "strict",
+    "tender": {
+      "title": "Server racks with associated installation work"
+    },
+    "campaign": {
+      "name": "Network infrastructure",
+      "description": "Supply network equipment and data-center infrastructure; no civil construction."
+    },
+    "expected": "unsure",
+    "recorded": {
+      "schema_version": 1,
+      "result": "unsure",
+      "score": 0.5,
+      "reasons": [
+        {
+          "code": "model_unavailable",
+          "detail": "Model evaluation failed; relevance remains unresolved",
+          "field": null
+        }
+      ],
+      "uncertainties": [
+        {
+          "code": "model_failure",
+          "detail": "semantic evaluation failed (HTTPStatusError)",
+          "field": null
+        }
+      ],
+      "confidence": 0.0,
+      "matcher_implementation": "intelligent",
+      "matcher_version": "1",
+      "tender_version_id": "dd88aa90-7cf8-5e06-ab06-fbe438ece6ce",
+      "criteria_version_id": null,
+      "decision_stage": "semantic",
+      "evidence": [],
+      "model_calls": [
+        {
+          "stage": "semantic",
+          "provider": "groq",
+          "model": "qwen/qwen3.8-27b",
+          "model_version": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "cost": null,
+          "error_code": "HTTPStatusError"
+        }
+      ]
+    }
+  },
+  {
+    "id": "weak_scope",
+    "mode": "broad",
+    "tender": {
+      "title": "Air conditioning for an office that hosts a server closet"
+    },
+    "campaign": {
+      "name": "Network infrastructure",
+      "description": "Supply network equipment and data-center infrastructure; no civil construction."
+    },
+    "expected": "unsure",
+    "recorded": {
+      "schema_version": 1,
+      "result": "unsure",
+      "score": 0.5,
+      "reasons": [
+        {
+          "code": "model_unavailable",
+          "detail": "Model evaluation failed; relevance remains unresolved",
+          "field": null
+        }
+      ],
+      "uncertainties": [
+        {
+          "code": "model_failure",
+          "detail": "semantic evaluation failed (ValueError)",
+          "field": null
+        }
+      ],
+      "confidence": 0.0,
+      "matcher_implementation": "intelligent",
+      "matcher_version": "1",
+      "tender_version_id": "5bdb010c-b0f9-5e32-a43a-4e604dd2cf55",
+      "criteria_version_id": null,
+      "decision_stage": "semantic",
+      "evidence": [],
+      "model_calls": [
+        {
+          "stage": "semantic",
+          "provider": "groq",
+          "model": "qwen/qwen3.8-27b",
+          "model_version": "qwen/qwen3.8-27b/fp_43dd1ea4ee",
+          "input_tokens": 461,
+          "output_tokens": 220,
+          "cost": null,
+          "error_code": "ValueError"
+        }
+      ]
+    }
+  },
+  {
+    "id": "weak_scope",
+    "mode": "balanced",
+    "tender": {
+      "title": "Air conditioning for an office that hosts a server closet"
+    },
+    "campaign": {
+      "name": "Network infrastructure",
+      "description": "Supply network equipment and data-center infrastructure; no civil construction."
+    },
+    "expected": "unsure",
+    "recorded": {
+      "schema_version": 1,
+      "result": "unsure",
+      "score": 0.5,
+      "reasons": [
+        {
+          "code": "model_unavailable",
+          "detail": "Model evaluation failed; relevance remains unresolved",
+          "field": null
+        }
+      ],
+      "uncertainties": [
+        {
+          "code": "model_failure",
+          "detail": "semantic evaluation failed (ValueError)",
+          "field": null
+        }
+      ],
+      "confidence": 0.0,
+      "matcher_implementation": "intelligent",
+      "matcher_version": "1",
+      "tender_version_id": "5bdb010c-b0f9-5e32-a43a-4e604dd2cf55",
+      "criteria_version_id": null,
+      "decision_stage": "semantic",
+      "evidence": [],
+      "model_calls": [
+        {
+          "stage": "semantic",
+          "provider": "groq",
+          "model": "qwen/qwen3.8-27b",
+          "model_version": "qwen/qwen3.8-27b/fp_8da23ae6c7",
+          "input_tokens": 461,
+          "output_tokens": 220,
+          "cost": null,
+          "error_code": "ValueError"
+        }
+      ]
+    }
+  },
+  {
+    "id": "weak_scope",
+    "mode": "strict",
+    "tender": {
+      "title": "Air conditioning for an office that hosts a server closet"
+    },
+    "campaign": {
+      "name": "Network infrastructure",
+      "description": "Supply network equipment and data-center infrastructure; no civil construction."
+    },
+    "expected": "no_match",
+    "recorded": {
+      "schema_version": 1,
+      "result": "unsure",
+      "score": 0.5,
+      "reasons": [
+        {
+          "code": "model_unavailable",
+          "detail": "Model evaluation failed; relevance remains unresolved",
+          "field": null
+        }
+      ],
+      "uncertainties": [
+        {
+          "code": "model_failure",
+          "detail": "semantic evaluation failed (HTTPStatusError)",
+          "field": null
+        }
+      ],
+      "confidence": 0.0,
+      "matcher_implementation": "intelligent",
+      "matcher_version": "1",
+      "tender_version_id": "5bdb010c-b0f9-5e32-a43a-4e604dd2cf55",
+      "criteria_version_id": null,
+      "decision_stage": "semantic",
+      "evidence": [],
+      "model_calls": [
+        {
+          "stage": "semantic",
+          "provider": "groq",
+          "model": "qwen/qwen3.8-27b",
+          "model_version": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "cost": null,
+          "error_code": "HTTPStatusError"
+        }
+      ]
+    }
+  }
+]

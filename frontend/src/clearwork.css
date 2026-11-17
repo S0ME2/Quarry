@@ -1,0 +1,420 @@
+/* Generated Clearwork foundation, adapted from current Stitch Tenders and Tender Details exports. Unused selectors omitted; see DESIGN.md. */
+/* tenders */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bg-canvas: #f6f8fb;
+  --surface: #ffffff;
+  --ink: #17243a;
+  --secondary: #526176;
+  --border: #dde3ea;
+  --border-light: #eef2f6;
+  --cobalt: #2457d6;
+  --cobalt-hover: #1d46b0;
+  --cobalt-bg: #ebf0ff;
+  --amber-ink: #8f5400;
+  --amber-bg: #fef7ea;
+  --amber-border: #f6d8a6;
+  --green-ink: #0b6b38;
+  --green-bg: #ebf7ee;
+  --green-border: #c0e8cc;
+  --font-family:
+    "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+}
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-canvas);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+}
+.app-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 176px;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+.app-main {
+  flex: 1 1 auto;
+  margin-left: 176px;
+  min-width: 0;
+  width: calc(100% - 176px);
+  padding: 24px 24px 48px;
+  display: flex;
+  flex-direction: column;
+}
+.mobile-header {
+  display: none !important;
+}
+.brand-header {
+  padding: 20px 16px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.brand-logo-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: var(--cobalt);
+}
+.brand-title {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.nav-list {
+  list-style: none;
+  padding: 8px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+.nav-item a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--secondary);
+  text-decoration: none;
+  transition:
+    background-color 0.15s,
+    color 0.15s;
+}
+.nav-item a:hover {
+  background-color: var(--bg-canvas);
+  color: var(--ink);
+}
+.nav-item.active a {
+  background-color: var(--cobalt-bg);
+  color: var(--cobalt);
+  font-weight: 600;
+}
+.sidebar-footer {
+  padding: 16px 20px;
+  border-top: 1px solid var(--border-light);
+  font-size: 14px;
+  color: var(--secondary);
+}
+.toolbar-container {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.toolbar-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+@media (min-width: 700px) and (max-width: 1099px) {
+  .app-sidebar {
+    width: 56px !important;
+  }
+  .app-main {
+    margin-left: 56px !important;
+    width: calc(100% - 56px) !important;
+  }
+  .brand-title,
+  .nav-text,
+  .sidebar-footer {
+    display: none !important;
+  }
+  .brand-header {
+    padding: 16px 14px;
+    justify-content: center;
+  }
+  .nav-item a {
+    justify-content: center;
+    padding: 10px 0;
+  }
+}
+@media (max-width: 699px) {
+  .app-sidebar {
+    display: none !important;
+  }
+  .app-main {
+    margin-left: 0 !important;
+    width: 100% !important;
+    padding: 16px 16px 40px !important;
+  }
+  .mobile-header {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--surface);
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    margin: -16px -16px 16px -16px;
+  }
+  .mobile-header-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--ink);
+  }
+}
+body {
+  overflow-x: visible;
+}
+body * {
+  font-family: inherit;
+}
+.app-main,
+.toolbar-container,
+.toolbar-row,
+.campaign-context,
+.detail-grid-container,
+.tender-header-card {
+  min-width: 0;
+  max-width: 100%;
+}
+.detail-grid-container > * {
+  min-width: 0;
+}
+@media (min-width: 1440px) {
+  .detail-grid-container {
+    grid-template-columns: minmax(0, 1fr) 340px;
+  }
+}
+@media (max-width: 1439px) {
+  .detail-grid-container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 699px) {
+  .app-sidebar {
+    display: none !important;
+  }
+  .app-main {
+    margin-left: 0 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+  .mobile-header {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .mobile-header-brand {
+    min-width: 0;
+  }
+  input,
+  select {
+    min-width: 0;
+    max-width: 100%;
+  }
+  .campaign-context,
+  .pagination-bar {
+    flex-wrap: wrap;
+    min-width: 0;
+  }
+}
+
+/* detail */
+
+:root {
+  --bg-canvas: #f6f8fb;
+  --surface: #ffffff;
+  --ink: #17243a;
+  --secondary: #526176;
+  --border: #dde3ea;
+  --border-light: #eef2f6;
+  --cobalt: #2457d6;
+  --cobalt-hover: #1d46b0;
+  --cobalt-bg: #ebf0ff;
+  --amber-ink: #8f5400;
+  --amber-bg: #fef7ea;
+  --amber-border: #f6d8a6;
+  --green-ink: #0b6b38;
+  --green-bg: #ebf7ee;
+  --green-border: #c0e8cc;
+  --font-family:
+    "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+}
+.app-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 176px;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+.mobile-header {
+  display: none !important;
+}
+.brand-logo-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: var(--cobalt);
+}
+.nav-list {
+  list-style: none;
+  padding: 8px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+.nav-item a:hover {
+  background-color: var(--bg-canvas);
+  color: var(--ink);
+}
+.sidebar-footer {
+  padding: 16px 20px;
+  border-top: 1px solid var(--border-light);
+  font-size: 14px;
+  color: var(--secondary);
+}
+.tender-header-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+.tender-headline {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--ink);
+  letter-spacing: -0.015em;
+  margin-bottom: 16px;
+}
+.buyer-full-line {
+  font-size: 16px;
+  color: var(--ink);
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-light);
+  line-height: 1.5;
+}
+.buyer-full-line strong {
+  font-weight: 600;
+  color: var(--secondary);
+  font-size: 14px;
+  display: block;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.header-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+.fact-item label {
+  display: block;
+  font-size: 14px;
+  color: var(--secondary);
+  margin-bottom: 2px;
+}
+.fact-item .fact-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.detail-grid-container {
+  display: grid;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+@media (min-width: 1440px) {
+  .detail-grid-container {
+    grid-template-columns: 1fr 340px;
+    grid-template-areas: "main match";
+    align-items: start;
+  }
+}
+@media (min-width: 700px) and (max-width: 1439px) {
+  .detail-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "match"
+      "main";
+  }
+}
+@media (max-width: 699px) {
+  .detail-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "match"
+      "main";
+  }
+}
+@media (max-width: 699px) {
+  .app-sidebar {
+    display: none !important;
+  }
+  .app-main {
+    margin-left: 0 !important;
+    width: 100% !important;
+    padding: 16px 16px 40px !important;
+  }
+  .mobile-header {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--surface);
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    margin: -16px -16px 16px -16px;
+  }
+  .mobile-header-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--ink);
+  }
+  .tender-headline {
+    font-size: 22px;
+  }
+}
+body * {
+  font-family: inherit;
+}
+.detail-grid-container > * {
+  min-width: 0;
+}
+@media (max-width: 1439px) {
+  .detail-grid-container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

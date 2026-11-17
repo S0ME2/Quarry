@@ -1,0 +1,629 @@
+[
+  {
+    "contractDate": null,
+    "contractStatus": "IN_PROCESS",
+    "contractSumma": null,
+    "contractType": 0,
+    "date": "2026-10-05",
+    "districtId": 6,
+    "districtName": "Mirzo Ulug'bek tumani",
+    "enktCodes": "21.31.17.260-00001",
+    "enktNames": "Kasalxona uchun jihozlar",
+    "lotId": 26111006517309,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "organ": "Fixture buyer 1",
+    "organInn": "100000001",
+    "organizationType": "BUDGET",
+    "platformName": "xarid.uzex.uz",
+    "purchaseType": "TENDER",
+    "regDate": null,
+    "regionId": 1,
+    "regionName": "Toshkent shahri",
+    "startDate": "2026-10-05",
+    "startSumma": 349200000000,
+    "vendor": "",
+    "vendorInn": ""
+  },
+  {
+    "contractDate": null,
+    "contractStatus": "IN_PROCESS",
+    "contractSumma": null,
+    "contractType": 0,
+    "date": "2026-10-05",
+    "districtId": 4,
+    "districtName": "Chilonzor tumani",
+    "enktCodes": "41.20.40.900-00007",
+    "enktNames": "Binolarni rekonstruksiya qilish bo‘yicha qurilish ishlari",
+    "lotId": 26111006517287,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "organ": "Fixture buyer 2",
+    "organInn": "100000002",
+    "organizationType": "BUDGET",
+    "platformName": "xarid.uzex.uz",
+    "purchaseType": "TENDER",
+    "regDate": null,
+    "regionId": 1,
+    "regionName": "Toshkent shahri",
+    "startDate": "2026-10-05",
+    "startSumma": 3654039116100,
+    "vendor": "",
+    "vendorInn": ""
+  },
+  {
+    "contractDate": null,
+    "contractStatus": "IN_PROCESS",
+    "contractSumma": null,
+    "contractType": 0,
+    "date": "2026-10-05",
+    "districtId": 6,
+    "districtName": "Mirzo Ulug'bek tumani",
+    "enktCodes": "21.31.17.260-00001",
+    "enktNames": "Kasalxona uchun jihozlar",
+    "lotId": 26111006517281,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "organ": "Fixture buyer 3",
+    "organInn": "100000003",
+    "organizationType": "BUDGET",
+    "platformName": "xarid.uzex.uz",
+    "purchaseType": "TENDER",
+    "regDate": null,
+    "regionId": 1,
+    "regionName": "Toshkent shahri",
+    "startDate": "2026-10-05",
+    "startSumma": 1848000000000,
+    "vendor": "",
+    "vendorInn": ""
+  },
+  {
+    "contractDate": null,
+    "contractStatus": "IN_PROCESS",
+    "contractSumma": null,
+    "contractType": 0,
+    "date": "2026-10-05",
+    "districtId": 6,
+    "districtName": "Mirzo Ulug'bek tumani",
+    "enktCodes": "21.32.20.210-00002",
+    "enktNames": "Gidrotsefaliya uchun implantlanadigan shuntlash tizimi",
+    "lotId": 26111006517278,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "organ": "Fixture buyer 4",
+    "organInn": "100000004",
+    "organizationType": "BUDGET",
+    "platformName": "xarid.uzex.uz",
+    "purchaseType": "TENDER",
+    "regDate": null,
+    "regionId": 1,
+    "regionName": "Toshkent shahri",
+    "startDate": "2026-10-05",
+    "startSumma": 412510849740,
+    "vendor": "",
+    "vendorInn": ""
+  },
+  {
+    "contractDate": null,
+    "contractStatus": "IN_PROCESS",
+    "contractSumma": null,
+    "contractType": 0,
+    "date": "2026-10-05",
+    "districtId": 6,
+    "districtName": "Mirzo Ulug'bek tumani",
+    "enktCodes": "21.31.17.260-00001",
+    "enktNames": "Kasalxona uchun jihozlar",
+    "lotId": 26111006517270,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "organ": "Fixture buyer 5",
+    "organInn": "100000005",
+    "organizationType": "BUDGET",
+    "platformName": "xarid.uzex.uz",
+    "purchaseType": "TENDER",
+    "regDate": null,
+    "regionId": 1,
+    "regionName": "Toshkent shahri",
+    "startDate": "2026-10-05",
+    "startSumma": 7629600000000,
+    "vendor": "",
+    "vendorInn": ""
+  },
+  {
+    "contractDate": null,
+    "contractStatus": "IN_PROCESS",
+    "contractSumma": null,
+    "contractType": 0,
+    "date": "2026-10-03",
+    "districtId": 1,
+    "districtName": "Mirobod tumani",
+    "enktCodes": "26.20.13.000-00003",
+    "enktNames": "Monoblok",
+    "lotId": 26111006517228,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "organ": "Fixture buyer 6",
+    "organInn": "100000006",
+    "organizationType": "BUDGET",
+    "platformName": "xarid.uzex.uz",
+    "purchaseType": "TENDER",
+    "regDate": null,
+    "regionId": 1,
+    "regionName": "Toshkent shahri",
+    "startDate": "2026-10-03",
+    "startSumma": 1725000000000,
+    "vendor": "",
+    "vendorInn": ""
+  },
+  {
+    "contractDate": null,
+    "contractStatus": "IN_PROCESS",
+    "contractSumma": null,
+    "contractType": 0,
+    "date": "2026-10-02",
+    "districtId": 6,
+    "districtName": "Mirzo Ulug'bek tumani",
+    "enktCodes": "21.20.13.231-00010",
+    "enktNames": "Human Coagulation Factor VIII & Von Willebrand Factor",
+    "lotId": 26111006516735,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "organ": "Fixture buyer 7",
+    "organInn": "100000007",
+    "organizationType": "BUDGET",
+    "platformName": "xarid.uzex.uz",
+    "purchaseType": "TENDER",
+    "regDate": null,
+    "regionId": 1,
+    "regionName": "Toshkent shahri",
+    "startDate": "2026-10-02",
+    "startSumma": 483681750000,
+    "vendor": "",
+    "vendorInn": ""
+  },
+  {
+    "contractDate": null,
+    "contractStatus": "IN_PROCESS",
+    "contractSumma": null,
+    "contractType": 0,
+    "date": "2026-10-01",
+    "districtId": 8,
+    "districtName": "Yunusobod tumani",
+    "enktCodes": "32.40.12.131-00001\n32.40.20.122-00001\n32.40.39.129-00002\n32.40.39.259-00001\n32.99.53.130-00080",
+    "enktNames": "Yog‘och bolalar o‘yinchog‘i\nDidaktik material\nO‘yinchoqlar va stol o‘yinlari to‘plami\nRivojlantiruvchi va aqliy o‘stiruvchi bolalar o‘yinchog‘i\nStol ustida turadigan pazl o‘yin",
+    "lotId": 26111006516699,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "organ": "Fixture buyer 8",
+    "organInn": "100000008",
+    "organizationType": "BUDGET",
+    "platformName": "xarid.uzex.uz",
+    "purchaseType": "TENDER",
+    "regDate": null,
+    "regionId": 1,
+    "regionName": "Toshkent shahri",
+    "startDate": "2026-10-01",
+    "startSumma": 671072215500,
+    "vendor": "",
+    "vendorInn": ""
+  },
+  {
+    "contractDate": null,
+    "contractStatus": "IN_PROCESS",
+    "contractSumma": null,
+    "contractType": 0,
+    "date": "2026-09-30",
+    "districtId": 8,
+    "districtName": "Yunusobod tumani",
+    "enktCodes": "32.40.12.131-00001\n32.40.20.122-00001\n32.40.39.129-00002\n32.40.39.259-00001\n32.99.53.130-00080",
+    "enktNames": "Yog‘och bolalar o‘yinchog‘i\nDidaktik material\nO‘yinchoqlar va stol o‘yinlari to‘plami\nRivojlantiruvchi va aqliy o‘stiruvchi bolalar o‘yinchog‘i\nStol ustida turadigan pazl o‘yin",
+    "lotId": 26111006516668,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "organ": "Fixture buyer 9",
+    "organInn": "100000009",
+    "organizationType": "BUDGET",
+    "platformName": "xarid.uzex.uz",
+    "purchaseType": "TENDER",
+    "regDate": null,
+    "regionId": 1,
+    "regionName": "Toshkent shahri",
+    "startDate": "2026-09-30",
+    "startSumma": 556681861800,
+    "vendor": "",
+    "vendorInn": ""
+  },
+  {
+    "contractDate": null,
+    "contractStatus": "IN_PROCESS",
+    "contractSumma": null,
+    "contractType": 0,
+    "date": "2026-09-30",
+    "districtId": 4,
+    "districtName": "Chilonzor tumani",
+    "enktCodes": "21.32.28.110-00001",
+    "enktNames": "Reagentlar va reagentlar to‘plami (test tizimi)",
+    "lotId": 26111006516567,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "organ": "Fixture buyer 10",
+    "organInn": "100000010",
+    "organizationType": "BUDGET",
+    "platformName": "xarid.uzex.uz",
+    "purchaseType": "TENDER",
+    "regDate": null,
+    "regionId": 1,
+    "regionName": "Toshkent shahri",
+    "startDate": "2026-09-30",
+    "startSumma": 405000000000,
+    "vendor": "",
+    "vendorInn": ""
+  },
+  {
+    "contractDate": "2026-08-28",
+    "contractStatus": "IN_PROCESS",
+    "contractSumma": null,
+    "contractType": 0,
+    "date": "2026-08-14",
+    "districtId": 66,
+    "districtName": "Samarqand shahar",
+    "enktCodes": "21.31.17.190-00006\n21.31.17.190-00004\n21.31.17.190-00005\n21.31.17.190-00001\n26.51.32.190-00005\n31.01.10.000-00001\n31.01.12.139-00003\n31.01.12.131-00002\n31.09.12.132-00001\n31.01.12.190-00012\n31.01.12.129-00003\n31.01.12.110-00003\n31.01.11.150-00006\n31.01.12.190-00010\n31.01.12.110-00004\n31.01.10.000-00003\n31.09.10.000-00018\n31.01.11.150-00001\n31.09.11.190-00011\n31.01.12.122-00002\n31.01.12.122-00005\n32.50.30.110-00009\n32.99.53.130-00002\n32.50.30.110-00010",
+    "enktNames": "Birinchi tibbiy yordam stoli\nLogoped stoli\nRuhshunos stoli\nTibbiy stol\nChizma taxtasi\nYozuv stoli\nKitob javoni\nMDFdan ishlangan kiyim javoni\nJurnal stoli\nRahbar xonasi uchun mebel to‘plami\nMinbar-stol\nMajlislar stoli\nOfis kreslosi\nMinbar\nKompyuter stoli\nO‘qituvchi stoli\nLaboratoriya stoli\nMetall karkasli stul\nMetall karkasga mahkamlangan uch o‘rinli kursi\nO‘quvchilar stoli ikki o'rindiqli\nBir o‘rinli o‘quvchilar stoli\nBemorlarni ko‘rikdan o‘tkazish uchun kushetka\nMagnitli-bo‘rli doska\nTibbiy javon",
+    "lotId": 26111006507659,
+    "lotStatus": "IN_PROCESS",
+    "lotStatuses": [
+      {
+        "isCompleted": true,
+        "name": "E'lon",
+        "order": 1
+      },
+      {
+        "isCompleted": false,
+        "name": "Shartnoma shakllandi",
+        "order": 2
+      },
+      {
+        "isCompleted": false,
+        "name": "Oldindan to'lov o'tkazildi",
+        "order": 3
+      },
+      {
+        "isCompleted": false,
+        "name": "Hisob-faktura yuborilgan",
+        "order": 4
+      },
+      {
+        "isCompleted": false,
+        "name": "Amalga oshirilgan to'lov",
+        "order": 5
+      },
+      {
+        "isCompleted": false,
+        "name": "To'lov to'liq to'landi",
+        "order": 6
+      }
+    ],
+    "organ": "Fixture buyer 11",
+    "organInn": "100000011",
+    "organizationType": "BUDGET",
+    "platformName": "xarid.uzex.uz",
+    "purchaseType": "TENDER",
+    "regDate": null,
+    "regionId": 5,
+    "regionName": "Samarqand viloyati",
+    "startDate": "2026-08-14",
+    "startSumma": 714951613900,
+    "vendor": "",
+    "vendorInn": ""
+  }
+]

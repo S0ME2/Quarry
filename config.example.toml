@@ -1,0 +1,90 @@
+schema_version = 1
+
+[global]
+database_url_env = "DATABASE_URL"
+
+[global.source]
+check_interval_seconds = 14400
+rematch_fields = ["title", "description", "deadline", "value", "status"]
+
+# Explicit policy wins over rematch_fields; raw-only values stay evidence.
+[global.source.field_change_policy]
+time_left = "VOLATILE"
+view_count = "IGNORE"
+scraped_at = "VOLATILE"
+ui_metadata = "VOLATILE"
+buyer = "TRACK"
+deadline = "REMATCH"
+
+[global.source.health]
+allow_empty = false
+minimum_retained_ratio = 0.5
+maximum_changed_ratio = 0.9
+minimum_change_sample = 5
+required_fields = ["title"]
+# Every group requires at least one present canonical field. For sources that
+# omit titles: remove title from required_fields and configure this content group.
+required_any_of = [["title", "description"]]
+reject_quality_issues = true
+
+[global.source.repair_checks]
+timeout_seconds = 120
+require_samples = true
+sample_size = 3
+maximum_field_change_ratio = 0.5
+maximum_identity_loss_ratio = 0.25
+require_complete = true
+
+[global.campaign]
+matcher_adapter = "rules"
+matcher_version = "1"
+batch_size = 100
+timeout_seconds = 30
+lease_seconds = 3600
+matching_mode = "balanced"
+
+[sources.example]
+timeout_seconds = 60
+browser_fallback_enabled = true
+fallback_recipe_reference = "recipes/example-browser.json"
+fallback_max_runs = 3
+fallback_max_age_seconds = 86400
+timezone = "Asia/Tashkent"
+
+# Documentation/example policy only; no production source history exists.
+[sources.example.calibration]
+version = "example-api-provisional-v1"
+status = "provisional"
+evidence_references = ["recipes/api.example.json", "tests/unit/test_recipes.py"]
+full_inventory_supported = true
+completion_signals = ["next_cursor_absent"]
+minimum_pages = 1
+require_reported_total = true
+empty_policy = "reported_zero"
+maximum_malformed_ratio = 0.0
+maximum_duplicate_ratio = 0.0
+
+[sources.example.calibration.freshness]
+# generated_at proves page generation, not inventory currency.
+basis = "unknown"
+unknown_policy = "observe_only"
+
+[sources.example.normalization]
+date_only_deadline = "end_of_day"
+parse_failure_policy = "reject"
+decimal_separator = "."
+thousands_separator = ","
+
+[sources.example.identity]
+# These only apply if registered SourceRecord.has_stable_external_id is false.
+url_is_reliable = false
+# If URL is not reliable, configure actual stable raw input names explicitly.
+fingerprint_fields = []
+
+[campaigns.example]
+matching_mode = "strict"
+match_threshold = 0.85
+
+# Matching-only campaign exception; omitted validity keys inherit source rules.
+[campaigns.example.validity]
+exclude_expired = true

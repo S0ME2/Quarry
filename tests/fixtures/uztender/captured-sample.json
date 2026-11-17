@@ -1,0 +1,110 @@
+{
+  "captured_from": "https://api.uztender.com/api/catalog",
+  "listing": {
+    "data": [
+      {
+        "id": "cmv57j5zv3hxvpv0nrqqm9515",
+        "slug": "xiva-tumanidagi-birlashgan-kanalini-rekonstruktsiya-qilish",
+        "title": "Xiva tumanidagi \"Birlashgan\" kanalini rekonstruksiya qilish",
+        "buyerName": "\"O‘ZBEKISTON RESPUBLIKASI SUV XO‘JALIGI VAZIRLIGI SUV XO‘JALIGI LOYIHALARINI AMALGA OSHIRISH DEPARTAMENTI XORAZMSUVQURILISHINVEST\" DAVLAT MUASSASASI",
+        "budgetUzs": "8446698676",
+        "deadline": "2026-10-19T18:59:59.000Z",
+        "status": "active",
+        "summary": null,
+        "description": null,
+        "region": {
+          "code": "KHO",
+          "name": "Xorazm"
+        },
+        "categories": [
+          {
+            "slug": "infrastructure",
+            "name": "Yo'llar va infratuzilma"
+          }
+        ],
+        "ikpu": "42.91",
+        "noticeType": null
+      },
+      {
+        "id": "cmv53ojk42xezpv0n5203bjb2",
+        "slug": "mobilith-shc-100-moyi",
+        "title": "Мобиль СХЦ 100 масло"
+      }
+    ],
+    "meta": {
+      "pagination": {
+        "total": 2,
+        "offset": 0,
+        "limit": 100
+      }
+    }
+  },
+  "detail": {
+    "data": {
+      "id": "cmv57j5zv3hxvpv0nrqqm9515",
+      "slug": "xiva-tumanidagi-birlashgan-kanalini-rekonstruktsiya-qilish",
+      "title": "Реконструкция канала \"Объединенный\" в Хивинском районе",
+      "buyerName": "\"O‘ZBEKISTON RESPUBLIKASI SUV XO‘JALIGI VAZIRLIGI SUV XO‘JALIGI LOYIHALARINI AMALGA OSHIRISH DEPARTAMENTI XORAZMSUVQURILISHINVEST\" DAVLAT MUASSASASI",
+      "budgetUzs": "8446698676",
+      "deadline": "2026-10-19T18:59:59.000Z",
+      "status": "active",
+      "summary": "Предмет закупки: Реконструкция канала \"Объединенный\" в Хивинском районе. Описание у источника отсутствует.",
+      "description": null,
+      "region": {
+        "code": "KHO",
+        "name": "Хорезмская область"
+      },
+      "categories": [
+        {
+          "slug": "infrastructure",
+          "name": "Дороги и инфраструктура"
+        }
+      ],
+      "ikpu": "42.91",
+      "noticeType": null,
+      "publishedAt": null,
+      "documents": null,
+      "documentsPreview": [
+        {
+          "name": "Ишчи чизмалар После Экспертиза Ҳужжатлари.zip",
+          "type": "psd"
+        },
+        {
+          "name": "СВОДНАЯ Бирлашган ПОСЛЕ+++.xls",
+          "type": "excel1"
+        },
+        {
+          "name": "объемов_ робот- Хива Бирлашган.xlsx",
+          "type": "excel2"
+        },
+        {
+          "name": "Ресурс, — Хива Бирлашган.xlsx",
+          "type": "excel3"
+        }
+      ],
+      "hasDocuments": true,
+      "lotDetails": null
+    }
+  },
+  "additional_nested_detail": {
+    "id": "cmv53ojk42xezpv0n5203bjb2",
+    "slug": "mobilith-shc-100-moyi",
+    "title": "Мобиль СХЦ 100 масло",
+    "budgetUzs": "84000000",
+    "deadline": "2026-10-14T18:59:59.000Z",
+    "publishedAt": null,
+    "hasDocuments": true,
+    "documents": null,
+    "documentsPreview": [
+      {
+        "name": "26521138016123 (3).pdf",
+        "type": "pdf"
+      }
+    ],
+    "lotDetails": {
+      "qty": 200,
+      "unit": "кг",
+      "unitPrice": 420000
+    }
+  }
+}

@@ -1,0 +1,58 @@
+schema_version = 1
+
+[sources.icppa-xarid-tender]
+timezone = "Asia/Tashkent"
+timeout_seconds = 20
+check_interval_seconds = 1800
+rematch_fields = ["title", "description", "buyer", "location", "deadline", "value", "currency", "status"]
+
+[sources.icppa-xarid-tender.health]
+required_fields = ["buyer", "value", "currency", "status", "source_url"]
+# Titles may legitimately be null. Preserve them; require some actual object text.
+required_any_of = [["title", "description"]]
+allow_empty = false
+max_executed_steps = 100000
+
+[sources.icppa-xarid-tender.validity]
+excluded_statuses = ["draft", "closed", "cancelled", "expired", "deleted"]
+exclude_expired = true
+
+[sources.icppa-xarid-tender.normalization]
+parse_failure_policy = "reject"
+date_only_deadline = "reject"
+
+[sources.icppa-xarid-tender.calibration]
+version = "icppa-public-api-enrichment-observation-v2"
+status = "provisional"
+evidence_references = ["docs/sources/ICPPA.md", "tests/fixtures/icppa/README.md"]
+full_inventory_supported = false
+expected_mode = "incremental"
+completion_signals = ["final_page"]
+minimum_pages = 1
+require_reported_total = true
+empty_policy = "block"
+maximum_malformed_ratio = 0
+maximum_duplicate_ratio = 0
+# Anonymous endpoints require no session. No invented expiry/maintenance signatures.
+
+[sources.icppa-xarid-tender.calibration.freshness]
+basis = "observed"
+max_age_seconds = 3600
+aging_after_seconds = 1800
+timestamp_meaning = "Collector retrieved these individual public API records during this sweep; this is observation recency, not an inventory update timestamp or verification of unseen records."
+
+[sources.icppa-xarid-tender.field_change_policy]
+title = "REMATCH"
+description = "REMATCH"
+buyer = "REMATCH"
+location = "REMATCH"
+deadline = "REMATCH"
+value = "REMATCH"
+currency = "REMATCH"
+status = "REMATCH"
+source_url = "TRACK"
+published_at = "TRACK"
+lotStatuses = "VOLATILE"
+analysisInfo = "VOLATILE"
+paidAmount = "IGNORE"
+savedPercent = "VOLATILE"

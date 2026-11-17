@@ -1,0 +1,37 @@
+{
+  "name": "quarry-clearwork",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "check": "tsc --noEmit && eslint src tests && prettier --check src tests *.ts *.json *.mjs index.html",
+    "format": "prettier --write src tests *.ts *.json *.mjs index.html",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@tabler/icons-react": "^3.35.0",
+    "@tanstack/react-query": "^5.90.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/react": "^16.0.0",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "axe-core": "^4.14.0",
+    "eslint": "^10.12.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "jsdom": "^26.0.0",
+    "openapi-typescript": "^7.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.9.0",
+    "typescript-eslint": "^8.71.2",
+    "vite": "^7.0.0",
+    "vitest": "^3.2.0"
+  }
+}

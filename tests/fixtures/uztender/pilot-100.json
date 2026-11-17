@@ -1,0 +1,398 @@
+{
+  "schema_version": 1,
+  "source_id": "uztender",
+  "version": "codex-2026-10-12-pilot-100-v1",
+  "steps": [
+    {
+      "type": "transform",
+      "parameters": {
+        "name": "identity",
+        "input": 0,
+        "arguments": {},
+        "output": "offset",
+        "emit": false
+      },
+      "steps": [],
+      "else_steps": []
+    },
+    {
+      "type": "transform",
+      "parameters": {
+        "name": "identity",
+        "input": false,
+        "arguments": {},
+        "output": "done",
+        "emit": false
+      },
+      "steps": [],
+      "else_steps": []
+    },
+    {
+      "type": "loop",
+      "parameters": {
+        "items": null,
+        "variable": "page",
+        "until": {
+          "$ref": "done"
+        },
+        "max_iterations": 1
+      },
+      "steps": [
+        {
+          "type": "http_request",
+          "parameters": {
+            "url": "https://api.uztender.com/api/catalog",
+            "method": "GET",
+            "headers": {
+              "Accept": "application/json"
+            },
+            "query": {
+              "limit": 100,
+              "offset": {
+                "$ref": "offset"
+              }
+            },
+            "body": null,
+            "output": "listing_response",
+            "accepted_statuses": [
+              200
+            ],
+            "encoding": "utf-8",
+            "inventory_page": false
+          },
+          "steps": [],
+          "else_steps": []
+        },
+        {
+          "type": "extract",
+          "parameters": {
+            "input": {
+              "$ref": "listing_response.body"
+            },
+            "format": "json",
+            "selector": "data",
+            "fields": {},
+            "namespaces": {},
+            "output": "listing_rows",
+            "emit": false,
+            "require_match": true
+          },
+          "steps": [],
+          "else_steps": []
+        },
+        {
+          "type": "extract",
+          "parameters": {
+            "input": {
+              "$ref": "listing_response.body"
+            },
+            "format": "json",
+            "selector": "meta.pagination.total",
+            "fields": {},
+            "namespaces": {},
+            "output": "expected_total",
+            "emit": false,
+            "require_match": true
+          },
+          "steps": [],
+          "else_steps": []
+        },
+        {
+          "type": "loop",
+          "parameters": {
+            "items": {
+              "$ref": "listing_rows"
+            },
+            "variable": "tender",
+            "until": null,
+            "max_iterations": 100
+          },
+          "steps": [
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "join_fields",
+                "input": [
+                  {
+                    "$ref": "tender.slug"
+                  },
+                  {
+                    "$ref": "tender.id"
+                  }
+                ],
+                "arguments": {
+                  "separator": "-"
+                },
+                "output": "public_slug",
+                "emit": false
+              },
+              "steps": [],
+              "else_steps": []
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "urljoin",
+                "input": {
+                  "$ref": "public_slug"
+                },
+                "arguments": {
+                  "base": "https://uztender.com/tender/"
+                },
+                "output": "source_url",
+                "emit": false
+              },
+              "steps": [],
+              "else_steps": []
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "urljoin",
+                "input": {
+                  "$ref": "tender.id"
+                },
+                "arguments": {
+                  "base": "https://api.uztender.com/api/catalog/"
+                },
+                "output": "detail_url",
+                "emit": false
+              },
+              "steps": [],
+              "else_steps": []
+            },
+            {
+              "type": "http_request",
+              "parameters": {
+                "url": {
+                  "$ref": "detail_url"
+                },
+                "method": "GET",
+                "headers": {
+                  "Accept": "application/json"
+                },
+                "query": {
+                  "lang": "ru"
+                },
+                "body": null,
+                "output": "detail_response",
+                "accepted_statuses": [
+                  200
+                ],
+                "encoding": "utf-8",
+                "inventory_page": false
+              },
+              "steps": [],
+              "else_steps": []
+            },
+            {
+              "type": "extract",
+              "parameters": {
+                "input": {
+                  "$ref": "detail_response.body"
+                },
+                "format": "json",
+                "selector": "data",
+                "fields": {
+                  "ikpu": {
+                    "selector": "ikpu",
+                    "attribute": null,
+                    "required": false
+                  },
+                  "buyer": {
+                    "selector": "buyerName",
+                    "attribute": null,
+                    "required": false
+                  },
+                  "scope": {
+                    "selector": "scope",
+                    "attribute": null,
+                    "required": false
+                  },
+                  "title": {
+                    "selector": "title",
+                    "attribute": null,
+                    "required": true
+                  },
+                  "value": {
+                    "selector": "budgetUzs",
+                    "attribute": null,
+                    "required": false
+                  },
+                  "status": {
+                    "selector": "status",
+                    "attribute": null,
+                    "required": false
+                  },
+                  "summary": {
+                    "selector": "summary",
+                    "attribute": null,
+                    "required": false
+                  },
+                  "deadline": {
+                    "selector": "deadline",
+                    "attribute": null,
+                    "required": false
+                  },
+                  "location": {
+                    "selector": "region.name",
+                    "attribute": null,
+                    "required": false
+                  },
+                  "categories": {
+                    "selector": "categories",
+                    "attribute": null,
+                    "required": false
+                  },
+                  "description": {
+                    "selector": "description",
+                    "attribute": null,
+                    "required": false
+                  },
+                  "lot_details": {
+                    "selector": "lotDetails",
+                    "attribute": null,
+                    "required": false
+                  },
+                  "notice_type": {
+                    "selector": "noticeType",
+                    "attribute": null,
+                    "required": false
+                  },
+                  "product_items": {
+                    "selector": "lotDetails.positions",
+                    "attribute": null,
+                    "required": false
+                  },
+                  "external_tender_id": {
+                    "selector": "id",
+                    "attribute": null,
+                    "required": true
+                  },
+                  "published_at": {
+                    "selector": "publishedAt",
+                    "attribute": null,
+                    "required": false
+                  },
+                  "documents": {
+                    "selector": "documents",
+                    "attribute": null,
+                    "required": false
+                  },
+                  "document_previews": {
+                    "selector": "documentsPreview",
+                    "attribute": null,
+                    "required": false
+                  },
+                  "has_documents": {
+                    "selector": "hasDocuments",
+                    "attribute": null,
+                    "required": false
+                  }
+                },
+                "namespaces": {},
+                "output": "tender_record",
+                "emit": false,
+                "require_match": true
+              },
+              "steps": [],
+              "else_steps": []
+            },
+            {
+              "type": "transform",
+              "parameters": {
+                "name": "merge_fields",
+                "input": {
+                  "$ref": "tender_record"
+                },
+                "arguments": {
+                  "fields": {
+                    "source_url": {
+                      "$ref": "source_url"
+                    },
+                    "currency": "UZS"
+                  }
+                },
+                "output": "tender_observation",
+                "emit": true
+              },
+              "steps": [],
+              "else_steps": []
+            }
+          ],
+          "else_steps": []
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "name": "length",
+            "input": {
+              "$ref": "listing_rows"
+            },
+            "arguments": {},
+            "output": "page_count",
+            "emit": false
+          },
+          "steps": [],
+          "else_steps": []
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "name": "add",
+            "input": {
+              "$ref": "offset"
+            },
+            "arguments": {
+              "other": {
+                "$ref": "page_count"
+              }
+            },
+            "output": "page_end",
+            "emit": false
+          },
+          "steps": [],
+          "else_steps": []
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "name": "identity",
+            "input": true,
+            "arguments": {},
+            "output": "done",
+            "emit": false
+          },
+          "steps": [],
+          "else_steps": []
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "name": "add",
+            "input": {
+              "$ref": "offset"
+            },
+            "arguments": {
+              "other": 100
+            },
+            "output": "offset",
+            "emit": false
+          },
+          "steps": [],
+          "else_steps": []
+        }
+      ],
+      "else_steps": []
+    }
+  ],
+  "coverage": "incremental",
+  "checkpoint": null,
+  "expected_count": {
+    "$ref": "page_count"
+  },
+  "data_as_of": null,
+  "completion": {
+    "$ref": "done"
+  }
+}

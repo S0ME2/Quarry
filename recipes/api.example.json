@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "source_id": "example",
+  "version": "1",
+  "coverage": "full",
+  "completion": {
+    "$ref": "done"
+  },
+  "expected_count": {
+    "$ref": "document.total"
+  },
+  "checkpoint": {
+    "$ref": "document.modified_since"
+  },
+  "data_as_of": {
+    "$ref": "document.generated_at"
+  },
+  "steps": [
+    {
+      "type": "transform",
+      "parameters": {
+        "name": "identity",
+        "input": "https://source.invalid/api/tenders",
+        "output": "url"
+      }
+    },
+    {
+      "type": "loop",
+      "parameters": {
+        "until": {
+          "$ref": "done"
+        }
+      },
+      "steps": [
+        {
+          "type": "http_request",
+          "parameters": {
+            "url": {
+              "$ref": "url"
+            },
+            "inventory_page": true
+          }
+        },
+        {
+          "type": "extract",
+          "parameters": {
+            "format": "json",
+            "input": {
+              "$ref": "response.body"
+            },
+            "output": "document"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "name": "get",
+            "input": {
+              "$ref": "document"
+            },
+            "arguments": {
+              "path": "items"
+            },
+            "emit": true
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "name": "get",
+            "input": {
+              "$ref": "document"
+            },
+            "arguments": {
+              "path": "next"
+            },
+            "output": "url"
+          }
+        },
+        {
+          "type": "transform",
+          "parameters": {
+            "name": "equals",
+            "input": {
+              "$ref": "url"
+            },
+            "arguments": {
+              "other": null
+            },
+            "output": "done"
+          }
+        }
+      ]
+    }
+  ],
+  "completion_signal": {
+    "kind": "next_cursor_absent",
+    "value": {
+      "$ref": "document.next"
+    }
+  },
+  "inventory_total": {
+    "$ref": "document.total"
+  }
+}

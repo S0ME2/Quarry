@@ -1,0 +1,2052 @@
+[
+  {
+    "listing": {
+      "contractDate": null,
+      "contractStatus": "IN_PROCESS",
+      "contractSumma": null,
+      "contractType": 0,
+      "date": "2026-09-25",
+      "districtId": 4,
+      "districtName": "Chilonzor tumani",
+      "enktCodes": "",
+      "enktNames": "",
+      "lotId": 26111006515078,
+      "lotStatus": "IN_PROCESS",
+      "lotStatuses": [
+        {
+          "isCompleted": true,
+          "name": "E'lon",
+          "order": 1
+        },
+        {
+          "isCompleted": false,
+          "name": "Shartnoma shakllandi",
+          "order": 2
+        },
+        {
+          "isCompleted": false,
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3
+        },
+        {
+          "isCompleted": false,
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4
+        },
+        {
+          "isCompleted": false,
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5
+        },
+        {
+          "isCompleted": false,
+          "name": "To'lov to'liq to'landi",
+          "order": 6
+        }
+      ],
+      "organ": "Sanitized buyer missing 1",
+      "organInn": "200000000",
+      "organizationType": "BUDGET",
+      "platformName": "xarid.uzex.uz",
+      "purchaseType": "TENDER",
+      "regDate": null,
+      "regionId": 1,
+      "regionName": "Toshkent shahri",
+      "startDate": "2026-09-25",
+      "startSumma": 580000000000,
+      "vendor": null,
+      "vendorInn": null
+    },
+    "detail": {
+      "lotId": 26111006515078,
+      "lotStatus": "IN_PROCESS",
+      "contractStatus": null,
+      "startAmount": 580000000000,
+      "paidAmount": 0,
+      "contractAmount": null,
+      "savedAmount": null,
+      "savedPercent": null,
+      "avansAmount": 0,
+      "contractDate": null,
+      "startDate": "2026-09-25",
+      "purchaseType": "TENDER",
+      "platformName": "xarid.uzex.uz",
+      "orgInfo": {
+        "name": "Sanitized buyer missing 1",
+        "inn": "200000000",
+        "code": "00000023988",
+        "state": "3"
+      },
+      "vendorInfo": null,
+      "organizationType": "BUDGET",
+      "products": [
+        {
+          "code": null,
+          "name": null,
+          "nameCrl": null,
+          "nameRu": null,
+          "amount": 1000.0,
+          "price": 316150000,
+          "summa": 316150000000,
+          "expense": "44252411",
+          "expenseName": "Tibbiy buyumlar",
+          "unit": null,
+          "type": null
+        },
+        {
+          "code": null,
+          "name": null,
+          "nameCrl": null,
+          "nameRu": null,
+          "amount": 1000.0,
+          "price": 263850000,
+          "summa": 263850000000,
+          "expense": "44252411",
+          "expenseName": "Tibbiy buyumlar",
+          "unit": null,
+          "type": null
+        }
+      ],
+      "lotStatuses": [
+        {
+          "name": "E'lon",
+          "order": 1,
+          "isCompleted": true
+        },
+        {
+          "name": "Shartnoma shakllandi",
+          "order": 2,
+          "isCompleted": false
+        },
+        {
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3,
+          "isCompleted": false
+        },
+        {
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4,
+          "isCompleted": false
+        },
+        {
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5,
+          "isCompleted": false
+        },
+        {
+          "name": "To'lov to'liq to'landi",
+          "order": 6,
+          "isCompleted": false
+        }
+      ],
+      "cause": null,
+      "analysisInfo": {
+        "isBlacklist": false,
+        "isSingleVendor": false,
+        "isBudgetCustomer": true,
+        "cause": null
+      }
+    },
+    "operator": {
+      "id": 515078,
+      "display_no": "26111006515078",
+      "customer_tin": "200000000",
+      "type_name": "Tender",
+      "start_cost": 5800000000.0,
+      "currency_codeabc": "UZS",
+      "status_id": 4,
+      "status_name": "Eʼlon qilindi",
+      "end_date": "2026-10-16T18:59:06",
+      "start_date": "2026-09-29T18:59:06",
+      "description": null,
+      "addon_description": "Davlat byudjeti, Markaz huzuridagi onkologik va gematologik kasalliklarga chalingan bolalarni sog‘lomlashtirishga ko‘maklashish jamg‘armasi mablag‘lari.",
+      "technical_description": "Texnik topshiriq. Техническое задание.",
+      "budget_products": "[{\"Product_Name\": \"Одноразовый комплект для обработки донорской плазмы\", \"Description\": \"Ultrabinafsha nurlanish apparati uchun plazma uchun bir martalik Mirasol to‘plami\", \"Quantity\": 1000, \"Unit_Name\": null}, {\"Product_Name\": \"Одноразовый комплект для обработки тромбоцитов\", \"Description\": \"Ultrabinafsha nurlanish apparati uchun trombotsitlar uchun bir martalik Mirasol to‘plami\", \"Quantity\": 1000, \"Unit_Name\": null}]",
+      "rest_time": 956250,
+      "tech_file_path": "/files/2026/9/25/202609251008601809.pdf",
+      "tech_file_name": "202609251008601809.pdf",
+      "tech_file_ext": "PDF"
+    },
+    "title_rows": [
+      {
+        "id": 515078,
+        "name": "“Bolalar onkologiyasi, gematologiyasi va immunologiyasi ilmiy-amaliy tibbiyot markazi ehtiyoji uchun tibbiy buyumlarni xarid qilish.” (расходники плазма и тромбоконцетраты)"
+      }
+    ]
+  },
+  {
+    "listing": {
+      "contractDate": null,
+      "contractStatus": "IN_PROCESS",
+      "contractSumma": null,
+      "contractType": 0,
+      "date": "2026-09-24",
+      "districtId": 4,
+      "districtName": "Chilonzor tumani",
+      "enktCodes": "",
+      "enktNames": "",
+      "lotId": 26111006514370,
+      "lotStatus": "IN_PROCESS",
+      "lotStatuses": [
+        {
+          "isCompleted": true,
+          "name": "E'lon",
+          "order": 1
+        },
+        {
+          "isCompleted": false,
+          "name": "Shartnoma shakllandi",
+          "order": 2
+        },
+        {
+          "isCompleted": false,
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3
+        },
+        {
+          "isCompleted": false,
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4
+        },
+        {
+          "isCompleted": false,
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5
+        },
+        {
+          "isCompleted": false,
+          "name": "To'lov to'liq to'landi",
+          "order": 6
+        }
+      ],
+      "organ": "Sanitized buyer missing 2",
+      "organInn": "200000001",
+      "organizationType": "BUDGET",
+      "platformName": "xarid.uzex.uz",
+      "purchaseType": "TENDER",
+      "regDate": null,
+      "regionId": 1,
+      "regionName": "Toshkent shahri",
+      "startDate": "2026-09-24",
+      "startSumma": 815500000000,
+      "vendor": null,
+      "vendorInn": null
+    },
+    "detail": {
+      "lotId": 26111006514370,
+      "lotStatus": "IN_PROCESS",
+      "contractStatus": null,
+      "startAmount": 815500000000,
+      "paidAmount": 0,
+      "contractAmount": null,
+      "savedAmount": null,
+      "savedPercent": null,
+      "avansAmount": 0,
+      "contractDate": null,
+      "startDate": "2026-09-24",
+      "purchaseType": "TENDER",
+      "platformName": "xarid.uzex.uz",
+      "orgInfo": {
+        "name": "Sanitized buyer missing 2",
+        "inn": "200000001",
+        "code": "00000000094",
+        "state": "3"
+      },
+      "vendorInfo": null,
+      "organizationType": "BUDGET",
+      "products": [
+        {
+          "code": null,
+          "name": null,
+          "nameCrl": null,
+          "nameRu": null,
+          "amount": 2500.0,
+          "price": 326200000,
+          "summa": 815500000000,
+          "expense": "44252411",
+          "expenseName": "Tibbiy buyumlar",
+          "unit": null,
+          "type": null
+        }
+      ],
+      "lotStatuses": [
+        {
+          "name": "E'lon",
+          "order": 1,
+          "isCompleted": true
+        },
+        {
+          "name": "Shartnoma shakllandi",
+          "order": 2,
+          "isCompleted": false
+        },
+        {
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3,
+          "isCompleted": false
+        },
+        {
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4,
+          "isCompleted": false
+        },
+        {
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5,
+          "isCompleted": false
+        },
+        {
+          "name": "To'lov to'liq to'landi",
+          "order": 6,
+          "isCompleted": false
+        }
+      ],
+      "cause": null,
+      "analysisInfo": {
+        "isBlacklist": false,
+        "isSingleVendor": false,
+        "isBudgetCustomer": true,
+        "cause": null
+      }
+    },
+    "operator": {
+      "id": 514370,
+      "display_no": "26111006514370",
+      "customer_tin": "200000001",
+      "type_name": "Tender",
+      "start_cost": 8155000000.0,
+      "currency_codeabc": "UZS",
+      "status_id": 4,
+      "status_name": "Eʼlon qilindi",
+      "end_date": "2026-10-16T16:01:07",
+      "start_date": "2026-09-29T16:01:07",
+      "description": null,
+      "addon_description": "“Mirasol Pathogen Reduction Technology System” tizimida trombotsitlar konsentratidagi patogenlarni ultrabinafsha nurlanish yordamida inaktivatsiya qilish uchun mo‘ljallangan bir martalik sarf materiallari",
+      "technical_description": "Техническое задание",
+      "budget_products": "[{\"Product_Name\": \"Одноразовый комплект для обработки тромбоцитов\", \"Description\": \"“Mirasol Pathogen Reduction Technology System” tizimida trombotsitlar konsentratidagi patogenlarni ultrabinafsha nurlanish yordamida inaktivatsiya qilish uchun mo‘ljallangan bir martalik sarf \\r\\nmateriallari\\r\\n\", \"Quantity\": 2500, \"Unit_Name\": null}]",
+      "rest_time": 945572,
+      "tech_file_path": "/files/2026/9/19/202609193045408333.pdf",
+      "tech_file_name": "202609193045408333.pdf",
+      "tech_file_ext": "PDF"
+    },
+    "title_rows": [
+      {
+        "id": 514370,
+        "name": "“Mirasol Pathogen Reduction Technology System” tizimida trombotsitlar konsentratidagi patogenlarni ultrabinafsha nurlanish yordamida inaktivatsiya qilish uchun mo‘ljallangan bir martalik sarf material"
+      }
+    ]
+  },
+  {
+    "listing": {
+      "contractDate": null,
+      "contractStatus": "IN_PROCESS",
+      "contractSumma": null,
+      "contractType": 0,
+      "date": "2026-09-19",
+      "districtId": 4,
+      "districtName": "Chilonzor tumani",
+      "enktCodes": "",
+      "enktNames": "",
+      "lotId": 26111006512875,
+      "lotStatus": "IN_PROCESS",
+      "lotStatuses": [
+        {
+          "isCompleted": true,
+          "name": "E'lon",
+          "order": 1
+        },
+        {
+          "isCompleted": false,
+          "name": "Shartnoma shakllandi",
+          "order": 2
+        },
+        {
+          "isCompleted": false,
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3
+        },
+        {
+          "isCompleted": false,
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4
+        },
+        {
+          "isCompleted": false,
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5
+        },
+        {
+          "isCompleted": false,
+          "name": "To'lov to'liq to'landi",
+          "order": 6
+        }
+      ],
+      "organ": "Sanitized buyer missing 3",
+      "organInn": "200000002",
+      "organizationType": "BUDGET",
+      "platformName": "xarid.uzex.uz",
+      "purchaseType": "TENDER",
+      "regDate": null,
+      "regionId": 1,
+      "regionName": "Toshkent shahri",
+      "startDate": "2026-09-19",
+      "startSumma": 705000000000,
+      "vendor": null,
+      "vendorInn": null
+    },
+    "detail": {
+      "lotId": 26111006512875,
+      "lotStatus": "IN_PROCESS",
+      "contractStatus": null,
+      "startAmount": 705000000000,
+      "paidAmount": 0,
+      "contractAmount": null,
+      "savedAmount": null,
+      "savedPercent": null,
+      "avansAmount": 0,
+      "contractDate": null,
+      "startDate": "2026-09-19",
+      "purchaseType": "TENDER",
+      "platformName": "xarid.uzex.uz",
+      "orgInfo": {
+        "name": "Sanitized buyer missing 3",
+        "inn": "200000002",
+        "code": "00000000094",
+        "state": "3"
+      },
+      "vendorInfo": null,
+      "organizationType": "BUDGET",
+      "products": [],
+      "lotStatuses": [
+        {
+          "name": "E'lon",
+          "order": 1,
+          "isCompleted": true
+        },
+        {
+          "name": "Shartnoma shakllandi",
+          "order": 2,
+          "isCompleted": false
+        },
+        {
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3,
+          "isCompleted": false
+        },
+        {
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4,
+          "isCompleted": false
+        },
+        {
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5,
+          "isCompleted": false
+        },
+        {
+          "name": "To'lov to'liq to'landi",
+          "order": 6,
+          "isCompleted": false
+        }
+      ],
+      "cause": null,
+      "analysisInfo": {
+        "isBlacklist": false,
+        "isSingleVendor": false,
+        "isBudgetCustomer": true,
+        "cause": null
+      }
+    },
+    "operator": {
+      "id": 512875,
+      "display_no": "26111006512875",
+      "customer_tin": "200000002",
+      "type_name": "Tender",
+      "start_cost": 7050000000.0,
+      "currency_codeabc": "UZS",
+      "status_id": 4,
+      "status_name": "Eʼlon qilindi",
+      "end_date": "2026-10-12T16:40:39",
+      "start_date": "2026-09-23T16:40:39",
+      "description": null,
+      "addon_description": "“Mirasol Pathogen Reduction Technology System” tizimida yangi muzlatilgan qon plazmasidagi patogenlarni ultrabinafsha nurlanish yordamida inaktivatsiya qilish uchun mo‘ljallangan bir martalik sarf materiallari.",
+      "technical_description": "Техническое задание",
+      "budget_products": "[{\"Product_Name\": \"Одноразовый комплект для обработки донорской плазмы\", \"Description\": \"“Mirasol Pathogen Reduction Technology System” tizimida yangi muzlatilgan qon plazmasidagi patogenlarni ultrabinafsha nurlanish yordamida inaktivatsiya qilish uchun mo‘ljallangan bir martalik sarf materiallari\", \"Quantity\": 2500, \"Unit_Name\": null}]",
+      "rest_time": 602343,
+      "tech_file_path": "/files/2026/9/19/202609192048425470.pdf",
+      "tech_file_name": "202609192048425470.pdf",
+      "tech_file_ext": "PDF"
+    },
+    "title_rows": [
+      {
+        "id": 512875,
+        "name": "“Mirasol Pathogen Reduction Technology System” tizimida yangi muzlatilgan qon plazmasidagi patogenlarni ultrabinafsha nurlanish yordamida inaktivatsiya qilish uchun mo‘ljallangan bir martalik sarf mat"
+      }
+    ]
+  },
+  {
+    "listing": {
+      "contractDate": null,
+      "contractStatus": "IN_PROCESS",
+      "contractSumma": null,
+      "contractType": 0,
+      "date": "2026-09-18",
+      "districtId": 11,
+      "districtName": "Yashnobod tumani",
+      "enktCodes": "",
+      "enktNames": "",
+      "lotId": 26111006512454,
+      "lotStatus": "IN_PROCESS",
+      "lotStatuses": [
+        {
+          "isCompleted": true,
+          "name": "E'lon",
+          "order": 1
+        },
+        {
+          "isCompleted": false,
+          "name": "Shartnoma shakllandi",
+          "order": 2
+        },
+        {
+          "isCompleted": false,
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3
+        },
+        {
+          "isCompleted": false,
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4
+        },
+        {
+          "isCompleted": false,
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5
+        },
+        {
+          "isCompleted": false,
+          "name": "To'lov to'liq to'landi",
+          "order": 6
+        }
+      ],
+      "organ": "Sanitized buyer missing 4",
+      "organInn": "200000003",
+      "organizationType": "BUDGET",
+      "platformName": "xarid.uzex.uz",
+      "purchaseType": "TENDER",
+      "regDate": null,
+      "regionId": 1,
+      "regionName": "Toshkent shahri",
+      "startDate": "2026-09-18",
+      "startSumma": 456073417800,
+      "vendor": null,
+      "vendorInn": null
+    },
+    "detail": {
+      "lotId": 26111006512454,
+      "lotStatus": "IN_PROCESS",
+      "contractStatus": null,
+      "startAmount": 456073417800,
+      "paidAmount": 0,
+      "contractAmount": null,
+      "savedAmount": null,
+      "savedPercent": null,
+      "avansAmount": 0,
+      "contractDate": null,
+      "startDate": "2026-09-18",
+      "purchaseType": "TENDER",
+      "platformName": "xarid.uzex.uz",
+      "orgInfo": {
+        "name": "Sanitized buyer missing 4",
+        "inn": "200000003",
+        "code": "85000000002",
+        "state": "3"
+      },
+      "vendorInfo": null,
+      "organizationType": "BUDGET",
+      "products": [
+        {
+          "code": null,
+          "name": null,
+          "nameCrl": null,
+          "nameRu": null,
+          "amount": 726.0,
+          "price": 628200300,
+          "summa": 456073417800,
+          "expense": "44252410",
+          "expenseName": "Dori vositalari",
+          "unit": null,
+          "type": null
+        }
+      ],
+      "lotStatuses": [
+        {
+          "name": "E'lon",
+          "order": 1,
+          "isCompleted": true
+        },
+        {
+          "name": "Shartnoma shakllandi",
+          "order": 2,
+          "isCompleted": false
+        },
+        {
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3,
+          "isCompleted": false
+        },
+        {
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4,
+          "isCompleted": false
+        },
+        {
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5,
+          "isCompleted": false
+        },
+        {
+          "name": "To'lov to'liq to'landi",
+          "order": 6,
+          "isCompleted": false
+        }
+      ],
+      "cause": null,
+      "analysisInfo": {
+        "isBlacklist": false,
+        "isSingleVendor": false,
+        "isBudgetCustomer": true,
+        "cause": null
+      }
+    },
+    "operator": {
+      "id": 512454,
+      "display_no": "26111006512454",
+      "customer_tin": "200000003",
+      "type_name": "Tender",
+      "start_cost": 4560734178.0,
+      "currency_codeabc": "UZS",
+      "status_id": 4,
+      "status_name": "Eʼlon qilindi",
+      "end_date": "2026-10-09T14:21:38",
+      "start_date": "2026-09-22T14:21:38",
+      "description": null,
+      "addon_description": "Роmре tashxisi tasdiqlangan bemorlarda irsiy fеrmепtаtiv yetishmovchilikni davolash uchun рrераrаt. Роmре kasalligi - bu lizosomal gidrolaza, kislotali alglyukozid aza аlfа rekombinant inson kislotali alfa-glyukozidazasi (rhGАА) yetishmovchiligi bilan tavsiflangan kam uchraydigan, progressiv metabolik miopatiya bо'lib, davolanmagan hollarda оg'ir asoratlar va o'limga olib kelishi mumkin. Alglyukozi daza-аlfа lizosomal kislotali alfaglyukozidaza fermenti yetishmovchiligini qoplashga yordam beradi, bu esa yurak va skelet mushaklari (shu jumladan nafas olish mushaklari) funksiyasining barqarorlashuvi yoki tiklanishiga olib keladi, biroq molekulaning kattaligi va gematoensefalik to'siq tufayli uning markaziy asab tizimiga kirib borishi ehtimoldan yiroq.",
+      "technical_description": "ТЗ",
+      "budget_products": "[{\"Product_Name\": \"Лекарственные препараты\", \"Description\": \"Infuziya uchun eritma\\ntayyorlashga mо' lj allangan konsentrat uchun\\nliofilizat\", \"Quantity\": 726, \"Unit_Name\": null}]",
+      "rest_time": 334803,
+      "tech_file_path": "tender/user-files/2026/8/25/3a5a63ca7c354d6da52379b97b9730c0.pdf",
+      "tech_file_name": "3a5a63ca7c354d6da52379b97b9730c0.pdf",
+      "tech_file_ext": ".PDF"
+    },
+    "title_rows": [
+      {
+        "id": 512454,
+        "name": "Respublika Ixtisoslashtirilgan Pediatriya ilmiy-amaliy tibbiyot markazi uchun Alglyukozidaza-alfa 50 mg (ta'sir birligi) dori vositasini xarid qilish"
+      }
+    ]
+  },
+  {
+    "listing": {
+      "contractDate": null,
+      "contractStatus": "IN_PROCESS",
+      "contractSumma": null,
+      "contractType": 0,
+      "date": "2026-09-17",
+      "districtId": 10,
+      "districtName": "Olmazor tumani",
+      "enktCodes": "",
+      "enktNames": "",
+      "lotId": 26111006512175,
+      "lotStatus": "IN_PROCESS",
+      "lotStatuses": [
+        {
+          "isCompleted": true,
+          "name": "E'lon",
+          "order": 1
+        },
+        {
+          "isCompleted": false,
+          "name": "Shartnoma shakllandi",
+          "order": 2
+        },
+        {
+          "isCompleted": false,
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3
+        },
+        {
+          "isCompleted": false,
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4
+        },
+        {
+          "isCompleted": false,
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5
+        },
+        {
+          "isCompleted": false,
+          "name": "To'lov to'liq to'landi",
+          "order": 6
+        }
+      ],
+      "organ": "Sanitized buyer missing 5",
+      "organInn": "200000004",
+      "organizationType": "BUDGET",
+      "platformName": "xarid.uzex.uz",
+      "purchaseType": "TENDER",
+      "regDate": null,
+      "regionId": 1,
+      "regionName": "Toshkent shahri",
+      "startDate": "2026-09-17",
+      "startSumma": 493153560000,
+      "vendor": null,
+      "vendorInn": null
+    },
+    "detail": {
+      "lotId": 26111006512175,
+      "lotStatus": "IN_PROCESS",
+      "contractStatus": null,
+      "startAmount": 493153560000,
+      "paidAmount": 0,
+      "contractAmount": null,
+      "savedAmount": null,
+      "savedPercent": null,
+      "avansAmount": 0,
+      "contractDate": null,
+      "startDate": "2026-09-17",
+      "purchaseType": "TENDER",
+      "platformName": "xarid.uzex.uz",
+      "orgInfo": {
+        "name": "Sanitized buyer missing 5",
+        "inn": "200000004",
+        "code": "00000005491",
+        "state": "3"
+      },
+      "vendorInfo": null,
+      "organizationType": "BUDGET",
+      "products": [
+        {
+          "code": null,
+          "name": null,
+          "nameCrl": null,
+          "nameRu": null,
+          "amount": 1.0,
+          "price": 493153560000,
+          "summa": 493153560000,
+          "expense": "44354990",
+          "expenseName": "Boshqa texnika",
+          "unit": null,
+          "type": null
+        }
+      ],
+      "lotStatuses": [
+        {
+          "name": "E'lon",
+          "order": 1,
+          "isCompleted": true
+        },
+        {
+          "name": "Shartnoma shakllandi",
+          "order": 2,
+          "isCompleted": false
+        },
+        {
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3,
+          "isCompleted": false
+        },
+        {
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4,
+          "isCompleted": false
+        },
+        {
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5,
+          "isCompleted": false
+        },
+        {
+          "name": "To'lov to'liq to'landi",
+          "order": 6,
+          "isCompleted": false
+        }
+      ],
+      "cause": null,
+      "analysisInfo": {
+        "isBlacklist": false,
+        "isSingleVendor": false,
+        "isBudgetCustomer": true,
+        "cause": null
+      }
+    },
+    "operator": {
+      "id": 512175,
+      "display_no": "26111006512175",
+      "customer_tin": "200000004",
+      "type_name": "Tender",
+      "start_cost": 4931535600.0,
+      "currency_codeabc": "UZS",
+      "status_id": 4,
+      "status_name": "Eʼlon qilindi",
+      "end_date": "2026-10-14T10:42:11",
+      "start_date": "2026-09-22T10:42:11",
+      "description": null,
+      "addon_description": "Батафсил тавсифи ва талаблар техник топшириқда ва тендер бўйича харид қилиш хужжатларида келтирилган/ Приведено и подробно указано в закупочной документации по тендеру и техническом задании",
+      "technical_description": "Техник топшириқ/Техническое задание",
+      "budget_products": "[{\"Product_Name\": \"Эталон плотности потока солнечной радиации\", \"Description\": \"Қуёш радиацияси оқими зичлиги эталонини харид қилиш. Техник параметрлар батафсил техник топшириқда ва харид хужжатларида келтирилган. / Эталон плотности потока солнечной радиации. Подробное описание и технические требования приведены в техническом задании и закупочной документации\\r\\n\\r\\n\", \"Quantity\": 1, \"Unit_Name\": null}]",
+      "rest_time": 753635,
+      "tech_file_path": "/files/2026/9/14/202609145257423498.pdf",
+      "tech_file_name": "202609145257423498.pdf",
+      "tech_file_ext": "PDF"
+    },
+    "title_rows": [
+      {
+        "id": 512175,
+        "name": "Қуёш радиацияси оқими зичлиги эталонини харид қилиш/Закупка эталона плотности потока солнечной радиации"
+      }
+    ]
+  },
+  {
+    "listing": {
+      "contractDate": null,
+      "contractStatus": "IN_PROCESS",
+      "contractSumma": null,
+      "contractType": 0,
+      "date": "2026-09-14",
+      "districtId": 10,
+      "districtName": "Olmazor tumani",
+      "enktCodes": "",
+      "enktNames": "",
+      "lotId": 26111006511692,
+      "lotStatus": "IN_PROCESS",
+      "lotStatuses": [
+        {
+          "isCompleted": true,
+          "name": "E'lon",
+          "order": 1
+        },
+        {
+          "isCompleted": false,
+          "name": "Shartnoma shakllandi",
+          "order": 2
+        },
+        {
+          "isCompleted": false,
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3
+        },
+        {
+          "isCompleted": false,
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4
+        },
+        {
+          "isCompleted": false,
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5
+        },
+        {
+          "isCompleted": false,
+          "name": "To'lov to'liq to'landi",
+          "order": 6
+        }
+      ],
+      "organ": "Sanitized buyer missing 6",
+      "organInn": "200000005",
+      "organizationType": "BUDGET",
+      "platformName": "xarid.uzex.uz",
+      "purchaseType": "TENDER",
+      "regDate": null,
+      "regionId": 1,
+      "regionName": "Toshkent shahri",
+      "startDate": "2026-09-14",
+      "startSumma": 871553711266,
+      "vendor": null,
+      "vendorInn": null
+    },
+    "detail": {
+      "lotId": 26111006511692,
+      "lotStatus": "IN_PROCESS",
+      "contractStatus": null,
+      "startAmount": 871553711266,
+      "paidAmount": 0,
+      "contractAmount": null,
+      "savedAmount": null,
+      "savedPercent": null,
+      "avansAmount": 0,
+      "contractDate": null,
+      "startDate": "2026-09-14",
+      "purchaseType": "TENDER",
+      "platformName": "xarid.uzex.uz",
+      "orgInfo": {
+        "name": "Sanitized buyer missing 6",
+        "inn": "200000005",
+        "code": "00000005491",
+        "state": "3"
+      },
+      "vendorInfo": null,
+      "organizationType": "BUDGET",
+      "products": [
+        {
+          "code": null,
+          "name": null,
+          "nameCrl": null,
+          "nameRu": null,
+          "amount": 1.0,
+          "price": 871553711266,
+          "summa": 871553711266,
+          "expense": "44354990",
+          "expenseName": "Boshqa texnika",
+          "unit": null,
+          "type": null
+        }
+      ],
+      "lotStatuses": [
+        {
+          "name": "E'lon",
+          "order": 1,
+          "isCompleted": true
+        },
+        {
+          "name": "Shartnoma shakllandi",
+          "order": 2,
+          "isCompleted": false
+        },
+        {
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3,
+          "isCompleted": false
+        },
+        {
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4,
+          "isCompleted": false
+        },
+        {
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5,
+          "isCompleted": false
+        },
+        {
+          "name": "To'lov to'liq to'landi",
+          "order": 6,
+          "isCompleted": false
+        }
+      ],
+      "cause": null,
+      "analysisInfo": {
+        "isBlacklist": false,
+        "isSingleVendor": false,
+        "isBudgetCustomer": true,
+        "cause": null
+      }
+    },
+    "operator": {
+      "id": 511692,
+      "display_no": "26111006511692",
+      "customer_tin": "200000005",
+      "type_name": "Tender",
+      "start_cost": 8715537112.66,
+      "currency_codeabc": "UZS",
+      "status_id": 4,
+      "status_name": "Eʼlon qilindi",
+      "end_date": "2026-10-09T11:40:23",
+      "start_date": "2026-09-18T11:40:23",
+      "description": null,
+      "addon_description": "Батафсил тавсифи ва талаблар техник топшириқда ва тендер бўйича харид қилиш хужжатларида келтирилган/ Приведено и подробно указано в закупочной документации по тендеру и техническом задании",
+      "technical_description": "Техник топшириқ/ТЗ",
+      "budget_products": "[{\"Product_Name\": \"Калибровочный комплекс сейсмометрического оборудования (датчиков)\", \"Description\": \"Сейсмик датчикларини калибрлаш тизими (сейсмовозбудитель)ни харид қилиш. Техник параметрлар батафсил техник топшириқда ва харид хужжатларида келтирилган. / Калибровочный комплекс сейсмометрического оборудования (датчиков). Подробное описание и технические требования приведены в техническом задании и закупочной документации.\", \"Quantity\": 1, \"Unit_Name\": null}]",
+      "rest_time": 325127,
+      "tech_file_path": "/files/2026/9/14/202609142355525655.rar",
+      "tech_file_name": "202609142355525655.rar",
+      "tech_file_ext": "RAR"
+    },
+    "title_rows": [
+      {
+        "id": 511692,
+        "name": "Сейсмик датчикларини калибрлаш тизимини харид қилиш /Закупка калибровочного комплекса сейсмометрического оборудования"
+      }
+    ]
+  },
+  {
+    "listing": {
+      "contractDate": null,
+      "contractStatus": "IN_PROCESS",
+      "contractSumma": null,
+      "contractType": 0,
+      "date": "2026-09-14",
+      "districtId": 10,
+      "districtName": "Olmazor tumani",
+      "enktCodes": "",
+      "enktNames": "",
+      "lotId": 26111006511674,
+      "lotStatus": "IN_PROCESS",
+      "lotStatuses": [
+        {
+          "isCompleted": true,
+          "name": "E'lon",
+          "order": 1
+        },
+        {
+          "isCompleted": false,
+          "name": "Shartnoma shakllandi",
+          "order": 2
+        },
+        {
+          "isCompleted": false,
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3
+        },
+        {
+          "isCompleted": false,
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4
+        },
+        {
+          "isCompleted": false,
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5
+        },
+        {
+          "isCompleted": false,
+          "name": "To'lov to'liq to'landi",
+          "order": 6
+        }
+      ],
+      "organ": "Sanitized buyer missing 7",
+      "organInn": "200000006",
+      "organizationType": "BUDGET",
+      "platformName": "xarid.uzex.uz",
+      "purchaseType": "TENDER",
+      "regDate": null,
+      "regionId": 1,
+      "regionName": "Toshkent shahri",
+      "startDate": "2026-09-14",
+      "startSumma": 1797410562500,
+      "vendor": null,
+      "vendorInn": null
+    },
+    "detail": {
+      "lotId": 26111006511674,
+      "lotStatus": "IN_PROCESS",
+      "contractStatus": null,
+      "startAmount": 1797410562500,
+      "paidAmount": 0,
+      "contractAmount": null,
+      "savedAmount": null,
+      "savedPercent": null,
+      "avansAmount": 0,
+      "contractDate": null,
+      "startDate": "2026-09-14",
+      "purchaseType": "TENDER",
+      "platformName": "xarid.uzex.uz",
+      "orgInfo": {
+        "name": "Sanitized buyer missing 7",
+        "inn": "200000006",
+        "code": "00000005491",
+        "state": "3"
+      },
+      "vendorInfo": null,
+      "organizationType": "BUDGET",
+      "products": [
+        {
+          "code": null,
+          "name": null,
+          "nameCrl": null,
+          "nameRu": null,
+          "amount": 1.0,
+          "price": 1797410562500,
+          "summa": 1797410562500,
+          "expense": "44354990",
+          "expenseName": "Boshqa texnika",
+          "unit": null,
+          "type": null
+        }
+      ],
+      "lotStatuses": [
+        {
+          "name": "E'lon",
+          "order": 1,
+          "isCompleted": true
+        },
+        {
+          "name": "Shartnoma shakllandi",
+          "order": 2,
+          "isCompleted": false
+        },
+        {
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3,
+          "isCompleted": false
+        },
+        {
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4,
+          "isCompleted": false
+        },
+        {
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5,
+          "isCompleted": false
+        },
+        {
+          "name": "To'lov to'liq to'landi",
+          "order": 6,
+          "isCompleted": false
+        }
+      ],
+      "cause": null,
+      "analysisInfo": {
+        "isBlacklist": false,
+        "isSingleVendor": false,
+        "isBudgetCustomer": true,
+        "cause": null
+      }
+    },
+    "operator": {
+      "id": 511674,
+      "display_no": "26111006511674",
+      "customer_tin": "200000006",
+      "type_name": "Tender",
+      "start_cost": 17974105625.0,
+      "currency_codeabc": "UZS",
+      "status_id": 4,
+      "status_name": "Eʼlon qilindi",
+      "end_date": "2026-10-12T11:40:41",
+      "start_date": "2026-09-18T11:40:41",
+      "description": null,
+      "addon_description": "Батафсил тавсифи ва талаблар техник топшириқда ва тендер бўйича харид қилиш хужжатларида келтирилган/ Приведено и подробно указано в закупочной документации по тендеру и техническом задании",
+      "technical_description": "Техник топширик/ТЗ",
+      "budget_products": "[{\"Product_Name\": \"Водородный эталон частоты активного типа\", \"Description\": \"Фаол турдаги водород частота эталонини харид қилиш. Техник параметрлар батафсил техник топшириқда ва харид хужжатларида келтирилган. / Водородный эталон частоты активного типа. Подробное описание и технические требования приведены в техническом задании и закупочной документации\\r\\n\\r\\n\", \"Quantity\": 1, \"Unit_Name\": null}]",
+      "rest_time": 584345,
+      "tech_file_path": "/files/2026/9/14/202609142455225603.rar",
+      "tech_file_name": "202609142455225603.rar",
+      "tech_file_ext": "RAR"
+    },
+    "title_rows": [
+      {
+        "id": 511674,
+        "name": "Фаол турдаги водород частота эталонини харид қилиш / Закупка водородного эталона частоты активного типа "
+      }
+    ]
+  },
+  {
+    "listing": {
+      "contractDate": null,
+      "contractStatus": "IN_PROCESS",
+      "contractSumma": null,
+      "contractType": 0,
+      "date": "2026-08-06",
+      "districtId": 6,
+      "districtName": "Mirzo Ulug'bek tumani",
+      "enktCodes": "",
+      "enktNames": "",
+      "lotId": 26111006506235,
+      "lotStatus": "IN_PROCESS",
+      "lotStatuses": [
+        {
+          "isCompleted": true,
+          "name": "E'lon",
+          "order": 1
+        },
+        {
+          "isCompleted": false,
+          "name": "Shartnoma shakllandi",
+          "order": 2
+        },
+        {
+          "isCompleted": false,
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3
+        },
+        {
+          "isCompleted": false,
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4
+        },
+        {
+          "isCompleted": false,
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5
+        },
+        {
+          "isCompleted": false,
+          "name": "To'lov to'liq to'landi",
+          "order": 6
+        }
+      ],
+      "organ": "Sanitized buyer missing 8",
+      "organInn": "200000007",
+      "organizationType": "BUDGET",
+      "platformName": "xarid.uzex.uz",
+      "purchaseType": "TENDER",
+      "regDate": null,
+      "regionId": 1,
+      "regionName": "Toshkent shahri",
+      "startDate": "2026-08-06",
+      "startSumma": 685581349376,
+      "vendor": null,
+      "vendorInn": null
+    },
+    "detail": {
+      "lotId": 26111006506235,
+      "lotStatus": "CANCELLED",
+      "contractStatus": null,
+      "startAmount": 685581349376,
+      "paidAmount": 0,
+      "contractAmount": null,
+      "savedAmount": null,
+      "savedPercent": null,
+      "avansAmount": 0,
+      "contractDate": null,
+      "startDate": "2026-08-06",
+      "purchaseType": "TENDER",
+      "platformName": "xarid.uzex.uz",
+      "orgInfo": {
+        "name": "Sanitized buyer missing 8",
+        "inn": "200000007",
+        "code": "00000027245",
+        "state": "A"
+      },
+      "vendorInfo": null,
+      "organizationType": "BUDGET",
+      "products": [
+        {
+          "code": null,
+          "name": null,
+          "nameCrl": null,
+          "nameRu": null,
+          "amount": 616.0,
+          "price": 1112956736,
+          "summa": 685581349376,
+          "expense": "44252410",
+          "expenseName": "Dori vositalari",
+          "unit": null,
+          "type": null
+        }
+      ],
+      "lotStatuses": [
+        {
+          "name": "Bekor bo'lgan",
+          "order": 1,
+          "isCompleted": true
+        }
+      ],
+      "cause": null,
+      "analysisInfo": {
+        "isBlacklist": false,
+        "isSingleVendor": false,
+        "isBudgetCustomer": true,
+        "cause": null
+      }
+    },
+    "operator": {
+      "id": 506235,
+      "display_no": "26111006506235",
+      "customer_tin": "200000007",
+      "type_name": "Tender",
+      "start_cost": 6855813493.76,
+      "currency_codeabc": "UZS",
+      "status_id": 12,
+      "status_name": "Savdo amalga oshmagan",
+      "end_date": "2026-08-26T11:23:18",
+      "start_date": "2026-08-10T11:23:18",
+      "description": null,
+      "addon_description": "Тенектеплаза 8000 IU 40 мг, лиофилизат (қуруқ кукун), донада",
+      "technical_description": "Тендер бўйича харид қилинадиган товарлар, ишлар ва хизматларнинг ушбу харид қилиш ҳужжатларининг ажралмас қисми бўлган Техник топшириқда кўрсатилган хусусиятлари, миқдори, рўйхати ва техник тавсифлари, шунингдек спецификацияси.",
+      "budget_products": "[{\"Product_Name\": \"Tenecteplase\", \"Description\": \"Тенектеплаза 8000 IU 40 мг, лиофилизат (қуруқ кукун), донада\", \"Quantity\": 616, \"Unit_Name\": null}]",
+      "rest_time": 0,
+      "tech_file_path": "/files/2026/6/16/202606165236288738.pdf",
+      "tech_file_name": "202606165236288738.pdf",
+      "tech_file_ext": "PDF"
+    },
+    "title_rows": []
+  },
+  {
+    "listing": {
+      "contractDate": null,
+      "contractStatus": "IN_PROCESS",
+      "contractSumma": null,
+      "contractType": 0,
+      "date": "2026-06-04",
+      "districtId": 6,
+      "districtName": "Mirzo Ulug'bek tumani",
+      "enktCodes": "",
+      "enktNames": "",
+      "lotId": 26111006495497,
+      "lotStatus": "IN_PROCESS",
+      "lotStatuses": [
+        {
+          "isCompleted": true,
+          "name": "E'lon",
+          "order": 1
+        },
+        {
+          "isCompleted": false,
+          "name": "Shartnoma shakllandi",
+          "order": 2
+        },
+        {
+          "isCompleted": false,
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3
+        },
+        {
+          "isCompleted": false,
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4
+        },
+        {
+          "isCompleted": false,
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5
+        },
+        {
+          "isCompleted": false,
+          "name": "To'lov to'liq to'landi",
+          "order": 6
+        }
+      ],
+      "organ": "Sanitized buyer missing 9",
+      "organInn": "200000008",
+      "organizationType": "BUDGET",
+      "platformName": "xarid.uzex.uz",
+      "purchaseType": "TENDER",
+      "regDate": null,
+      "regionId": 1,
+      "regionName": "Toshkent shahri",
+      "startDate": "2026-06-04",
+      "startSumma": 991760000000,
+      "vendor": null,
+      "vendorInn": null
+    },
+    "detail": {
+      "lotId": 26111006495497,
+      "lotStatus": "IN_PROCESS",
+      "contractStatus": null,
+      "startAmount": 991760000000,
+      "paidAmount": 0,
+      "contractAmount": null,
+      "savedAmount": null,
+      "savedPercent": null,
+      "avansAmount": 0,
+      "contractDate": null,
+      "startDate": "2026-06-04",
+      "purchaseType": "TENDER",
+      "platformName": "xarid.uzex.uz",
+      "orgInfo": {
+        "name": "Sanitized buyer missing 9",
+        "inn": "200000008",
+        "code": "00000027245",
+        "state": "A"
+      },
+      "vendorInfo": null,
+      "organizationType": "BUDGET",
+      "products": [
+        {
+          "code": null,
+          "name": null,
+          "nameCrl": null,
+          "nameRu": null,
+          "amount": 450800.0,
+          "price": 2200000,
+          "summa": 991760000000,
+          "expense": "44252410",
+          "expenseName": "Dori vositalari",
+          "unit": null,
+          "type": null
+        }
+      ],
+      "lotStatuses": [
+        {
+          "name": "E'lon",
+          "order": 1,
+          "isCompleted": true
+        },
+        {
+          "name": "Shartnoma shakllandi",
+          "order": 2,
+          "isCompleted": false
+        },
+        {
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3,
+          "isCompleted": false
+        },
+        {
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4,
+          "isCompleted": false
+        },
+        {
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5,
+          "isCompleted": false
+        },
+        {
+          "name": "To'lov to'liq to'landi",
+          "order": 6,
+          "isCompleted": false
+        }
+      ],
+      "cause": null,
+      "analysisInfo": {
+        "isBlacklist": false,
+        "isSingleVendor": false,
+        "isBudgetCustomer": true,
+        "cause": null
+      }
+    },
+    "operator": {
+      "id": 495497,
+      "display_no": "26111006495497",
+      "customer_tin": "200000008",
+      "type_name": "Tender",
+      "start_cost": 9917600000.0,
+      "currency_codeabc": "UZS",
+      "status_id": 12,
+      "status_name": "Savdo amalga oshmagan",
+      "end_date": "2026-06-24T18:23:12",
+      "start_date": "2026-06-08T18:23:12",
+      "description": null,
+      "addon_description": "Дефлазакорт 6 мг, таблеткалар, донада",
+      "technical_description": "Тендер бўйича харид қилинадиган товарлар, ишлар ва хизматларнинг ушбу харид қилиш ҳужжатларининг ажралмас қисми бўлган Техник топшириқда  кўрсатилган хусусиятлари, миқдори, рўйхати ва техник тавсифлари, шунингдек спецификацияси.",
+      "budget_products": "[{\"Product_Name\": \"Deflazakort\", \"Description\": \"Дефлазакот 6 мг, таблеткалар, донада\", \"Quantity\": 450800, \"Unit_Name\": null}]",
+      "rest_time": 0,
+      "tech_file_path": "/files/2026/6/4/202606043143514223.pdf",
+      "tech_file_name": "202606043143514223.pdf",
+      "tech_file_ext": "PDF"
+    },
+    "title_rows": []
+  },
+  {
+    "listing": {
+      "contractDate": null,
+      "contractStatus": "IN_PROCESS",
+      "contractSumma": null,
+      "contractType": 0,
+      "date": "2026-09-29",
+      "districtId": 10,
+      "districtName": "Olmazor tumani",
+      "enktCodes": "23.19.23.110-00056",
+      "enktNames": "Laboratoriya anjomlari",
+      "lotId": 26111006516350,
+      "lotStatus": "IN_PROCESS",
+      "lotStatuses": [
+        {
+          "isCompleted": true,
+          "name": "E'lon",
+          "order": 1
+        },
+        {
+          "isCompleted": false,
+          "name": "Shartnoma shakllandi",
+          "order": 2
+        },
+        {
+          "isCompleted": false,
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3
+        },
+        {
+          "isCompleted": false,
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4
+        },
+        {
+          "isCompleted": false,
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5
+        },
+        {
+          "isCompleted": false,
+          "name": "To'lov to'liq to'landi",
+          "order": 6
+        }
+      ],
+      "organ": "Sanitized lifecycle buyer 0",
+      "organInn": "300000000",
+      "organizationType": "BUDGET",
+      "platformName": "xarid.uzex.uz",
+      "purchaseType": "TENDER",
+      "regDate": null,
+      "regionId": 1,
+      "regionName": "Toshkent shahri",
+      "startDate": "2026-09-29",
+      "startSumma": 368900000000,
+      "vendor": null,
+      "vendorInn": null
+    },
+    "detail": {
+      "analysisInfo": {
+        "cause": null,
+        "isBlacklist": false,
+        "isBudgetCustomer": true,
+        "isSingleVendor": false
+      },
+      "avansAmount": 0,
+      "cause": null,
+      "contractAmount": null,
+      "contractDate": null,
+      "contractStatus": null,
+      "lotId": 26111006516350,
+      "lotStatus": "IN_PROCESS",
+      "lotStatuses": [
+        {
+          "isCompleted": true,
+          "name": "E'lon",
+          "order": 1
+        },
+        {
+          "isCompleted": false,
+          "name": "Shartnoma shakllandi",
+          "order": 2
+        },
+        {
+          "isCompleted": false,
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3
+        },
+        {
+          "isCompleted": false,
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4
+        },
+        {
+          "isCompleted": false,
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5
+        },
+        {
+          "isCompleted": false,
+          "name": "To'lov to'liq to'landi",
+          "order": 6
+        }
+      ],
+      "orgInfo": {
+        "name": "Sanitized lifecycle buyer 0",
+        "inn": "300000000",
+        "code": null,
+        "state": null
+      },
+      "organizationType": "BUDGET",
+      "paidAmount": 0,
+      "platformName": "xarid.uzex.uz",
+      "products": [
+        {
+          "amount": 1.0,
+          "code": "23.19.23.110-00056",
+          "expense": "44354990",
+          "expenseName": "Boshqa texnika",
+          "name": "Laboratoriya anjomlari",
+          "nameCrl": "Лаборатория анжомлари",
+          "nameRu": "Лабораторный инвентарь",
+          "price": 368900000000,
+          "summa": 368900000000,
+          "type": "PRODUCT",
+          "unit": "dona"
+        }
+      ],
+      "purchaseType": "TENDER",
+      "savedAmount": null,
+      "savedPercent": null,
+      "startAmount": 368900000000,
+      "startDate": "2026-09-29",
+      "vendorInfo": null
+    },
+    "operator": {
+      "id": 516350,
+      "display_no": "26111006516350",
+      "customer_tin": "300000000",
+      "type_name": "Tender",
+      "start_cost": 3689000000.0,
+      "currency_codeabc": "UZS",
+      "status_id": 2,
+      "status_name": "Komissiya kutilmoqda",
+      "end_date": null,
+      "start_date": null,
+      "description": null,
+      "addon_description": "Oʻzbekiston Respublikasi Vazirlar Mahkamasining 17.02.2026 yildagi 65-son qarori / Постановление Кабинета Министров Республики Узбекистан, от 17.02.2026 г. № 65",
+      "technical_description": "T54 Nanotexnologiyalarni rivojlantirish markazi uchun \"Kriostat\" / О54 \"Криостат\" для Центра развития нанотехнологий",
+      "budget_products": "[{\"Product_Name\": \"Лабораторный инвентарь\", \"Description\": \"Tovar murakkab strukturaviy xarakterga egaligi sababli uning texnik tavsiflari rus tilida beriladi:\\r\\nКриостат должен обладать следующими характеристиками: - Вставка с регулируемым охлаждением (VTI) - Опция для окон для линий луча - Холодная головка, компрессор с водяным охлаждением, кабеля и трубки - Сухой насос для непрерывной циркуляции газа 4НЕ - Слив, коллектор и трубки для непрерывного газового контура 4НЕ - Датчик и расходомер Pirani для газового контура 4НЕ - Программное обеспечение / Драйверы LABVIEW для удаленного управления - Вакуумные линии - Регулятор температуры и соединительные кабели - Держатель и устройства для вращения образцов - Базовая температура в непрерывном режиме - 1,5 К - Рабочий диапазон - от 1,5 К до 800 К - Стабильность температуры: - от базовой до 25К - +/- 50тК -от 25 К до 800 К - +/- 100 тК - Охлаждение датчика от 800К до базовой - <30 min - Охлаждение вставки ЗНЕ от 800К до ЗООмК - не более 5 часов - до базовой температуры - не более 10 часов ...\", \"Quantity\": 1, \"Unit_Name\": null}]",
+      "rest_time": 0,
+      "tech_file_path": "/files/2026/9/29/202609295353260630.pdf",
+      "tech_file_name": "202609295353260630.pdf",
+      "tech_file_ext": "PDF"
+    },
+    "title_rows": []
+  },
+  {
+    "listing": {
+      "contractDate": null,
+      "contractStatus": "IN_PROCESS",
+      "contractSumma": null,
+      "contractType": 0,
+      "date": "2026-06-10",
+      "districtId": 27,
+      "districtName": "Nurafshon shahar",
+      "enktCodes": "41.20.40.900-00002",
+      "enktNames": "Ma'muriy bino qurilishi bo'yicha xizmat",
+      "lotId": 26121006496547,
+      "lotStatus": "IN_PROCESS",
+      "lotStatuses": [
+        {
+          "isCompleted": true,
+          "name": "E'lon",
+          "order": 1
+        },
+        {
+          "isCompleted": false,
+          "name": "Shartnoma shakllandi",
+          "order": 2
+        },
+        {
+          "isCompleted": false,
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3
+        },
+        {
+          "isCompleted": false,
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4
+        },
+        {
+          "isCompleted": false,
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5
+        },
+        {
+          "isCompleted": false,
+          "name": "To'lov to'liq to'landi",
+          "order": 6
+        }
+      ],
+      "organ": "Sanitized lifecycle buyer 1",
+      "organInn": "300000001",
+      "organizationType": "BUDGET",
+      "platformName": "xarid.uzex.uz",
+      "purchaseType": "TENDER",
+      "regDate": null,
+      "regionId": 2,
+      "regionName": "Toshkent viloyati",
+      "startDate": "2026-06-10",
+      "startSumma": 9185669917100,
+      "vendor": null,
+      "vendorInn": null
+    },
+    "detail": {
+      "analysisInfo": {
+        "cause": null,
+        "isBlacklist": false,
+        "isBudgetCustomer": true,
+        "isSingleVendor": false
+      },
+      "avansAmount": 0,
+      "cause": null,
+      "contractAmount": null,
+      "contractDate": null,
+      "contractStatus": null,
+      "lotId": 26121006496547,
+      "lotStatus": "IN_PROCESS",
+      "lotStatuses": [
+        {
+          "isCompleted": true,
+          "name": "E'lon",
+          "order": 1
+        },
+        {
+          "isCompleted": false,
+          "name": "Shartnoma shakllandi",
+          "order": 2
+        },
+        {
+          "isCompleted": false,
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3
+        },
+        {
+          "isCompleted": false,
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4
+        },
+        {
+          "isCompleted": false,
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5
+        },
+        {
+          "isCompleted": false,
+          "name": "To'lov to'liq to'landi",
+          "order": 6
+        }
+      ],
+      "orgInfo": {
+        "name": "Sanitized lifecycle buyer 1",
+        "inn": "300000001",
+        "code": null,
+        "state": null
+      },
+      "organizationType": "BUDGET",
+      "paidAmount": 0,
+      "platformName": "xarid.uzex.uz",
+      "products": [
+        {
+          "amount": 1.0,
+          "code": "41.20.40.900-00002",
+          "expense": "44821190",
+          "expenseName": "Boshqa xarajatlar",
+          "name": "Ma'muriy bino qurilishi bo'yicha xizmat",
+          "nameCrl": "Маъмурий бино қурилиши бўйича хизмат",
+          "nameRu": "Услуга строительства административного здания",
+          "price": 9185669917100,
+          "summa": 9185669917100,
+          "type": "SERVICE",
+          "unit": "shartli birlik"
+        }
+      ],
+      "purchaseType": "TENDER",
+      "savedAmount": null,
+      "savedPercent": null,
+      "startAmount": 9185669917100,
+      "startDate": "2026-06-10",
+      "vendorInfo": null
+    },
+    "operator": {
+      "id": 496547,
+      "display_no": "26121006496547",
+      "customer_tin": "300000001",
+      "type_name": "Tender",
+      "start_cost": 91856699171.0,
+      "currency_codeabc": "UZS",
+      "status_id": 5,
+      "status_name": "Buyurtmachi tomonidan bekor qilingan",
+      "end_date": null,
+      "start_date": null,
+      "description": null,
+      "addon_description": "\"Nurafshon business city\" худудида Тошкент вилояти \"Бадиий академия тизимида мактаб интернати\" ни қуриш",
+      "technical_description": "ТЗ",
+      "budget_products": "[{\"Product_Name\": \"Услуга строительства административного здания\", \"Description\": \"\\\"Nurafshon business city\\\" худудида Тошкент вилояти \\\"Бадиий академия тизимида мактаб интернати\\\" ни қуриш\", \"Quantity\": 1, \"Unit_Name\": null}]",
+      "rest_time": 0,
+      "tech_file_path": "/files/2026/6/10/202606102247853256.rar",
+      "tech_file_name": "202606102247853256.rar",
+      "tech_file_ext": "RAR"
+    },
+    "title_rows": []
+  },
+  {
+    "listing": {
+      "contractDate": null,
+      "contractStatus": "IN_PROCESS",
+      "contractSumma": null,
+      "contractType": 0,
+      "date": "2024-09-20",
+      "districtId": 1,
+      "districtName": "Mirobod tumani",
+      "enktCodes": "26.30.30.000-00008",
+      "enktNames": "Maxsus kommunikatsiya uskunasi",
+      "lotId": 24121006389994,
+      "lotStatus": "IN_PROCESS",
+      "lotStatuses": [
+        {
+          "isCompleted": true,
+          "name": "E'lon",
+          "order": 1
+        },
+        {
+          "isCompleted": false,
+          "name": "Shartnoma shakllandi",
+          "order": 2
+        },
+        {
+          "isCompleted": false,
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3
+        },
+        {
+          "isCompleted": false,
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4
+        },
+        {
+          "isCompleted": false,
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5
+        },
+        {
+          "isCompleted": false,
+          "name": "To'lov to'liq to'landi",
+          "order": 6
+        }
+      ],
+      "organ": "Sanitized lifecycle buyer 2",
+      "organInn": "300000002",
+      "organizationType": "BUDGET",
+      "platformName": "xarid.uzex.uz",
+      "purchaseType": "TENDER",
+      "regDate": null,
+      "regionId": 1,
+      "regionName": "Toshkent shahri",
+      "startDate": "2024-09-20",
+      "startSumma": 440000000,
+      "vendor": null,
+      "vendorInn": null
+    },
+    "detail": {
+      "analysisInfo": {
+        "cause": null,
+        "isBlacklist": false,
+        "isBudgetCustomer": true,
+        "isSingleVendor": false
+      },
+      "avansAmount": 0,
+      "cause": null,
+      "contractAmount": null,
+      "contractDate": null,
+      "contractStatus": null,
+      "lotId": 24121006389994,
+      "lotStatus": "IN_PROCESS",
+      "lotStatuses": [
+        {
+          "isCompleted": true,
+          "name": "E'lon",
+          "order": 1
+        },
+        {
+          "isCompleted": false,
+          "name": "Shartnoma shakllandi",
+          "order": 2
+        },
+        {
+          "isCompleted": false,
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3
+        },
+        {
+          "isCompleted": false,
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4
+        },
+        {
+          "isCompleted": false,
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5
+        },
+        {
+          "isCompleted": false,
+          "name": "To'lov to'liq to'landi",
+          "order": 6
+        }
+      ],
+      "orgInfo": {
+        "name": "Sanitized lifecycle buyer 2",
+        "inn": "300000002",
+        "code": null,
+        "state": null
+      },
+      "organizationType": "BUDGET",
+      "paidAmount": 0,
+      "platformName": "xarid.uzex.uz",
+      "products": [
+        {
+          "amount": 1.0,
+          "code": "26.30.30.000-00008",
+          "expense": "44821190",
+          "expenseName": "Boshqa xarajatlar",
+          "name": "Maxsus kommunikatsiya uskunasi",
+          "nameCrl": "Махсус коммуникация ускунаси",
+          "nameRu": "Специализированное коммуникационное оборудование",
+          "price": 440000000,
+          "summa": 440000000,
+          "type": "PRODUCT",
+          "unit": "dona"
+        }
+      ],
+      "purchaseType": "TENDER",
+      "savedAmount": null,
+      "savedPercent": null,
+      "startAmount": 440000000,
+      "startDate": "2024-09-20",
+      "vendorInfo": null
+    },
+    "operator": {
+      "id": 389994,
+      "display_no": "24121006389994",
+      "customer_tin": "300000002",
+      "type_name": "Tender",
+      "start_cost": 4400000.0,
+      "currency_codeabc": "USD",
+      "status_id": 10,
+      "status_name": "Bayonnoma shakllantirilgan",
+      "end_date": "2024-11-07T16:17:46",
+      "start_date": "2024-09-23T09:13:48",
+      "description": null,
+      "addon_description": "Оценка тендерных предложений и определение победителя тендера производятся на основании последовательности, порядка, критериев и метода, изложенных в тендерной документации",
+      "technical_description": "Техническое задание",
+      "budget_products": "[{\"Product_Name\": \"Специализированное коммуникационное оборудование\", \"Description\": \"Система авиационной воздушной/наземной электросвязи с системой коммутации диспетчерской голосовой связи и с системой документирования (записи) и воспроизведения голосовой информации для обеспечения управления воздушным движением в районе аэродрома \\\"Ташкент им. Ислама Каримова\\\" и в зоне ответственности Ташкентского Центра АС УВД\", \"Quantity\": 1, \"Unit_Name\": null}]",
+      "rest_time": 0,
+      "tech_file_path": "/files/2024/9/20/202409200600942109.pdf",
+      "tech_file_name": "202409200600942109.pdf",
+      "tech_file_ext": "PDF"
+    },
+    "title_rows": []
+  },
+  {
+    "listing": {
+      "contractDate": null,
+      "contractStatus": "IN_PROCESS",
+      "contractSumma": null,
+      "contractType": 0,
+      "date": "2024-08-07",
+      "districtId": 1,
+      "districtName": "Mirobod tumani",
+      "enktCodes": "52.23.19.190-00001",
+      "enktNames": "Havo transportida maxsus parvozlarni amalga oshirish xizmati",
+      "lotId": 24121006381111,
+      "lotStatus": "IN_PROCESS",
+      "lotStatuses": [
+        {
+          "isCompleted": true,
+          "name": "E'lon",
+          "order": 1
+        },
+        {
+          "isCompleted": false,
+          "name": "Shartnoma shakllandi",
+          "order": 2
+        },
+        {
+          "isCompleted": false,
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3
+        },
+        {
+          "isCompleted": false,
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4
+        },
+        {
+          "isCompleted": false,
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5
+        },
+        {
+          "isCompleted": false,
+          "name": "To'lov to'liq to'landi",
+          "order": 6
+        }
+      ],
+      "organ": "Sanitized lifecycle buyer 3",
+      "organInn": "300000003",
+      "organizationType": "BUDGET",
+      "platformName": "xarid.uzex.uz",
+      "purchaseType": "TENDER",
+      "regDate": null,
+      "regionId": 1,
+      "regionName": "Toshkent shahri",
+      "startDate": "2024-08-07",
+      "startSumma": 109321600,
+      "vendor": null,
+      "vendorInn": null
+    },
+    "detail": {
+      "analysisInfo": {
+        "cause": null,
+        "isBlacklist": false,
+        "isBudgetCustomer": true,
+        "isSingleVendor": false
+      },
+      "avansAmount": 0,
+      "cause": null,
+      "contractAmount": null,
+      "contractDate": null,
+      "contractStatus": null,
+      "lotId": 24121006381111,
+      "lotStatus": "IN_PROCESS",
+      "lotStatuses": [
+        {
+          "isCompleted": true,
+          "name": "E'lon",
+          "order": 1
+        },
+        {
+          "isCompleted": false,
+          "name": "Shartnoma shakllandi",
+          "order": 2
+        },
+        {
+          "isCompleted": false,
+          "name": "Oldindan to'lov o'tkazildi",
+          "order": 3
+        },
+        {
+          "isCompleted": false,
+          "name": "Hisob-faktura yuborilgan",
+          "order": 4
+        },
+        {
+          "isCompleted": false,
+          "name": "Amalga oshirilgan to'lov",
+          "order": 5
+        },
+        {
+          "isCompleted": false,
+          "name": "To'lov to'liq to'landi",
+          "order": 6
+        }
+      ],
+      "orgInfo": {
+        "name": "Sanitized lifecycle buyer 3",
+        "inn": "300000003",
+        "code": null,
+        "state": null
+      },
+      "organizationType": "BUDGET",
+      "paidAmount": 0,
+      "platformName": "xarid.uzex.uz",
+      "products": [
+        {
+          "amount": 1.0,
+          "code": "52.23.19.190-00001",
+          "expense": "44821190",
+          "expenseName": "Boshqa xarajatlar",
+          "name": "Havo transportida maxsus parvozlarni amalga oshirish xizmati",
+          "nameCrl": "Ҳаво транспортида махсус парвозларни амалга ошириш хизмати",
+          "nameRu": "Услуга по выполнению специальных полетов воздушным транспортом",
+          "price": 109321600,
+          "summa": 109321600,
+          "type": "SERVICE",
+          "unit": "shartli birlik"
+        }
+      ],
+      "purchaseType": "TENDER",
+      "savedAmount": null,
+      "savedPercent": null,
+      "startAmount": 109321600,
+      "startDate": "2024-08-07",
+      "vendorInfo": null
+    },
+    "operator": {
+      "id": 381111,
+      "display_no": "24121006381111",
+      "customer_tin": "300000003",
+      "type_name": "Tender",
+      "start_cost": 1093216.0,
+      "currency_codeabc": "EUR",
+      "status_id": 10,
+      "status_name": "Bayonnoma shakllantirilgan",
+      "end_date": "2024-09-18T09:19:23",
+      "start_date": "2024-08-07T09:19:23",
+      "description": null,
+      "addon_description": "Оценка тендерных предложений и определение победителя тендера производятся на основании последовательности, порядка, критериев и метода, изложенных в тендерной документации",
+      "technical_description": "Техническое задание",
+      "budget_products": "[{\"Product_Name\": \"Услуга по выполнению специальных полетов воздушным транспортом\", \"Description\": \"Услуги по летным проверкам наземных средств радиотехнического обеспечения полетов ГУП Центр \\\"Узаэронавигация \\\" при Министерстве транспорта Республики Узбекистан 2024 - 2025 в годах.\", \"Quantity\": 1, \"Unit_Name\": null}]",
+      "rest_time": 0,
+      "tech_file_path": "/files/2024/6/12/202406125858049390.pdf",
+      "tech_file_name": "202406125858049390.pdf",
+      "tech_file_ext": "PDF"
+    },
+    "title_rows": []
+  }
+]

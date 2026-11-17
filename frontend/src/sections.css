@@ -1,0 +1,51 @@
+/* Section structures adapted from four Stitch-generated extensions; typography and tokens follow refined Tenders. */
+/* sources */
+.sources-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+/* campaigns */
+.automatic-setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #fafbfd;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+/* matching */
+.matching-filter {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px 18px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+/* activity */
+.operations-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 390px;
+  gap: 20px;
+  align-items: start;
+}
+@media (max-width: 1439px) {
+  .operations-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 699px) {
+  .automatic-setting {
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .matching-filter {
+    padding: 12px;
+  }
+}

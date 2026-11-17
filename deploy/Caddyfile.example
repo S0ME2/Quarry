@@ -1,0 +1,6 @@
+# Replace with the pilot hostname. Restrict access at the network layer to pilot users.
+pilot.example.org {
+    @registration path /api/v1/auth/register
+    respond @registration 403
+    reverse_proxy 127.0.0.1:8000
+}

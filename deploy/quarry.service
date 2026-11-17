@@ -1,0 +1,27 @@
+[Unit]
+Description=Quarry application and monitoring worker
+After=network-online.target postgresql.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=quarry
+Group=quarry
+WorkingDirectory=/opt/quarry
+EnvironmentFile=/etc/quarry/quarry.env
+# Apply these after EnvironmentFile, which takes precedence over Environment=.
+ExecStart=/usr/bin/env QUARRY_OPERATOR_MODE=false QUARRY_SECURE_COOKIES=true QUARRY_MANUAL_ONLY=false QUARRY_OPERATOR_WORKER_ENABLED=true QUARRY_AI_SEMANTIC_ENABLED=true PLAYWRIGHT_BROWSERS_PATH=/opt/quarry/.cache/ms-playwright QUARRY_EVIDENCE_DIRECTORY=/var/lib/quarry/evidence QUARRY_SESSION_DIRECTORY=/var/lib/quarry/sessions /opt/quarry/.venv/bin/python -m tender_system.api.server
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+StateDirectory=quarry
+StateDirectoryMode=0700
+MemoryMax=4G
+TasksMax=512
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

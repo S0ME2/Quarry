@@ -1,0 +1,10 @@
+.codex/
+artifacts/
+**/node_modules/
+**/dist/
+**/build/
+coverage/
+htmlcov/
+playwright-report/
+test-results/
+uv.lock
